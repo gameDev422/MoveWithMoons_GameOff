@@ -1,0 +1,618 @@
+{
+	"sceneObjects": [
+		{
+			"type": "SceneObject",
+			"position": {
+				"x": 0,
+				"y": -650
+			},
+			"rotation": 0,
+			"behaviors": [],
+			"sprites": [
+				{
+					"type": "TextSprite",
+					"text": "0.00",
+					"name": "",
+					"font": "80px Arial",
+					"alignment": "center",
+					"color": "#ffffff",
+					"visible": true,
+					"layer": 1,
+					"maxWidth": 0,
+					"shadowColor": "#000",
+					"shadowBlur": 0,
+					"shadowOffset": {
+						"x": 0,
+						"y": 0
+					},
+					"lineSpacing": 1,
+					"maxLines": 0,
+					"firstLine": 0,
+					"outlineColor": "#ffffff",
+					"outlineWidth": 2,
+					"boundsScale": {
+						"x": 1,
+						"y": 1
+					},
+					"sortPoint": {
+						"x": 0,
+						"y": 0
+					},
+					"fixedSize": false,
+					"drawModifiers": [],
+					"properties": {}
+				}
+			],
+			"spriteOffsets": [
+				{
+					"x": 0,
+					"y": 0,
+					"angle": 0
+				}
+			],
+			"flowChart": null,
+			"grid": null,
+			"alignment": {
+				"x": "center",
+				"y": "center"
+			},
+			"name": "SceneObject_0",
+			"isTemplate": false,
+			"path": "",
+			"addToScene": {
+				"autoListen": true,
+				"params": null
+			},
+			"properties": {},
+			"functions": {
+				"onAddToScene": "function (data)\n{\n\t\n}",
+				"onUpdate": "function (data)\n{\n\t\n}"
+			}
+		},
+		{
+			"type": "SceneObject",
+			"position": {
+				"x": 10574.875093104612,
+				"y": -636.1883878027179
+			},
+			"rotation": 0,
+			"behaviors": [],
+			"sprites": [
+				{
+					"type": "Sprite",
+					"animations": {},
+					"currentAnimation": "default",
+					"sortPoint": {
+						"x": 0,
+						"y": 0
+					},
+					"layer": 2,
+					"autoResize": false,
+					"visible": true,
+					"image": "procedural_square",
+					"imageArea": {
+						"minX": 0,
+						"minY": 0,
+						"maxX": 1,
+						"maxY": 1
+					},
+					"alwaysDraw": false,
+					"name": "",
+					"drawModifiers": [],
+					"pixelShader": "// This shader exposes 3 parameters\n// hue: usually in the range -1 to 1\n// saturation: usually in the range 0 to 2\n// brightness: usually in the range -1 to 1\n\n// get original color from the texture\nvec4 color = texture2D(uDiffuseSampler, uvAlphaTime.xy);\n\n// convert to hsv\nvec3 c = color.xyz;\nvec4 K = vec4(0.0, -1.0 / 3.0, 2.0 / 3.0, -1.0);\nvec4 p = mix(vec4(c.bg, K.wz), vec4(c.gb, K.xy), step(c.b, c.g));\nvec4 q = mix(vec4(p.xyw, c.r), vec4(c.r, p.yzx), step(p.x, c.r));\nfloat d = q.x - min(q.w, q.y);\nfloat e = 1.0e-10;\nc = vec3(abs(q.z + (q.w - q.y) / (6.0 * d + e)), d / (q.x + e), q.x);\n\n// apply color correction\nc.x += hue;\nc.y *= saturation;\nc.z -= brightness;\n\n// convert back to rgb\nK = vec4(1.0, 2.0 / 3.0, 1.0 / 3.0, 3.0);\nvec3 r = abs(fract(c.xxx + K.xyz) * 6.0 - K.www);\ncolor.xyz = c.z * mix(K.xxx, clamp(r - K.xxx, 0.0, 1.0), c.y);\ncolor.w *= uvAlphaTime.z;\n\ngl_FragColor = color;\n\n// Thanks to lolengine.net for the rgb<->hsb conversion code",
+					"pixelShaderUniforms": {
+						"hue": "float",
+						"saturation": "float",
+						"brightness": "float"
+					},
+					"pixelPerfectMouseEvents": 0,
+					"properties": {
+						"hue": 0,
+						"saturation": 1,
+						"brightness": "-"
+					},
+					"size": {
+						"x": 8000,
+						"y": 8000
+					}
+				}
+			],
+			"spriteOffsets": [
+				{
+					"x": 0,
+					"y": 0,
+					"angle": 0
+				}
+			],
+			"flowChart": null,
+			"grid": null,
+			"alignment": {
+				"x": "center",
+				"y": "center"
+			},
+			"name": "GameMan",
+			"isTemplate": false,
+			"path": "",
+			"addToScene": {
+				"autoListen": true,
+				"params": null
+			},
+			"properties": {},
+			"functions": {
+				"onAddToScene": "function (data)\n{\n\tvar score = wade.retrieveLocalObject(\"Score\")\n\tif (score >= 100)\n\twade.getObjectByName(\"Star1\").getSprite().\n\tsetVisible(true)\n\telse\n\twade.getObjectByName(\"Star1EMTPY\").getSprite().\n\tsetVisible(false)\n\tif (score >= 200)\n\twade.getObjectByName(\"Star2\").getSprite().\n\tsetVisible(true)\n\telse\n\twade.getObjectByName(\"Star2EMTPY\").getSprite().\n\tsetVisible(true)\n\tif (score >= 300)\n\twade.getObjectByName(\"Star3\").getSprite().\n\tsetVisible(true)\n\telse\n\twade.getObjectByName(\"Star3EMTPY\").getSprite().\n\tsetVisible(true)\n\twade.getObjectByName(\"SceneObject_0\").getSprite()\n\t.setText(score)\n}",
+				"onMouseDown": "function (data)\n{\n\t\n}",
+				"onUpdate": "function (data)\n{\n\t\n}",
+				"onKeyDown": "function (data)\n{\n\tif (data.keyName == \"space\"){\r\n\tvar score = wade.retrieveLocalObject(\"Score\");\r\n\tvar moonNum;\r\n\tif (score > 50)\r\n\tmoonNum = 1;\r\n\tif (score > 125)\r\n\tmoonNum = 2;\r\n\tif (score > 200)\r\n\tmoonNum = 3;\r\n\tif (wade.retrieveLocalObject(\"FullScore\"))\r\n\tmoonNum += wade.retrieveLocalObject(\"FullScore\");\r\n\twade.storeLocalObject(\"FullScore\", moonNum);\r\n\twade.clearScene();\r\n\twade.loadScene(wade.retrieveLocalObject(\"NextScene\")\r\n\t,true);\r\n\tconsole.log(wade.retrieveLocalObject(\"FullScore\"));\r\n\t}\n}"
+			}
+		},
+		{
+			"type": "SceneObject",
+			"position": {
+				"x": -250,
+				"y": 0
+			},
+			"rotation": 0,
+			"behaviors": [],
+			"sprites": [
+				{
+					"type": "Sprite",
+					"animations": {},
+					"currentAnimation": "default",
+					"sortPoint": {
+						"x": 0,
+						"y": 0
+					},
+					"layer": 1,
+					"autoResize": false,
+					"visible": false,
+					"image": "uiPack2.png",
+					"imageArea": {
+						"minX": 0.37783251231527093,
+						"minY": 0.30781010719754975,
+						"maxX": 0.47339901477832513,
+						"maxY": 0.46401225114854516
+					},
+					"alwaysDraw": false,
+					"name": "",
+					"drawModifiers": [],
+					"pixelShader": "",
+					"pixelShaderUniforms": null,
+					"pixelPerfectMouseEvents": 0,
+					"properties": {},
+					"size": {
+						"x": 196,
+						"y": 206
+					}
+				}
+			],
+			"spriteOffsets": [
+				{
+					"x": 0,
+					"y": 0,
+					"angle": 0
+				}
+			],
+			"flowChart": null,
+			"grid": null,
+			"alignment": {
+				"x": "center",
+				"y": "center"
+			},
+			"name": "Star1",
+			"path": "",
+			"addToScene": true,
+			"properties": {}
+		},
+		{
+			"type": "SceneObject",
+			"position": {
+				"x": -250,
+				"y": 0
+			},
+			"rotation": 0,
+			"behaviors": [],
+			"sprites": [
+				{
+					"type": "Sprite",
+					"animations": {},
+					"currentAnimation": "default",
+					"sortPoint": {
+						"x": 0,
+						"y": 0
+					},
+					"layer": 1,
+					"autoResize": false,
+					"visible": false,
+					"image": "uiPack2.png",
+					"imageArea": {
+						"minX": 0.37783251231527093,
+						"minY": 0.6163859111791731,
+						"maxX": 0.47339901477832513,
+						"maxY": 0.7641653905053599
+					},
+					"alwaysDraw": false,
+					"name": "",
+					"drawModifiers": [],
+					"pixelShader": "",
+					"pixelShaderUniforms": null,
+					"pixelPerfectMouseEvents": 0,
+					"properties": {},
+					"size": {
+						"x": 196,
+						"y": 195
+					}
+				}
+			],
+			"spriteOffsets": [
+				{
+					"x": 0,
+					"y": 0,
+					"angle": 0
+				}
+			],
+			"flowChart": null,
+			"grid": null,
+			"alignment": {
+				"x": "center",
+				"y": "center"
+			},
+			"name": "Star1EMTPY",
+			"path": "",
+			"addToScene": true,
+			"properties": {}
+		},
+		{
+			"type": "SceneObject",
+			"position": {
+				"x": 0,
+				"y": 0
+			},
+			"rotation": 0,
+			"behaviors": [],
+			"sprites": [
+				{
+					"type": "Sprite",
+					"animations": {},
+					"currentAnimation": "default",
+					"sortPoint": {
+						"x": 0,
+						"y": 0
+					},
+					"layer": 1,
+					"autoResize": false,
+					"visible": false,
+					"image": "uiPack2.png",
+					"imageArea": {
+						"minX": 0.37783251231527093,
+						"minY": 0.30781010719754975,
+						"maxX": 0.47339901477832513,
+						"maxY": 0.46401225114854516
+					},
+					"alwaysDraw": false,
+					"name": "",
+					"drawModifiers": [],
+					"pixelShader": "",
+					"pixelShaderUniforms": null,
+					"pixelPerfectMouseEvents": 0,
+					"properties": {},
+					"size": {
+						"x": 196,
+						"y": 206
+					}
+				}
+			],
+			"spriteOffsets": [
+				{
+					"x": 0,
+					"y": 0,
+					"angle": 0
+				}
+			],
+			"flowChart": null,
+			"grid": null,
+			"alignment": {
+				"x": "center",
+				"y": "center"
+			},
+			"name": "Star2",
+			"isTemplate": false,
+			"path": "",
+			"addToScene": true,
+			"properties": {
+				"instanceOf": "STAR1"
+			}
+		},
+		{
+			"type": "SceneObject",
+			"position": {
+				"x": 0,
+				"y": 0
+			},
+			"rotation": 0,
+			"behaviors": [],
+			"sprites": [
+				{
+					"type": "Sprite",
+					"animations": {},
+					"currentAnimation": "default",
+					"sortPoint": {
+						"x": 0,
+						"y": 0
+					},
+					"layer": 1,
+					"autoResize": false,
+					"visible": false,
+					"image": "uiPack2.png",
+					"imageArea": {
+						"minX": 0.37783251231527093,
+						"minY": 0.6163859111791731,
+						"maxX": 0.47339901477832513,
+						"maxY": 0.7641653905053599
+					},
+					"alwaysDraw": false,
+					"name": "",
+					"drawModifiers": [],
+					"pixelShader": "",
+					"pixelShaderUniforms": null,
+					"pixelPerfectMouseEvents": 0,
+					"properties": {},
+					"size": {
+						"x": 196,
+						"y": 195
+					}
+				}
+			],
+			"spriteOffsets": [
+				{
+					"x": 0,
+					"y": 0,
+					"angle": 0
+				}
+			],
+			"flowChart": null,
+			"grid": null,
+			"alignment": {
+				"x": "center",
+				"y": "center"
+			},
+			"name": "Star2EMTPY",
+			"isTemplate": false,
+			"path": "",
+			"addToScene": true,
+			"properties": {
+				"instanceOf": "Star1EMTPY"
+			}
+		},
+		{
+			"type": "SceneObject",
+			"position": {
+				"x": 250,
+				"y": 0
+			},
+			"rotation": 0,
+			"behaviors": [],
+			"sprites": [
+				{
+					"type": "Sprite",
+					"animations": {},
+					"currentAnimation": "default",
+					"sortPoint": {
+						"x": 0,
+						"y": 0
+					},
+					"layer": 1,
+					"autoResize": false,
+					"visible": false,
+					"image": "uiPack2.png",
+					"imageArea": {
+						"minX": 0.37783251231527093,
+						"minY": 0.30781010719754975,
+						"maxX": 0.47339901477832513,
+						"maxY": 0.46401225114854516
+					},
+					"alwaysDraw": false,
+					"name": "",
+					"drawModifiers": [],
+					"pixelShader": "",
+					"pixelShaderUniforms": null,
+					"pixelPerfectMouseEvents": 0,
+					"properties": {},
+					"size": {
+						"x": 196,
+						"y": 206
+					}
+				}
+			],
+			"spriteOffsets": [
+				{
+					"x": 0,
+					"y": 0,
+					"angle": 0
+				}
+			],
+			"flowChart": null,
+			"grid": null,
+			"alignment": {
+				"x": "center",
+				"y": "center"
+			},
+			"name": "Star3",
+			"isTemplate": false,
+			"path": "",
+			"addToScene": true,
+			"properties": {
+				"instanceOf": "STAR1"
+			}
+		},
+		{
+			"type": "SceneObject",
+			"position": {
+				"x": 250,
+				"y": 0
+			},
+			"rotation": 0,
+			"behaviors": [],
+			"sprites": [
+				{
+					"type": "Sprite",
+					"animations": {},
+					"currentAnimation": "default",
+					"sortPoint": {
+						"x": 0,
+						"y": 0
+					},
+					"layer": 1,
+					"autoResize": false,
+					"visible": false,
+					"image": "uiPack2.png",
+					"imageArea": {
+						"minX": 0.37783251231527093,
+						"minY": 0.6163859111791731,
+						"maxX": 0.47339901477832513,
+						"maxY": 0.7641653905053599
+					},
+					"alwaysDraw": false,
+					"name": "",
+					"drawModifiers": [],
+					"pixelShader": "",
+					"pixelShaderUniforms": null,
+					"pixelPerfectMouseEvents": 0,
+					"properties": {},
+					"size": {
+						"x": 196,
+						"y": 195
+					}
+				}
+			],
+			"spriteOffsets": [
+				{
+					"x": 0,
+					"y": 0,
+					"angle": 0
+				}
+			],
+			"flowChart": null,
+			"grid": null,
+			"alignment": {
+				"x": "center",
+				"y": "center"
+			},
+			"name": "Star3EMTPY",
+			"isTemplate": false,
+			"path": "",
+			"addToScene": true,
+			"properties": {
+				"instanceOf": "Star1EMTPY"
+			}
+		},
+		{
+			"type": "SceneObject",
+			"position": {
+				"x": 0,
+				"y": -300
+			},
+			"rotation": 0,
+			"behaviors": [],
+			"sprites": [
+				{
+					"type": "TextSprite",
+					"text": "You Win (until more levels)",
+					"name": "",
+					"font": "100px Arial",
+					"alignment": "center",
+					"color": "#ffffff",
+					"visible": true,
+					"layer": 1,
+					"maxWidth": 0,
+					"shadowColor": "#000",
+					"shadowBlur": 0,
+					"shadowOffset": {
+						"x": 0,
+						"y": 0
+					},
+					"lineSpacing": 1,
+					"maxLines": 0,
+					"firstLine": 0,
+					"outlineColor": "#000",
+					"outlineWidth": 0,
+					"boundsScale": {
+						"x": 1,
+						"y": 1
+					},
+					"sortPoint": {
+						"x": 0,
+						"y": 0
+					},
+					"fixedSize": false,
+					"drawModifiers": [],
+					"properties": {}
+				}
+			],
+			"spriteOffsets": [
+				{
+					"x": 0,
+					"y": 0,
+					"angle": 0
+				}
+			],
+			"flowChart": null,
+			"grid": null,
+			"alignment": {
+				"x": "center",
+				"y": "center"
+			},
+			"name": "SceneObject_1",
+			"isTemplate": false,
+			"path": "",
+			"addToScene": {
+				"autoListen": true,
+				"params": null
+			},
+			"properties": {}
+		}
+	],
+	"paths": [],
+	"sceneObjectGroups": [],
+	"layers": [
+		null,
+		{
+			"scaleFactor": 1,
+			"translateFactor": 1,
+			"renderMode": "webgl",
+			"useQuadtree": true,
+			"resolutionFactor": 1,
+			"blur": 0,
+			"postProcessShader": "",
+			"postProcessShaderUniforms": null,
+			"properties": {}
+		},
+		{
+			"scaleFactor": 1,
+			"translateFactor": 1,
+			"renderMode": "webgl",
+			"useQuadtree": true,
+			"resolutionFactor": 1,
+			"blur": 0,
+			"postProcessShader": "",
+			"postProcessShaderUniforms": null,
+			"properties": {}
+		}
+	],
+	"minScreenSize": {
+		"x": 1500,
+		"y": 1500
+	},
+	"maxScreenSize": {
+		"x": 10000,
+		"y": 10000
+	},
+	"orientation": "none",
+	"windowMode": "full",
+	"defaultLayer": 1,
+	"timeline": {
+		"events": []
+	},
+	"scripts": [
+		"wade.physics.js"
+	]
+}

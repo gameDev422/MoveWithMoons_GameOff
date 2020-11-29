@@ -1,0 +1,5242 @@
+{
+	"sceneObjects": [
+		{
+			"type": "SceneObject",
+			"position": {
+				"x": -675,
+				"y": -300
+			},
+			"rotation": 0,
+			"behaviors": [],
+			"sprites": [
+				{
+					"type": "Sprite",
+					"animations": {},
+					"currentAnimation": "default",
+					"sortPoint": {
+						"x": 0,
+						"y": 0
+					},
+					"layer": 1,
+					"autoResize": false,
+					"visible": true,
+					"image": "Moon1.png",
+					"imageArea": {
+						"minX": 0,
+						"minY": 0,
+						"maxX": 1,
+						"maxY": 1
+					},
+					"alwaysDraw": false,
+					"name": "",
+					"drawModifiers": [],
+					"pixelShader": "gl_FragColor = texture2D(uDiffuseSampler, uvAlphaTime.xy);\ngl_FragColor.w *= uvAlphaTime.z;",
+					"pixelShaderUniforms": {
+						"tintColor": "vec3"
+					},
+					"pixelPerfectMouseEvents": 0,
+					"properties": {
+						"tintColor": [
+							0.3,
+							0.3,
+							0.3
+						]
+					},
+					"size": {
+						"x": 120,
+						"y": 120
+					}
+				},
+				{
+					"type": "TextSprite",
+					"text": "1",
+					"name": "",
+					"font": "50px Arial",
+					"alignment": "center",
+					"color": "#fff",
+					"visible": true,
+					"layer": 1,
+					"maxWidth": 0,
+					"shadowColor": "#000",
+					"shadowBlur": 0,
+					"shadowOffset": {
+						"x": 0,
+						"y": 0
+					},
+					"lineSpacing": 1,
+					"maxLines": 0,
+					"firstLine": 0,
+					"outlineColor": "#000",
+					"outlineWidth": 2,
+					"boundsScale": {
+						"x": 1,
+						"y": 1
+					},
+					"sortPoint": {
+						"x": 0,
+						"y": 0
+					},
+					"fixedSize": false,
+					"drawModifiers": [],
+					"properties": {}
+				}
+			],
+			"spriteOffsets": [
+				{
+					"x": 2,
+					"y": 2,
+					"angle": 0
+				},
+				{
+					"x": 0,
+					"y": 20,
+					"angle": 0
+				}
+			],
+			"flowChart": null,
+			"grid": null,
+			"alignment": {
+				"x": "center",
+				"y": "center"
+			},
+			"name": "SYMB_STOP1",
+			"path": "",
+			"addToScene": true,
+			"properties": {},
+			"functions": {
+				"onMouseDown": "function (data)\n{\n\t// var level = wade.retrieveLocalObject(\"Level\");\r\n\t// if (this.lStart){\r\n\t// this.lStart = false\r\n\t// wade.clearScene();\r\n\t// wade.loadScene(\"scene1.wsc\")\r\n\t// }\n}",
+				"onAddToScene": "function (data)\n{\n\tvar level = wade.retrieveLocalObject(\"Level\");\r\n\tif (level < 0){\r\n\tvar bObj = wade.getObjectByName(\"Lock\").clone(\r\n\tthis.getPosition().x, this.getPosition().y)\r\n\twade.addSceneObject(bObj)\r\n\t}\r\n\tthis.lStart = true\n}",
+				"onClick": "function (data)\n{\n\tvar level = wade.retrieveLocalObject(\"Level\");\r\n\tif (this.lStart){\r\n\tthis.lStart = false\r\n\twade.clearScene();\r\n\twade.loadScene(\"scene1.wsc\",false,function(){}\r\n\t,true)\r\n\t}\n}",
+				"onMouseIn": "function (data)\n{\n\twade.app.onMoonPlace()\n\tthis.getSprite().setSize(150,150)\n\tconsole.log(wade.retrieveLocalObject(\"muted\"))\n}",
+				"onMouseOut": "function (data)\n{\n\tthis.getSprite().setSize(120,120)\n}"
+			}
+		},
+		{
+			"type": "SceneObject",
+			"position": {
+				"x": -525,
+				"y": -300
+			},
+			"rotation": 0,
+			"behaviors": [],
+			"sprites": [
+				{
+					"type": "Sprite",
+					"animations": {},
+					"currentAnimation": "default",
+					"sortPoint": {
+						"x": 0,
+						"y": 0
+					},
+					"layer": 1,
+					"autoResize": false,
+					"visible": true,
+					"image": "Moon1.png",
+					"imageArea": {
+						"minX": 0,
+						"minY": 0,
+						"maxX": 1,
+						"maxY": 1
+					},
+					"alwaysDraw": false,
+					"name": "",
+					"drawModifiers": [],
+					"pixelShader": "gl_FragColor = texture2D(uDiffuseSampler, uvAlphaTime.xy);\ngl_FragColor.w *= uvAlphaTime.z;",
+					"pixelShaderUniforms": {
+						"tintColor": "vec3"
+					},
+					"pixelPerfectMouseEvents": 0,
+					"properties": {
+						"tintColor": [
+							0.3,
+							0.3,
+							0.3
+						]
+					},
+					"size": {
+						"x": 120,
+						"y": 120
+					}
+				},
+				{
+					"type": "TextSprite",
+					"text": "2",
+					"name": "",
+					"font": "50px Arial",
+					"alignment": "center",
+					"color": "#fff",
+					"visible": true,
+					"layer": 1,
+					"maxWidth": 0,
+					"shadowColor": "#000",
+					"shadowBlur": 0,
+					"shadowOffset": {
+						"x": 0,
+						"y": 0
+					},
+					"lineSpacing": 1,
+					"maxLines": 0,
+					"firstLine": 0,
+					"outlineColor": "#000",
+					"outlineWidth": 2,
+					"boundsScale": {
+						"x": 1,
+						"y": 1
+					},
+					"sortPoint": {
+						"x": 0,
+						"y": 0
+					},
+					"fixedSize": false,
+					"drawModifiers": [],
+					"properties": {}
+				}
+			],
+			"spriteOffsets": [
+				{
+					"x": 2,
+					"y": 2,
+					"angle": 0
+				},
+				{
+					"x": 0,
+					"y": 20,
+					"angle": 0
+				}
+			],
+			"flowChart": null,
+			"grid": null,
+			"alignment": {
+				"x": "center",
+				"y": "center"
+			},
+			"name": "SYMB_STOP2",
+			"isTemplate": false,
+			"path": "",
+			"addToScene": true,
+			"properties": {
+				"instanceOf": "SYMB_STOP"
+			},
+			"functions": {
+				"onMouseDown": "function (data)\n{\n\t\n}",
+				"onAddToScene": "function (data)\n{\n\tvar level = wade.retrieveLocalObject(\"Level\");\r\n\tif (level < 2){\r\n\tvar bObj = wade.getObjectByName(\"Lock\").clone(\r\n\tthis.getPosition().x, this.getPosition().y)\r\n\twade.addSceneObject(bObj)\r\n\t}\r\n\tthis.lStart = true\n}",
+				"onClick": "function (data)\n{\n\t\n}",
+				"onMouseUp": "function (data)\n{\n\tvar level = wade.retrieveLocalObject(\"Level\");\r\n\tif (level >= 2 && this.lStart){\r\n\tthis.lStart = false\r\n\twade.clearScene();\r\n\twade.loadScene(\"scene2.wsc\",false,function(){}\r\n\t,true)\r\n\t}\n}",
+				"onMouseIn": "function (data)\n{\n\tvar level = wade.retrieveLocalObject(\"Level\");\n\tif(level >= 2)\n\t{\n\twade.app.onMoonPlace()\n\tthis.getSprite().setSize(150,150)\n\t}\n}",
+				"onMouseOut": "function (data)\n{\n\tthis.getSprite().setSize(120,120)\n}"
+			}
+		},
+		{
+			"type": "SceneObject",
+			"position": {
+				"x": -375,
+				"y": -300
+			},
+			"rotation": 0,
+			"behaviors": [],
+			"sprites": [
+				{
+					"type": "Sprite",
+					"animations": {},
+					"currentAnimation": "default",
+					"sortPoint": {
+						"x": 0,
+						"y": 0
+					},
+					"layer": 1,
+					"autoResize": false,
+					"visible": true,
+					"image": "Moon1.png",
+					"imageArea": {
+						"minX": 0,
+						"minY": 0,
+						"maxX": 1,
+						"maxY": 1
+					},
+					"alwaysDraw": false,
+					"name": "",
+					"drawModifiers": [],
+					"pixelShader": "gl_FragColor = texture2D(uDiffuseSampler, uvAlphaTime.xy);\ngl_FragColor.w *= uvAlphaTime.z;",
+					"pixelShaderUniforms": {
+						"tintColor": "vec3"
+					},
+					"pixelPerfectMouseEvents": 0,
+					"properties": {
+						"tintColor": [
+							0.3,
+							0.3,
+							0.3
+						]
+					},
+					"size": {
+						"x": 120,
+						"y": 120
+					}
+				},
+				{
+					"type": "TextSprite",
+					"text": "3",
+					"name": "",
+					"font": "50px Arial",
+					"alignment": "center",
+					"color": "#fff",
+					"visible": true,
+					"layer": 1,
+					"maxWidth": 0,
+					"shadowColor": "#000",
+					"shadowBlur": 0,
+					"shadowOffset": {
+						"x": 0,
+						"y": 0
+					},
+					"lineSpacing": 1,
+					"maxLines": 0,
+					"firstLine": 0,
+					"outlineColor": "#000",
+					"outlineWidth": 2,
+					"boundsScale": {
+						"x": 1,
+						"y": 1
+					},
+					"sortPoint": {
+						"x": 0,
+						"y": 0
+					},
+					"fixedSize": false,
+					"drawModifiers": [],
+					"properties": {}
+				}
+			],
+			"spriteOffsets": [
+				{
+					"x": 2,
+					"y": 2,
+					"angle": 0
+				},
+				{
+					"x": 0,
+					"y": 20,
+					"angle": 0
+				}
+			],
+			"flowChart": null,
+			"grid": null,
+			"alignment": {
+				"x": "center",
+				"y": "center"
+			},
+			"name": "SYMB_STOP3",
+			"isTemplate": false,
+			"path": "",
+			"addToScene": true,
+			"properties": {
+				"instanceOf": "SYMB_STOP"
+			},
+			"functions": {
+				"onMouseDown": "function (data)\n{\n\t\n}",
+				"onAddToScene": "function (data)\n{\n\tvar level = wade.retrieveLocalObject(\"Level\");\r\n\tif (level < 3){\r\n\tvar bObj = wade.getObjectByName(\"Lock\").clone(\r\n\tthis.getPosition().x, this.getPosition().y)\r\n\twade.addSceneObject(bObj)\r\n\t}\r\n\tthis.lStart = true\n}",
+				"onClick": "function (data)\n{\n\tvar level = wade.retrieveLocalObject(\"Level\");\r\n\tif (level >= 3 && this.lStart){\r\n\tthis.lStart = false\r\n\twade.clearScene();\r\n\twade.loadScene(\"scene3.wsc\")\r\n\t}\n}",
+				"onMouseIn": "function (data)\n{\n\tvar level = wade.retrieveLocalObject(\"Level\");\n\tif(level >= 3)\n\t{\n\twade.app.onMoonPlace()\n\tthis.getSprite().setSize(150,150)\n\t}\n}",
+				"onMouseOut": "function (data)\n{\n\tthis.getSprite().setSize(120,120)\n}"
+			}
+		},
+		{
+			"type": "SceneObject",
+			"position": {
+				"x": -225,
+				"y": -300
+			},
+			"rotation": 0,
+			"behaviors": [],
+			"sprites": [
+				{
+					"type": "Sprite",
+					"animations": {},
+					"currentAnimation": "default",
+					"sortPoint": {
+						"x": 0,
+						"y": 0
+					},
+					"layer": 1,
+					"autoResize": false,
+					"visible": true,
+					"image": "Moon1.png",
+					"imageArea": {
+						"minX": 0,
+						"minY": 0,
+						"maxX": 1,
+						"maxY": 1
+					},
+					"alwaysDraw": false,
+					"name": "",
+					"drawModifiers": [],
+					"pixelShader": "gl_FragColor = texture2D(uDiffuseSampler, uvAlphaTime.xy);\ngl_FragColor.w *= uvAlphaTime.z;",
+					"pixelShaderUniforms": {
+						"tintColor": "vec3"
+					},
+					"pixelPerfectMouseEvents": 0,
+					"properties": {
+						"tintColor": [
+							0.3,
+							0.3,
+							0.3
+						]
+					},
+					"size": {
+						"x": 120,
+						"y": 120
+					}
+				},
+				{
+					"type": "TextSprite",
+					"text": "4",
+					"name": "",
+					"font": "50px Arial",
+					"alignment": "center",
+					"color": "#fff",
+					"visible": true,
+					"layer": 1,
+					"maxWidth": 0,
+					"shadowColor": "#000",
+					"shadowBlur": 0,
+					"shadowOffset": {
+						"x": 0,
+						"y": 0
+					},
+					"lineSpacing": 1,
+					"maxLines": 0,
+					"firstLine": 0,
+					"outlineColor": "#000",
+					"outlineWidth": 2,
+					"boundsScale": {
+						"x": 1,
+						"y": 1
+					},
+					"sortPoint": {
+						"x": 0,
+						"y": 0
+					},
+					"fixedSize": false,
+					"drawModifiers": [],
+					"properties": {}
+				}
+			],
+			"spriteOffsets": [
+				{
+					"x": 2,
+					"y": 2,
+					"angle": 0
+				},
+				{
+					"x": 0,
+					"y": 20,
+					"angle": 0
+				}
+			],
+			"flowChart": null,
+			"grid": null,
+			"alignment": {
+				"x": "center",
+				"y": "center"
+			},
+			"name": "SYMB_STOP4",
+			"isTemplate": false,
+			"path": "",
+			"addToScene": true,
+			"properties": {
+				"instanceOf": "SYMB_STOP"
+			},
+			"functions": {
+				"onMouseDown": "function (data)\n{\n\t\n}",
+				"onAddToScene": "function (data)\n{\n\tvar level = wade.retrieveLocalObject(\"Level\");\r\n\tif (level < 4){\r\n\tvar bObj = wade.getObjectByName(\"Lock\").clone(\r\n\tthis.getPosition().x, this.getPosition().y)\r\n\twade.addSceneObject(bObj)\r\n\t}\r\n\tthis.lStart = true\n}",
+				"onClick": "function (data)\n{\n\t\n}",
+				"onMouseUp": "function (data)\n{\n\tvar level = wade.retrieveLocalObject(\"Level\");\r\n\tif (level >= 4 && this.lStart){\r\n\tthis.lStart = false\r\n\twade.clearScene();\r\n\twade.loadScene(\"scene4.wsc\",false,function(){}\r\n\t,true)\r\n\t}\n}",
+				"onMouseIn": "function (data)\n{\n\tvar level = wade.retrieveLocalObject(\"Level\");\n\tif(level >= 4)\n\t{\n\twade.app.onMoonPlace()\n\tthis.getSprite().setSize(150,150)\n\t}\n}",
+				"onMouseOut": "function (data)\n{\n\tthis.getSprite().setSize(120,120)\n}"
+			}
+		},
+		{
+			"type": "SceneObject",
+			"position": {
+				"x": -68.28839371022174,
+				"y": -296.64419685511086
+			},
+			"rotation": 0,
+			"behaviors": [],
+			"sprites": [
+				{
+					"type": "Sprite",
+					"animations": {},
+					"currentAnimation": "default",
+					"sortPoint": {
+						"x": 0,
+						"y": 0
+					},
+					"layer": 1,
+					"autoResize": false,
+					"visible": true,
+					"image": "Moon1.png",
+					"imageArea": {
+						"minX": 0,
+						"minY": 0,
+						"maxX": 1,
+						"maxY": 1
+					},
+					"alwaysDraw": false,
+					"name": "",
+					"drawModifiers": [],
+					"pixelShader": "gl_FragColor = texture2D(uDiffuseSampler, uvAlphaTime.xy);\ngl_FragColor.w *= uvAlphaTime.z;",
+					"pixelShaderUniforms": {
+						"tintColor": "vec3"
+					},
+					"pixelPerfectMouseEvents": 0,
+					"properties": {
+						"tintColor": [
+							0.3,
+							0.3,
+							0.3
+						]
+					},
+					"size": {
+						"x": 120,
+						"y": 120
+					}
+				},
+				{
+					"type": "TextSprite",
+					"text": "5",
+					"name": "",
+					"font": "50px Arial",
+					"alignment": "center",
+					"color": "#fff",
+					"visible": true,
+					"layer": 1,
+					"maxWidth": 0,
+					"shadowColor": "#000",
+					"shadowBlur": 0,
+					"shadowOffset": {
+						"x": 0,
+						"y": 0
+					},
+					"lineSpacing": 1,
+					"maxLines": 0,
+					"firstLine": 0,
+					"outlineColor": "#000",
+					"outlineWidth": 2,
+					"boundsScale": {
+						"x": 1,
+						"y": 1
+					},
+					"sortPoint": {
+						"x": 0,
+						"y": 0
+					},
+					"fixedSize": false,
+					"drawModifiers": [],
+					"properties": {}
+				}
+			],
+			"spriteOffsets": [
+				{
+					"x": 2,
+					"y": 2,
+					"angle": 0
+				},
+				{
+					"x": 0,
+					"y": 20,
+					"angle": 0
+				}
+			],
+			"flowChart": null,
+			"grid": null,
+			"alignment": {
+				"x": "center",
+				"y": "center"
+			},
+			"name": "SYMB_STOP5",
+			"isTemplate": false,
+			"path": "",
+			"addToScene": true,
+			"properties": {
+				"instanceOf": "SYMB_STOP"
+			},
+			"functions": {
+				"onAddToScene": "function (data)\n{\n\tvar level = wade.retrieveLocalObject(\"Level\");\r\n\tif (level < 5){\r\n\tvar bObj = wade.getObjectByName(\"Lock\").clone(\r\n\tthis.getPosition().x, this.getPosition().y)\r\n\twade.addSceneObject(bObj)\r\n\tconsole.log(level)\r\n\t}\r\n\tthis.lStart = true\n}",
+				"onMouseDown": "function (data)\n{\n\t\n}",
+				"onClick": "function (data)\n{\n\tvar level = wade.retrieveLocalObject(\"Level\");\r\n\tif (level >= 5){\r\n\twade.clearScene();\r\n\twade.loadScene(\"scene5.wsc\")\r\n\t}\n}",
+				"onMouseIn": "function (data)\n{\n\tvar level = wade.retrieveLocalObject(\"Level\");\n\tif(level >= 5)\n\t{\n\twade.app.onMoonPlace()\n\tthis.getSprite().setSize(150,150)\n\t}\n}",
+				"onMouseOut": "function (data)\n{\n\tthis.getSprite().setSize(120,120)\n}"
+			}
+		},
+		{
+			"type": "SceneObject",
+			"position": {
+				"x": 75,
+				"y": -300
+			},
+			"rotation": 0,
+			"behaviors": [],
+			"sprites": [
+				{
+					"type": "Sprite",
+					"animations": {},
+					"currentAnimation": "default",
+					"sortPoint": {
+						"x": 0,
+						"y": 0
+					},
+					"layer": 1,
+					"autoResize": false,
+					"visible": true,
+					"image": "Moon1.png",
+					"imageArea": {
+						"minX": 0,
+						"minY": 0,
+						"maxX": 1,
+						"maxY": 1
+					},
+					"alwaysDraw": false,
+					"name": "",
+					"drawModifiers": [],
+					"pixelShader": "vec4 col = texture2D(uDiffuseSampler, uvAlphaTime.xy);\ncol.xyz *= tintColor;\ncol.w *= uvAlphaTime.z;\ngl_FragColor = col;",
+					"pixelShaderUniforms": {
+						"tintColor": "vec3"
+					},
+					"pixelPerfectMouseEvents": 0,
+					"properties": {
+						"tintColor": [
+							1,
+							0,
+							0
+						]
+					},
+					"size": {
+						"x": 120,
+						"y": 120
+					}
+				},
+				{
+					"type": "TextSprite",
+					"text": "6",
+					"name": "",
+					"font": "50px Arial",
+					"alignment": "center",
+					"color": "#fff",
+					"visible": true,
+					"layer": 1,
+					"maxWidth": 0,
+					"shadowColor": "#000",
+					"shadowBlur": 0,
+					"shadowOffset": {
+						"x": 0,
+						"y": 0
+					},
+					"lineSpacing": 1,
+					"maxLines": 0,
+					"firstLine": 0,
+					"outlineColor": "#000",
+					"outlineWidth": 2,
+					"boundsScale": {
+						"x": 1,
+						"y": 1
+					},
+					"sortPoint": {
+						"x": 0,
+						"y": 0
+					},
+					"fixedSize": false,
+					"drawModifiers": [],
+					"properties": {}
+				}
+			],
+			"spriteOffsets": [
+				{
+					"x": 2,
+					"y": 2,
+					"angle": 0
+				},
+				{
+					"x": 0,
+					"y": 20,
+					"angle": 0
+				}
+			],
+			"flowChart": null,
+			"grid": null,
+			"alignment": {
+				"x": "center",
+				"y": "center"
+			},
+			"name": "SYMB_STOP6",
+			"isTemplate": false,
+			"path": "",
+			"addToScene": true,
+			"properties": {
+				"instanceOf": "SYMB_STOP1"
+			},
+			"functions": {
+				"onMouseDown": "function (data)\n{\n\tvar level = wade.retrieveLocalObject(\"Level\");\r\n\tif (level >= 6){\r\n\twade.clearScene();\r\n\twade.loadScene(\"scene6.wsc\")\r\n\t}\n}",
+				"onAddToScene": "function (data)\n{\n\tvar level = wade.retrieveLocalObject(\"Level\");\r\n\tif (level < 6){\r\n\tvar bObj = wade.getObjectByName(\"Lock\").clone(\r\n\tthis.getPosition().x, this.getPosition().y)\r\n\twade.addSceneObject(bObj)\r\n\t}\r\n\tthis.lStart = true\n}",
+				"onMouseIn": "function (data)\n{\n\tvar level = wade.retrieveLocalObject(\"Level\");\n\tif(level >= 6)\n\t{\n\twade.app.onMoonPlace()\n\tthis.getSprite().setSize(150,150)\n\t}\n}",
+				"onMouseOut": "function (data)\n{\n\tthis.getSprite().setSize(120,120)\n}"
+			}
+		},
+		{
+			"type": "SceneObject",
+			"position": {
+				"x": 225,
+				"y": -300
+			},
+			"rotation": 0,
+			"behaviors": [],
+			"sprites": [
+				{
+					"type": "Sprite",
+					"animations": {},
+					"currentAnimation": "default",
+					"sortPoint": {
+						"x": 0,
+						"y": 0
+					},
+					"layer": 1,
+					"autoResize": false,
+					"visible": true,
+					"image": "Moon1.png",
+					"imageArea": {
+						"minX": 0,
+						"minY": 0,
+						"maxX": 1,
+						"maxY": 1
+					},
+					"alwaysDraw": false,
+					"name": "",
+					"drawModifiers": [],
+					"pixelShader": "vec4 col = texture2D(uDiffuseSampler, uvAlphaTime.xy);\ncol.xyz *= tintColor;\ncol.w *= uvAlphaTime.z;\ngl_FragColor = col;",
+					"pixelShaderUniforms": {
+						"tintColor": "vec3"
+					},
+					"pixelPerfectMouseEvents": 0,
+					"properties": {
+						"tintColor": [
+							1,
+							0,
+							0
+						]
+					},
+					"size": {
+						"x": 120,
+						"y": 120
+					}
+				},
+				{
+					"type": "TextSprite",
+					"text": "7",
+					"name": "",
+					"font": "50px Arial",
+					"alignment": "center",
+					"color": "#fff",
+					"visible": true,
+					"layer": 1,
+					"maxWidth": 0,
+					"shadowColor": "#000",
+					"shadowBlur": 0,
+					"shadowOffset": {
+						"x": 0,
+						"y": 0
+					},
+					"lineSpacing": 1,
+					"maxLines": 0,
+					"firstLine": 0,
+					"outlineColor": "#000",
+					"outlineWidth": 2,
+					"boundsScale": {
+						"x": 1,
+						"y": 1
+					},
+					"sortPoint": {
+						"x": 0,
+						"y": 0
+					},
+					"fixedSize": false,
+					"drawModifiers": [],
+					"properties": {}
+				}
+			],
+			"spriteOffsets": [
+				{
+					"x": 2,
+					"y": 2,
+					"angle": 0
+				},
+				{
+					"x": 0,
+					"y": 20,
+					"angle": 0
+				}
+			],
+			"flowChart": null,
+			"grid": null,
+			"alignment": {
+				"x": "center",
+				"y": "center"
+			},
+			"name": "SYMB_STOP7",
+			"isTemplate": false,
+			"path": "",
+			"addToScene": true,
+			"properties": {
+				"instanceOf": "SYMB_STOP"
+			},
+			"functions": {
+				"onMouseDown": "function (data)\n{\n\t\n}",
+				"onAddToScene": "function (data)\n{\n\tvar level = wade.retrieveLocalObject(\"Level\");\r\n\tif (level < 7){\r\n\tvar bObj = wade.getObjectByName(\"Lock\").clone(\r\n\tthis.getPosition().x, this.getPosition().y)\r\n\twade.addSceneObject(bObj)\r\n\t}\r\n\tthis.lStart = true\n}",
+				"onClick": "function (data)\n{\n\tvar level = wade.retrieveLocalObject(\"Level\");\r\n\tif (level >= 7 && this.lStart){\r\n\tthis.lStart = false\r\n\twade.clearScene();\r\n\twade.loadScene(\"scene7.wsc\")\r\n\t}\n}",
+				"onMouseIn": "function (data)\n{\n\tvar level = wade.retrieveLocalObject(\"Level\");\n\tif(level >= 7)\n\t{\n\twade.app.onMoonPlace()\n\tthis.getSprite().setSize(150,150)\n\t}\n}",
+				"onMouseOut": "function (data)\n{\n\tthis.getSprite().setSize(120,120)\n}"
+			}
+		},
+		{
+			"type": "SceneObject",
+			"position": {
+				"x": 375,
+				"y": -300
+			},
+			"rotation": 0,
+			"behaviors": [],
+			"sprites": [
+				{
+					"type": "Sprite",
+					"animations": {},
+					"currentAnimation": "default",
+					"sortPoint": {
+						"x": 0,
+						"y": 0
+					},
+					"layer": 1,
+					"autoResize": false,
+					"visible": true,
+					"image": "Moon1.png",
+					"imageArea": {
+						"minX": 0,
+						"minY": 0,
+						"maxX": 1,
+						"maxY": 1
+					},
+					"alwaysDraw": false,
+					"name": "",
+					"drawModifiers": [],
+					"pixelShader": "vec4 col = texture2D(uDiffuseSampler, uvAlphaTime.xy);\ncol.xyz *= tintColor;\ncol.w *= uvAlphaTime.z;\ngl_FragColor = col;",
+					"pixelShaderUniforms": {
+						"tintColor": "vec3"
+					},
+					"pixelPerfectMouseEvents": 0,
+					"properties": {
+						"tintColor": [
+							1,
+							0,
+							0
+						]
+					},
+					"size": {
+						"x": 120,
+						"y": 120
+					}
+				},
+				{
+					"type": "TextSprite",
+					"text": "8",
+					"name": "",
+					"font": "50px Arial",
+					"alignment": "center",
+					"color": "#fff",
+					"visible": true,
+					"layer": 1,
+					"maxWidth": 0,
+					"shadowColor": "#000",
+					"shadowBlur": 0,
+					"shadowOffset": {
+						"x": 0,
+						"y": 0
+					},
+					"lineSpacing": 1,
+					"maxLines": 0,
+					"firstLine": 0,
+					"outlineColor": "#000",
+					"outlineWidth": 2,
+					"boundsScale": {
+						"x": 1,
+						"y": 1
+					},
+					"sortPoint": {
+						"x": 0,
+						"y": 0
+					},
+					"fixedSize": false,
+					"drawModifiers": [],
+					"properties": {}
+				}
+			],
+			"spriteOffsets": [
+				{
+					"x": 2,
+					"y": 2,
+					"angle": 0
+				},
+				{
+					"x": 0,
+					"y": 20,
+					"angle": 0
+				}
+			],
+			"flowChart": null,
+			"grid": null,
+			"alignment": {
+				"x": "center",
+				"y": "center"
+			},
+			"name": "SYMB_STOP8",
+			"isTemplate": false,
+			"path": "",
+			"addToScene": true,
+			"properties": {
+				"instanceOf": "SYMB_STOP"
+			},
+			"functions": {
+				"onMouseDown": "function (data)\n{\n\t\n}",
+				"onAddToScene": "function (data)\n{\n\tvar level = wade.retrieveLocalObject(\"Level\");\r\n\tif (level < 8){\r\n\tvar bObj = wade.getObjectByName(\"Lock\").clone(\r\n\tthis.getPosition().x, this.getPosition().y)\r\n\twade.addSceneObject(bObj)\r\n\t}\r\n\tthis.lStart = true\r\n\tconsole.log(level)\n}",
+				"onClick": "function (data)\n{\n\tvar level = wade.retrieveLocalObject(\"Level\");\r\n\tif (level >= 8 && this.lStart){\r\n\tthis.lStart = false\r\n\twade.clearScene();\r\n\twade.loadScene(\"scene8.wsc\")\r\n\t}\n}",
+				"onMouseIn": "function (data)\n{\n\tvar level = wade.retrieveLocalObject(\"Level\");\n\tif(level >= 8)\n\t{\n\twade.app.onMoonPlace()\n\tthis.getSprite().setSize(150,150)\n\t}\n}",
+				"onMouseOut": "function (data)\n{\n\tthis.getSprite().setSize(120,120)\n}"
+			}
+		},
+		{
+			"type": "SceneObject",
+			"position": {
+				"x": 525,
+				"y": -302.2312731814299
+			},
+			"rotation": 0,
+			"behaviors": [],
+			"sprites": [
+				{
+					"type": "Sprite",
+					"animations": {},
+					"currentAnimation": "default",
+					"sortPoint": {
+						"x": 0,
+						"y": 0
+					},
+					"layer": 1,
+					"autoResize": false,
+					"visible": true,
+					"image": "Moon1.png",
+					"imageArea": {
+						"minX": 0,
+						"minY": 0,
+						"maxX": 1,
+						"maxY": 1
+					},
+					"alwaysDraw": false,
+					"name": "",
+					"drawModifiers": [],
+					"pixelShader": "vec4 col = texture2D(uDiffuseSampler, uvAlphaTime.xy);\ncol.xyz *= tintColor;\ncol.w *= uvAlphaTime.z;\ngl_FragColor = col;",
+					"pixelShaderUniforms": {
+						"tintColor": "vec3"
+					},
+					"pixelPerfectMouseEvents": 0,
+					"properties": {
+						"tintColor": [
+							1,
+							0,
+							0
+						]
+					},
+					"size": {
+						"x": 120,
+						"y": 120
+					}
+				},
+				{
+					"type": "TextSprite",
+					"text": "9",
+					"name": "",
+					"font": "50px Arial",
+					"alignment": "center",
+					"color": "#fff",
+					"visible": true,
+					"layer": 1,
+					"maxWidth": 0,
+					"shadowColor": "#000",
+					"shadowBlur": 0,
+					"shadowOffset": {
+						"x": 0,
+						"y": 0
+					},
+					"lineSpacing": 1,
+					"maxLines": 0,
+					"firstLine": 0,
+					"outlineColor": "#000",
+					"outlineWidth": 2,
+					"boundsScale": {
+						"x": 1,
+						"y": 1
+					},
+					"sortPoint": {
+						"x": 0,
+						"y": 0
+					},
+					"fixedSize": false,
+					"drawModifiers": [],
+					"properties": {}
+				}
+			],
+			"spriteOffsets": [
+				{
+					"x": 2,
+					"y": 2,
+					"angle": 0
+				},
+				{
+					"x": 0,
+					"y": 20,
+					"angle": 0
+				}
+			],
+			"flowChart": null,
+			"grid": null,
+			"alignment": {
+				"x": "center",
+				"y": "center"
+			},
+			"name": "SYMB_STOP9",
+			"isTemplate": false,
+			"path": "",
+			"addToScene": true,
+			"properties": {
+				"instanceOf": "SYMB_STOP"
+			},
+			"functions": {
+				"onMouseDown": "function (data)\n{\n\t\n}",
+				"onAddToScene": "function (data)\n{\n\tvar level = wade.retrieveLocalObject(\"Level\");\r\n\tif (level < 9){\r\n\tvar bObj = wade.getObjectByName(\"Lock\").clone(\r\n\tthis.getPosition().x, this.getPosition().y)\r\n\twade.addSceneObject(bObj)\r\n\t}\r\n\tthis.lStart = true\n}",
+				"onClick": "function (data)\n{\n\tvar level = wade.retrieveLocalObject(\"Level\");\r\n\tif (level >= 9 && this.lStart){\r\n\tthis.lStart = false\r\n\twade.clearScene();\r\n\twade.loadScene(\"scene9.wsc\")\r\n\t}\n}",
+				"onMouseIn": "function (data)\n{\n\tvar level = wade.retrieveLocalObject(\"Level\");\n\tif(level >= 8)\n\t{\n\twade.app.onMoonPlace()\n\tthis.getSprite().setSize(150,150)\n\t}\n}",
+				"onMouseOut": "function (data)\n{\n\tthis.getSprite().setSize(120,120)\n}"
+			}
+		},
+		{
+			"type": "SceneObject",
+			"position": {
+				"x": 675,
+				"y": -302.2312731814299
+			},
+			"rotation": 0,
+			"behaviors": [],
+			"sprites": [
+				{
+					"type": "Sprite",
+					"animations": {},
+					"currentAnimation": "default",
+					"sortPoint": {
+						"x": 0,
+						"y": 0
+					},
+					"layer": 1,
+					"autoResize": false,
+					"visible": true,
+					"image": "Moon1.png",
+					"imageArea": {
+						"minX": 0,
+						"minY": 0,
+						"maxX": 1,
+						"maxY": 1
+					},
+					"alwaysDraw": false,
+					"name": "",
+					"drawModifiers": [],
+					"pixelShader": "vec4 col = texture2D(uDiffuseSampler, uvAlphaTime.xy);\ncol.xyz *= tintColor;\ncol.w *= uvAlphaTime.z;\ngl_FragColor = col;",
+					"pixelShaderUniforms": {
+						"tintColor": "vec3"
+					},
+					"pixelPerfectMouseEvents": 0,
+					"properties": {
+						"tintColor": [
+							1,
+							0,
+							0
+						]
+					},
+					"size": {
+						"x": 120,
+						"y": 120
+					}
+				},
+				{
+					"type": "TextSprite",
+					"text": "10",
+					"name": "",
+					"font": "50px Arial",
+					"alignment": "center",
+					"color": "#fff",
+					"visible": true,
+					"layer": 1,
+					"maxWidth": 0,
+					"shadowColor": "#000",
+					"shadowBlur": 0,
+					"shadowOffset": {
+						"x": 0,
+						"y": 0
+					},
+					"lineSpacing": 1,
+					"maxLines": 0,
+					"firstLine": 0,
+					"outlineColor": "#000",
+					"outlineWidth": 2,
+					"boundsScale": {
+						"x": 1,
+						"y": 1
+					},
+					"sortPoint": {
+						"x": 0,
+						"y": 0
+					},
+					"fixedSize": false,
+					"drawModifiers": [],
+					"properties": {}
+				}
+			],
+			"spriteOffsets": [
+				{
+					"x": 2,
+					"y": 2,
+					"angle": 0
+				},
+				{
+					"x": 0,
+					"y": 20,
+					"angle": 0
+				}
+			],
+			"flowChart": null,
+			"grid": null,
+			"alignment": {
+				"x": "center",
+				"y": "center"
+			},
+			"name": "SYMB_STOP10",
+			"isTemplate": false,
+			"path": "",
+			"addToScene": true,
+			"properties": {
+				"instanceOf": "SYMB_STOP"
+			},
+			"functions": {
+				"onAddToScene": "function (data)\n{\n\tvar level = wade.retrieveLocalObject(\"Level\");\r\n\tif (level < 10){\r\n\tvar bObj = wade.getObjectByName(\"Lock\").clone(\r\n\tthis.getPosition().x, this.getPosition().y)\r\n\twade.addSceneObject(bObj)\r\n\t}\r\n\tthis.lStart = true\n}",
+				"onMouseDown": "function (data)\n{\n\t\n}",
+				"onClick": "function (data)\n{\n\tvar level = wade.retrieveLocalObject(\"Level\");\r\n\tif (level >= 10 && this.lStart){\r\n\twade.clearScene();\r\n\twade.loadScene(\"scene10.wsc\")\r\n\t}\n}",
+				"onMouseIn": "function (data)\n{\n\tvar level = wade.retrieveLocalObject(\"Level\");\n\tif(level >= 10)\n\t{\n\twade.app.onMoonPlace()\n\tthis.getSprite().setSize(150,150)\n\t}\n}",
+				"onMouseOut": "function (data)\n{\n\tthis.getSprite().setSize(120,120)\n}"
+			}
+		},
+		{
+			"type": "SceneObject",
+			"position": {
+				"x": -672.219746371855,
+				"y": -150
+			},
+			"rotation": 0,
+			"behaviors": [],
+			"sprites": [
+				{
+					"type": "Sprite",
+					"animations": {},
+					"currentAnimation": "default",
+					"sortPoint": {
+						"x": 0,
+						"y": 0
+					},
+					"layer": 1,
+					"autoResize": false,
+					"visible": true,
+					"image": "Moon1.png",
+					"imageArea": {
+						"minX": 0,
+						"minY": 0,
+						"maxX": 1,
+						"maxY": 1
+					},
+					"alwaysDraw": false,
+					"name": "",
+					"drawModifiers": [],
+					"pixelShader": "vec4 col = texture2D(uDiffuseSampler, uvAlphaTime.xy);\ncol.xyz *= tintColor;\ncol.w *= uvAlphaTime.z;\ngl_FragColor = col;",
+					"pixelShaderUniforms": {
+						"tintColor": "vec3"
+					},
+					"pixelPerfectMouseEvents": 0,
+					"properties": {
+						"tintColor": [
+							0.9,
+							0.9,
+							0
+						]
+					},
+					"size": {
+						"x": 120,
+						"y": 120
+					}
+				},
+				{
+					"type": "TextSprite",
+					"text": "11",
+					"name": "",
+					"font": "50px Arial",
+					"alignment": "center",
+					"color": "#fff",
+					"visible": true,
+					"layer": 1,
+					"maxWidth": 0,
+					"shadowColor": "#000",
+					"shadowBlur": 0,
+					"shadowOffset": {
+						"x": 0,
+						"y": 0
+					},
+					"lineSpacing": 1,
+					"maxLines": 0,
+					"firstLine": 0,
+					"outlineColor": "#000",
+					"outlineWidth": 2,
+					"boundsScale": {
+						"x": 1,
+						"y": 1
+					},
+					"sortPoint": {
+						"x": 0,
+						"y": 0
+					},
+					"fixedSize": false,
+					"drawModifiers": [],
+					"properties": {}
+				}
+			],
+			"spriteOffsets": [
+				{
+					"x": 2,
+					"y": 2,
+					"angle": 0
+				},
+				{
+					"x": 0,
+					"y": 20,
+					"angle": 0
+				}
+			],
+			"flowChart": null,
+			"grid": null,
+			"alignment": {
+				"x": "center",
+				"y": "center"
+			},
+			"name": "SYMB_STOP1_clone_0",
+			"isTemplate": false,
+			"path": "",
+			"addToScene": true,
+			"properties": {
+				"instanceOf": "SYMB_STOP1"
+			},
+			"functions": {
+				"onMouseDown": "function (data)\n{\n\t// var level = wade.retrieveLocalObject(\"Level\");\r\n\t// if (this.lStart){\r\n\t// this.lStart = false\r\n\t// wade.clearScene();\r\n\t// wade.loadScene(\"scene1.wsc\")\r\n\t// }\n}",
+				"onAddToScene": "function (data)\n{\n\tvar level = wade.retrieveLocalObject(\"Level\");\r\n\tif (level < 11){\r\n\tvar bObj = wade.getObjectByName(\"Lock\").clone(\r\n\tthis.getPosition().x, this.getPosition().y)\r\n\twade.addSceneObject(bObj)\r\n\t}\r\n\tthis.lStart = true\n}",
+				"onClick": "function (data)\n{\n\tvar level = wade.retrieveLocalObject(\"Level\");\r\n\tif (level >= 11 && this.lStart){\r\n\tthis.lStart = false\r\n\twade.clearScene();\r\n\twade.loadScene(\"scene11.wsc\",false,function(){}\r\n\t,true)\r\n\t}\n}",
+				"onMouseIn": "function (data)\n{\n\tvar level = wade.retrieveLocalObject(\"Level\");\n\tif(level >= 11)\n\t{\n\twade.app.onMoonPlace()\n\tthis.getSprite().setSize(150,150)\n\t}\n}",
+				"onMouseOut": "function (data)\n{\n\tthis.getSprite().setSize(120,120)\n}"
+			}
+		},
+		{
+			"type": "SceneObject",
+			"position": {
+				"x": -522.2197463718552,
+				"y": -150
+			},
+			"rotation": 0,
+			"behaviors": [],
+			"sprites": [
+				{
+					"type": "Sprite",
+					"animations": {},
+					"currentAnimation": "default",
+					"sortPoint": {
+						"x": 0,
+						"y": 0
+					},
+					"layer": 1,
+					"autoResize": false,
+					"visible": true,
+					"image": "Moon1.png",
+					"imageArea": {
+						"minX": 0,
+						"minY": 0,
+						"maxX": 1,
+						"maxY": 1
+					},
+					"alwaysDraw": false,
+					"name": "",
+					"drawModifiers": [],
+					"pixelShader": "vec4 col = texture2D(uDiffuseSampler, uvAlphaTime.xy);\ncol.xyz *= tintColor;\ncol.w *= uvAlphaTime.z;\ngl_FragColor = col;",
+					"pixelShaderUniforms": {
+						"tintColor": "vec3"
+					},
+					"pixelPerfectMouseEvents": 0,
+					"properties": {
+						"tintColor": [
+							0.9,
+							0.9,
+							0
+						]
+					},
+					"size": {
+						"x": 120,
+						"y": 120
+					}
+				},
+				{
+					"type": "TextSprite",
+					"text": "12",
+					"name": "",
+					"font": "50px Arial",
+					"alignment": "center",
+					"color": "#fff",
+					"visible": true,
+					"layer": 1,
+					"maxWidth": 0,
+					"shadowColor": "#000",
+					"shadowBlur": 0,
+					"shadowOffset": {
+						"x": 0,
+						"y": 0
+					},
+					"lineSpacing": 1,
+					"maxLines": 0,
+					"firstLine": 0,
+					"outlineColor": "#000",
+					"outlineWidth": 2,
+					"boundsScale": {
+						"x": 1,
+						"y": 1
+					},
+					"sortPoint": {
+						"x": 0,
+						"y": 0
+					},
+					"fixedSize": false,
+					"drawModifiers": [],
+					"properties": {}
+				}
+			],
+			"spriteOffsets": [
+				{
+					"x": 2,
+					"y": 2,
+					"angle": 0
+				},
+				{
+					"x": 0,
+					"y": 20,
+					"angle": 0
+				}
+			],
+			"flowChart": null,
+			"grid": null,
+			"alignment": {
+				"x": "center",
+				"y": "center"
+			},
+			"name": "SYMB_STOP2_clone_0",
+			"isTemplate": false,
+			"path": "",
+			"addToScene": true,
+			"properties": {
+				"instanceOf": "SYMB_STOP"
+			},
+			"functions": {
+				"onMouseDown": "function (data)\n{\n\t\n}",
+				"onAddToScene": "function (data)\n{\n\tvar level = wade.retrieveLocalObject(\"Level\");\r\n\tif (level < 12){\r\n\tvar bObj = wade.getObjectByName(\"Lock\").clone(\r\n\tthis.getPosition().x, this.getPosition().y)\r\n\twade.addSceneObject(bObj)\r\n\t}\r\n\tthis.lStart = true\n}",
+				"onClick": "function (data)\n{\n\t\n}",
+				"onMouseUp": "function (data)\n{\n\tvar level = wade.retrieveLocalObject(\"Level\");\r\n\tif (level >= 12 && this.lStart){\r\n\tthis.lStart = false\r\n\twade.clearScene();\r\n\twade.loadScene(\"scene12.wsc\",false,function(){}\r\n\t,true)\r\n\t}\n}",
+				"onMouseIn": "function (data)\n{\n\tvar level = wade.retrieveLocalObject(\"Level\");\n\tif(level >= 12)\n\t{\n\twade.app.onMoonPlace()\n\tthis.getSprite().setSize(150,150)\n\t}\n}",
+				"onMouseOut": "function (data)\n{\n\tthis.getSprite().setSize(120,120)\n}"
+			}
+		},
+		{
+			"type": "SceneObject",
+			"position": {
+				"x": -372.21974637185554,
+				"y": -150
+			},
+			"rotation": 0,
+			"behaviors": [],
+			"sprites": [
+				{
+					"type": "Sprite",
+					"animations": {},
+					"currentAnimation": "default",
+					"sortPoint": {
+						"x": 0,
+						"y": 0
+					},
+					"layer": 1,
+					"autoResize": false,
+					"visible": true,
+					"image": "Moon1.png",
+					"imageArea": {
+						"minX": 0,
+						"minY": 0,
+						"maxX": 1,
+						"maxY": 1
+					},
+					"alwaysDraw": false,
+					"name": "",
+					"drawModifiers": [],
+					"pixelShader": "vec4 col = texture2D(uDiffuseSampler, uvAlphaTime.xy);\ncol.xyz *= tintColor;\ncol.w *= uvAlphaTime.z;\ngl_FragColor = col;",
+					"pixelShaderUniforms": {
+						"tintColor": "vec3"
+					},
+					"pixelPerfectMouseEvents": 0,
+					"properties": {
+						"tintColor": [
+							0.9,
+							0.9,
+							0
+						]
+					},
+					"size": {
+						"x": 120,
+						"y": 120
+					}
+				},
+				{
+					"type": "TextSprite",
+					"text": "13",
+					"name": "",
+					"font": "50px Arial",
+					"alignment": "center",
+					"color": "#fff",
+					"visible": true,
+					"layer": 1,
+					"maxWidth": 0,
+					"shadowColor": "#000",
+					"shadowBlur": 0,
+					"shadowOffset": {
+						"x": 0,
+						"y": 0
+					},
+					"lineSpacing": 1,
+					"maxLines": 0,
+					"firstLine": 0,
+					"outlineColor": "#000",
+					"outlineWidth": 2,
+					"boundsScale": {
+						"x": 1,
+						"y": 1
+					},
+					"sortPoint": {
+						"x": 0,
+						"y": 0
+					},
+					"fixedSize": false,
+					"drawModifiers": [],
+					"properties": {}
+				}
+			],
+			"spriteOffsets": [
+				{
+					"x": 2,
+					"y": 2,
+					"angle": 0
+				},
+				{
+					"x": 0,
+					"y": 20,
+					"angle": 0
+				}
+			],
+			"flowChart": null,
+			"grid": null,
+			"alignment": {
+				"x": "center",
+				"y": "center"
+			},
+			"name": "SYMB_STOP3_clone_0",
+			"isTemplate": false,
+			"path": "",
+			"addToScene": true,
+			"properties": {
+				"instanceOf": "SYMB_STOP"
+			},
+			"functions": {
+				"onMouseDown": "function (data)\n{\n\t\n}",
+				"onAddToScene": "function (data)\n{\n\tvar level = wade.retrieveLocalObject(\"Level\");\r\n\tif (level < 13){\r\n\tvar bObj = wade.getObjectByName(\"Lock\").clone(\r\n\tthis.getPosition().x, this.getPosition().y)\r\n\twade.addSceneObject(bObj)\r\n\t}\r\n\tthis.lStart = true\n}",
+				"onClick": "function (data)\n{\n\tvar level = wade.retrieveLocalObject(\"Level\");\r\n\tif (level >= 13 && this.lStart){\r\n\tthis.lStart = false\r\n\twade.clearScene();\r\n\twade.loadScene(\"scene13.wsc\")\r\n\t}\n}",
+				"onMouseIn": "function (data)\n{\n\tvar level = wade.retrieveLocalObject(\"Level\");\n\tif(level >= 13)\n\t{\n\twade.app.onMoonPlace()\n\tthis.getSprite().setSize(150,150)\n\t}\n}",
+				"onMouseOut": "function (data)\n{\n\tthis.getSprite().setSize(120,120)\n}"
+			}
+		},
+		{
+			"type": "SceneObject",
+			"position": {
+				"x": -222.21974637185647,
+				"y": -150
+			},
+			"rotation": 0,
+			"behaviors": [],
+			"sprites": [
+				{
+					"type": "Sprite",
+					"animations": {},
+					"currentAnimation": "default",
+					"sortPoint": {
+						"x": 0,
+						"y": 0
+					},
+					"layer": 1,
+					"autoResize": false,
+					"visible": true,
+					"image": "Moon1.png",
+					"imageArea": {
+						"minX": 0,
+						"minY": 0,
+						"maxX": 1,
+						"maxY": 1
+					},
+					"alwaysDraw": false,
+					"name": "",
+					"drawModifiers": [],
+					"pixelShader": "vec4 col = texture2D(uDiffuseSampler, uvAlphaTime.xy);\ncol.xyz *= tintColor;\ncol.w *= uvAlphaTime.z;\ngl_FragColor = col;",
+					"pixelShaderUniforms": {
+						"tintColor": "vec3"
+					},
+					"pixelPerfectMouseEvents": 0,
+					"properties": {
+						"tintColor": [
+							0.9,
+							0.9,
+							0
+						]
+					},
+					"size": {
+						"x": 120,
+						"y": 120
+					}
+				},
+				{
+					"type": "TextSprite",
+					"text": "14",
+					"name": "",
+					"font": "50px Arial",
+					"alignment": "center",
+					"color": "#fff",
+					"visible": true,
+					"layer": 1,
+					"maxWidth": 0,
+					"shadowColor": "#000",
+					"shadowBlur": 0,
+					"shadowOffset": {
+						"x": 0,
+						"y": 0
+					},
+					"lineSpacing": 1,
+					"maxLines": 0,
+					"firstLine": 0,
+					"outlineColor": "#000",
+					"outlineWidth": 2,
+					"boundsScale": {
+						"x": 1,
+						"y": 1
+					},
+					"sortPoint": {
+						"x": 0,
+						"y": 0
+					},
+					"fixedSize": false,
+					"drawModifiers": [],
+					"properties": {}
+				}
+			],
+			"spriteOffsets": [
+				{
+					"x": 2,
+					"y": 2,
+					"angle": 0
+				},
+				{
+					"x": 0,
+					"y": 20,
+					"angle": 0
+				}
+			],
+			"flowChart": null,
+			"grid": null,
+			"alignment": {
+				"x": "center",
+				"y": "center"
+			},
+			"name": "SYMB_STOP4_clone_0",
+			"isTemplate": false,
+			"path": "",
+			"addToScene": true,
+			"properties": {
+				"instanceOf": "SYMB_STOP"
+			},
+			"functions": {
+				"onMouseDown": "function (data)\n{\n\t\n}",
+				"onAddToScene": "function (data)\n{\n\tvar level = wade.retrieveLocalObject(\"Level\");\r\n\tif (level < 14){\r\n\tvar bObj = wade.getObjectByName(\"Lock\").clone(\r\n\tthis.getPosition().x, this.getPosition().y)\r\n\twade.addSceneObject(bObj)\r\n\t}\r\n\tthis.lStart = true\n}",
+				"onClick": "function (data)\n{\n\t\n}",
+				"onMouseUp": "function (data)\n{\n\tvar level = wade.retrieveLocalObject(\"Level\");\r\n\tif (level >= 14 && this.lStart){\r\n\tthis.lStart = false\r\n\twade.clearScene();\r\n\twade.loadScene(\"scene14.wsc\",false,function(){}\r\n\t,true)\r\n\t}\n}",
+				"onMouseIn": "function (data)\n{\n\tvar level = wade.retrieveLocalObject(\"Level\");\n\tif(level >= 14)\n\t{\n\twade.app.onMoonPlace()\n\tthis.getSprite().setSize(150,150)\n\t}\n}",
+				"onMouseOut": "function (data)\n{\n\tthis.getSprite().setSize(120,120)\n}"
+			}
+		},
+		{
+			"type": "SceneObject",
+			"position": {
+				"x": -72.21974637185558,
+				"y": -150
+			},
+			"rotation": 0,
+			"behaviors": [],
+			"sprites": [
+				{
+					"type": "Sprite",
+					"animations": {},
+					"currentAnimation": "default",
+					"sortPoint": {
+						"x": 0,
+						"y": 0
+					},
+					"layer": 1,
+					"autoResize": false,
+					"visible": true,
+					"image": "Moon1.png",
+					"imageArea": {
+						"minX": 0,
+						"minY": 0,
+						"maxX": 1,
+						"maxY": 1
+					},
+					"alwaysDraw": false,
+					"name": "",
+					"drawModifiers": [],
+					"pixelShader": "vec4 col = texture2D(uDiffuseSampler, uvAlphaTime.xy);\ncol.xyz *= tintColor;\ncol.w *= uvAlphaTime.z;\ngl_FragColor = col;",
+					"pixelShaderUniforms": {
+						"tintColor": "vec3"
+					},
+					"pixelPerfectMouseEvents": 0,
+					"properties": {
+						"tintColor": [
+							0.9,
+							0.9,
+							0
+						]
+					},
+					"size": {
+						"x": 120,
+						"y": 120
+					}
+				},
+				{
+					"type": "TextSprite",
+					"text": "15",
+					"name": "",
+					"font": "50px Arial",
+					"alignment": "center",
+					"color": "#fff",
+					"visible": true,
+					"layer": 1,
+					"maxWidth": 0,
+					"shadowColor": "#000",
+					"shadowBlur": 0,
+					"shadowOffset": {
+						"x": 0,
+						"y": 0
+					},
+					"lineSpacing": 1,
+					"maxLines": 0,
+					"firstLine": 0,
+					"outlineColor": "#000",
+					"outlineWidth": 2,
+					"boundsScale": {
+						"x": 1,
+						"y": 1
+					},
+					"sortPoint": {
+						"x": 0,
+						"y": 0
+					},
+					"fixedSize": false,
+					"drawModifiers": [],
+					"properties": {}
+				}
+			],
+			"spriteOffsets": [
+				{
+					"x": 2,
+					"y": 2,
+					"angle": 0
+				},
+				{
+					"x": 0,
+					"y": 20,
+					"angle": 0
+				}
+			],
+			"flowChart": null,
+			"grid": null,
+			"alignment": {
+				"x": "center",
+				"y": "center"
+			},
+			"name": "SYMB_STOP5_clone_0",
+			"isTemplate": false,
+			"path": "",
+			"addToScene": true,
+			"properties": {
+				"instanceOf": "SYMB_STOP"
+			},
+			"functions": {
+				"onAddToScene": "function (data)\n{\n\tvar level = wade.retrieveLocalObject(\"Level\");\r\n\tif (level < 15){\r\n\tvar bObj = wade.getObjectByName(\"Lock\").clone(\r\n\tthis.getPosition().x, this.getPosition().y)\r\n\twade.addSceneObject(bObj)\r\n\tconsole.log(level)\r\n\t}\r\n\tthis.lStart = true\n}",
+				"onMouseDown": "function (data)\n{\n\t\n}",
+				"onClick": "function (data)\n{\n\tvar level = wade.retrieveLocalObject(\"Level\");\r\n\tif (level >= 15){\r\n\twade.clearScene();\r\n\twade.loadScene(\"scene15.wsc\")\r\n\t}\n}",
+				"onMouseIn": "function (data)\n{\n\tvar level = wade.retrieveLocalObject(\"Level\");\n\tif(level >= 15)\n\t{\n\twade.app.onMoonPlace()\n\tthis.getSprite().setSize(150,150)\n\t}\n}",
+				"onMouseOut": "function (data)\n{\n\tthis.getSprite().setSize(120,120)\n}"
+			}
+		},
+		{
+			"type": "SceneObject",
+			"position": {
+				"x": 77.78025362814442,
+				"y": -150
+			},
+			"rotation": 0,
+			"behaviors": [],
+			"sprites": [
+				{
+					"type": "Sprite",
+					"animations": {},
+					"currentAnimation": "default",
+					"sortPoint": {
+						"x": 0,
+						"y": 0
+					},
+					"layer": 1,
+					"autoResize": false,
+					"visible": true,
+					"image": "Moon1.png",
+					"imageArea": {
+						"minX": 0,
+						"minY": 0,
+						"maxX": 1,
+						"maxY": 1
+					},
+					"alwaysDraw": false,
+					"name": "",
+					"drawModifiers": [],
+					"pixelShader": "vec4 col = texture2D(uDiffuseSampler, uvAlphaTime.xy);\ncol.xyz *= tintColor;\ncol.w *= uvAlphaTime.z;\ngl_FragColor = col;",
+					"pixelShaderUniforms": {
+						"tintColor": "vec3"
+					},
+					"pixelPerfectMouseEvents": 0,
+					"properties": {
+						"tintColor": [
+							0.4,
+							0,
+							1
+						]
+					},
+					"size": {
+						"x": 120,
+						"y": 120
+					}
+				},
+				{
+					"type": "TextSprite",
+					"text": "16",
+					"name": "",
+					"font": "50px Arial",
+					"alignment": "center",
+					"color": "#fff",
+					"visible": true,
+					"layer": 1,
+					"maxWidth": 0,
+					"shadowColor": "#000",
+					"shadowBlur": 0,
+					"shadowOffset": {
+						"x": 0,
+						"y": 0
+					},
+					"lineSpacing": 1,
+					"maxLines": 0,
+					"firstLine": 0,
+					"outlineColor": "#000",
+					"outlineWidth": 2,
+					"boundsScale": {
+						"x": 1,
+						"y": 1
+					},
+					"sortPoint": {
+						"x": 0,
+						"y": 0
+					},
+					"fixedSize": false,
+					"drawModifiers": [],
+					"properties": {}
+				}
+			],
+			"spriteOffsets": [
+				{
+					"x": 2,
+					"y": 2,
+					"angle": 0
+				},
+				{
+					"x": 0,
+					"y": 20,
+					"angle": 0
+				}
+			],
+			"flowChart": null,
+			"grid": null,
+			"alignment": {
+				"x": "center",
+				"y": "center"
+			},
+			"name": "SYMB_STOP6_clone_0",
+			"isTemplate": false,
+			"path": "",
+			"addToScene": true,
+			"properties": {
+				"instanceOf": "SYMB_STOP1"
+			},
+			"functions": {
+				"onMouseDown": "function (data)\n{\n\tvar level = wade.retrieveLocalObject(\"Level\");\r\n\tif (level >= 16){\r\n\twade.clearScene();\r\n\twade.loadScene(\"scene16.wsc\")\r\n\t}\n}",
+				"onAddToScene": "function (data)\n{\n\tvar level = wade.retrieveLocalObject(\"Level\");\r\n\tif (level < 16){\r\n\tvar bObj = wade.getObjectByName(\"Lock\").clone(\r\n\tthis.getPosition().x, this.getPosition().y)\r\n\twade.addSceneObject(bObj)\r\n\t}\r\n\tthis.lStart = true\n}",
+				"onMouseIn": "function (data)\n{\n\tvar level = wade.retrieveLocalObject(\"Level\");\n\tif(level >= 16)\n\t{\n\twade.app.onMoonPlace()\n\tthis.getSprite().setSize(150,150)\n\t}\n}",
+				"onMouseOut": "function (data)\n{\n\tthis.getSprite().setSize(120,120)\n}"
+			}
+		},
+		{
+			"type": "SceneObject",
+			"position": {
+				"x": 227.78025362814353,
+				"y": -150
+			},
+			"rotation": 0,
+			"behaviors": [],
+			"sprites": [
+				{
+					"type": "Sprite",
+					"animations": {},
+					"currentAnimation": "default",
+					"sortPoint": {
+						"x": 0,
+						"y": 0
+					},
+					"layer": 1,
+					"autoResize": false,
+					"visible": true,
+					"image": "Moon1.png",
+					"imageArea": {
+						"minX": 0,
+						"minY": 0,
+						"maxX": 1,
+						"maxY": 1
+					},
+					"alwaysDraw": false,
+					"name": "",
+					"drawModifiers": [],
+					"pixelShader": "vec4 col = texture2D(uDiffuseSampler, uvAlphaTime.xy);\ncol.xyz *= tintColor;\ncol.w *= uvAlphaTime.z;\ngl_FragColor = col;",
+					"pixelShaderUniforms": {
+						"tintColor": "vec3"
+					},
+					"pixelPerfectMouseEvents": 0,
+					"properties": {
+						"tintColor": [
+							0.4,
+							0,
+							1
+						]
+					},
+					"size": {
+						"x": 120,
+						"y": 120
+					}
+				},
+				{
+					"type": "TextSprite",
+					"text": "17",
+					"name": "",
+					"font": "50px Arial",
+					"alignment": "center",
+					"color": "#fff",
+					"visible": true,
+					"layer": 1,
+					"maxWidth": 0,
+					"shadowColor": "#000",
+					"shadowBlur": 0,
+					"shadowOffset": {
+						"x": 0,
+						"y": 0
+					},
+					"lineSpacing": 1,
+					"maxLines": 0,
+					"firstLine": 0,
+					"outlineColor": "#000",
+					"outlineWidth": 2,
+					"boundsScale": {
+						"x": 1,
+						"y": 1
+					},
+					"sortPoint": {
+						"x": 0,
+						"y": 0
+					},
+					"fixedSize": false,
+					"drawModifiers": [],
+					"properties": {}
+				}
+			],
+			"spriteOffsets": [
+				{
+					"x": 2,
+					"y": 2,
+					"angle": 0
+				},
+				{
+					"x": 0,
+					"y": 20,
+					"angle": 0
+				}
+			],
+			"flowChart": null,
+			"grid": null,
+			"alignment": {
+				"x": "center",
+				"y": "center"
+			},
+			"name": "SYMB_STOP7_clone_0",
+			"isTemplate": false,
+			"path": "",
+			"addToScene": true,
+			"properties": {
+				"instanceOf": "SYMB_STOP"
+			},
+			"functions": {
+				"onMouseDown": "function (data)\n{\n\t\n}",
+				"onAddToScene": "function (data)\n{\n\tvar level = wade.retrieveLocalObject(\"Level\");\r\n\tif (level < 17){\r\n\tvar bObj = wade.getObjectByName(\"Lock\").clone(\r\n\tthis.getPosition().x, this.getPosition().y)\r\n\twade.addSceneObject(bObj)\r\n\t}\r\n\tthis.lStart = true\n}",
+				"onClick": "function (data)\n{\n\tvar level = wade.retrieveLocalObject(\"Level\");\r\n\tif (level >= 17 && this.lStart){\r\n\tthis.lStart = false\r\n\twade.clearScene();\r\n\twade.loadScene(\"scene17.wsc\")\r\n\t}\n}",
+				"onMouseIn": "function (data)\n{\n\tvar level = wade.retrieveLocalObject(\"Level\");\n\tif(level >= 17)\n\t{\n\twade.app.onMoonPlace()\n\tthis.getSprite().setSize(150,150)\n\t}\n}",
+				"onMouseOut": "function (data)\n{\n\tthis.getSprite().setSize(120,120)\n}"
+			}
+		},
+		{
+			"type": "SceneObject",
+			"position": {
+				"x": 377.78025362814446,
+				"y": -150
+			},
+			"rotation": 0,
+			"behaviors": [],
+			"sprites": [
+				{
+					"type": "Sprite",
+					"animations": {},
+					"currentAnimation": "default",
+					"sortPoint": {
+						"x": 0,
+						"y": 0
+					},
+					"layer": 1,
+					"autoResize": false,
+					"visible": true,
+					"image": "Moon1.png",
+					"imageArea": {
+						"minX": 0,
+						"minY": 0,
+						"maxX": 1,
+						"maxY": 1
+					},
+					"alwaysDraw": false,
+					"name": "",
+					"drawModifiers": [],
+					"pixelShader": "vec4 col = texture2D(uDiffuseSampler, uvAlphaTime.xy);\ncol.xyz *= tintColor;\ncol.w *= uvAlphaTime.z;\ngl_FragColor = col;",
+					"pixelShaderUniforms": {
+						"tintColor": "vec3"
+					},
+					"pixelPerfectMouseEvents": 0,
+					"properties": {
+						"tintColor": [
+							0.4,
+							0,
+							1
+						]
+					},
+					"size": {
+						"x": 120,
+						"y": 120
+					}
+				},
+				{
+					"type": "TextSprite",
+					"text": "18",
+					"name": "",
+					"font": "50px Arial",
+					"alignment": "center",
+					"color": "#fff",
+					"visible": true,
+					"layer": 1,
+					"maxWidth": 0,
+					"shadowColor": "#000",
+					"shadowBlur": 0,
+					"shadowOffset": {
+						"x": 0,
+						"y": 0
+					},
+					"lineSpacing": 1,
+					"maxLines": 0,
+					"firstLine": 0,
+					"outlineColor": "#000",
+					"outlineWidth": 2,
+					"boundsScale": {
+						"x": 1,
+						"y": 1
+					},
+					"sortPoint": {
+						"x": 0,
+						"y": 0
+					},
+					"fixedSize": false,
+					"drawModifiers": [],
+					"properties": {}
+				}
+			],
+			"spriteOffsets": [
+				{
+					"x": 2,
+					"y": 2,
+					"angle": 0
+				},
+				{
+					"x": 0,
+					"y": 20,
+					"angle": 0
+				}
+			],
+			"flowChart": null,
+			"grid": null,
+			"alignment": {
+				"x": "center",
+				"y": "center"
+			},
+			"name": "SYMB_STOP8_clone_0",
+			"isTemplate": false,
+			"path": "",
+			"addToScene": true,
+			"properties": {
+				"instanceOf": "SYMB_STOP"
+			},
+			"functions": {
+				"onMouseDown": "function (data)\n{\n\t\n}",
+				"onAddToScene": "function (data)\n{\n\tvar level = wade.retrieveLocalObject(\"Level\");\r\n\tif (level < 18){\r\n\tvar bObj = wade.getObjectByName(\"Lock\").clone(\r\n\tthis.getPosition().x, this.getPosition().y)\r\n\twade.addSceneObject(bObj)\r\n\t}\r\n\tthis.lStart = true\n}",
+				"onClick": "function (data)\n{\n\tvar level = wade.retrieveLocalObject(\"Level\");\r\n\tif (level >= 18 && this.lStart){\r\n\tthis.lStart = false\r\n\twade.clearScene();\r\n\twade.loadScene(\"scene18.wsc\")\r\n\t}\n}",
+				"onMouseIn": "function (data)\n{\n\tvar level = wade.retrieveLocalObject(\"Level\");\n\tif(level >= 18)\n\t{\n\twade.app.onMoonPlace()\n\tthis.getSprite().setSize(150,150)\n\t}\n}",
+				"onMouseOut": "function (data)\n{\n\tthis.getSprite().setSize(120,120)\n}"
+			}
+		},
+		{
+			"type": "SceneObject",
+			"position": {
+				"x": 527.780253628145,
+				"y": -150
+			},
+			"rotation": 0,
+			"behaviors": [],
+			"sprites": [
+				{
+					"type": "Sprite",
+					"animations": {},
+					"currentAnimation": "default",
+					"sortPoint": {
+						"x": 0,
+						"y": 0
+					},
+					"layer": 1,
+					"autoResize": false,
+					"visible": true,
+					"image": "Moon1.png",
+					"imageArea": {
+						"minX": 0,
+						"minY": 0,
+						"maxX": 1,
+						"maxY": 1
+					},
+					"alwaysDraw": false,
+					"name": "",
+					"drawModifiers": [],
+					"pixelShader": "vec4 col = texture2D(uDiffuseSampler, uvAlphaTime.xy);\ncol.xyz *= tintColor;\ncol.w *= uvAlphaTime.z;\ngl_FragColor = col;",
+					"pixelShaderUniforms": {
+						"tintColor": "vec3"
+					},
+					"pixelPerfectMouseEvents": 0,
+					"properties": {
+						"tintColor": [
+							0.4,
+							0,
+							1
+						]
+					},
+					"size": {
+						"x": 120,
+						"y": 120
+					}
+				},
+				{
+					"type": "TextSprite",
+					"text": "19",
+					"name": "",
+					"font": "50px Arial",
+					"alignment": "center",
+					"color": "#fff",
+					"visible": true,
+					"layer": 1,
+					"maxWidth": 0,
+					"shadowColor": "#000",
+					"shadowBlur": 0,
+					"shadowOffset": {
+						"x": 0,
+						"y": 0
+					},
+					"lineSpacing": 1,
+					"maxLines": 0,
+					"firstLine": 0,
+					"outlineColor": "#000",
+					"outlineWidth": 2,
+					"boundsScale": {
+						"x": 1,
+						"y": 1
+					},
+					"sortPoint": {
+						"x": 0,
+						"y": 0
+					},
+					"fixedSize": false,
+					"drawModifiers": [],
+					"properties": {}
+				}
+			],
+			"spriteOffsets": [
+				{
+					"x": 2,
+					"y": 2,
+					"angle": 0
+				},
+				{
+					"x": 0,
+					"y": 20,
+					"angle": 0
+				}
+			],
+			"flowChart": null,
+			"grid": null,
+			"alignment": {
+				"x": "center",
+				"y": "center"
+			},
+			"name": "SYMB_STOP9_clone_0",
+			"isTemplate": false,
+			"path": "",
+			"addToScene": true,
+			"properties": {
+				"instanceOf": "SYMB_STOP"
+			},
+			"functions": {
+				"onMouseDown": "function (data)\n{\n\t\n}",
+				"onAddToScene": "function (data)\n{\n\tvar level = wade.retrieveLocalObject(\"Level\");\r\n\tif (level < 19){\r\n\tvar bObj = wade.getObjectByName(\"Lock\").clone(\r\n\tthis.getPosition().x, this.getPosition().y)\r\n\twade.addSceneObject(bObj)\r\n\t}\r\n\tthis.lStart = true\n}",
+				"onClick": "function (data)\n{\n\tvar level = wade.retrieveLocalObject(\"Level\");\r\n\tif (level >= 19 && this.lStart){\r\n\tthis.lStart = false\r\n\twade.clearScene();\r\n\twade.loadScene(\"scene19.wsc\")\r\n\t}\n}",
+				"onMouseIn": "function (data)\n{\n\tvar level = wade.retrieveLocalObject(\"Level\");\n\tif(level >= 19)\n\t{\n\twade.app.onMoonPlace()\n\tthis.getSprite().setSize(150,150)\n\t}\n}",
+				"onMouseOut": "function (data)\n{\n\tthis.getSprite().setSize(120,120)\n}"
+			}
+		},
+		{
+			"type": "SceneObject",
+			"position": {
+				"x": 677.780253628145,
+				"y": -150
+			},
+			"rotation": 0,
+			"behaviors": [],
+			"sprites": [
+				{
+					"type": "Sprite",
+					"animations": {},
+					"currentAnimation": "default",
+					"sortPoint": {
+						"x": 0,
+						"y": 0
+					},
+					"layer": 1,
+					"autoResize": false,
+					"visible": true,
+					"image": "Moon1.png",
+					"imageArea": {
+						"minX": 0,
+						"minY": 0,
+						"maxX": 1,
+						"maxY": 1
+					},
+					"alwaysDraw": false,
+					"name": "",
+					"drawModifiers": [],
+					"pixelShader": "vec4 col = texture2D(uDiffuseSampler, uvAlphaTime.xy);\ncol.xyz *= tintColor;\ncol.w *= uvAlphaTime.z;\ngl_FragColor = col;",
+					"pixelShaderUniforms": {
+						"tintColor": "vec3"
+					},
+					"pixelPerfectMouseEvents": 0,
+					"properties": {
+						"tintColor": [
+							0.4,
+							0,
+							1
+						]
+					},
+					"size": {
+						"x": 120,
+						"y": 120
+					}
+				},
+				{
+					"type": "TextSprite",
+					"text": "20",
+					"name": "",
+					"font": "50px Arial",
+					"alignment": "center",
+					"color": "#fff",
+					"visible": true,
+					"layer": 1,
+					"maxWidth": 0,
+					"shadowColor": "#000",
+					"shadowBlur": 0,
+					"shadowOffset": {
+						"x": 0,
+						"y": 0
+					},
+					"lineSpacing": 1,
+					"maxLines": 0,
+					"firstLine": 0,
+					"outlineColor": "#000",
+					"outlineWidth": 2,
+					"boundsScale": {
+						"x": 1,
+						"y": 1
+					},
+					"sortPoint": {
+						"x": 0,
+						"y": 0
+					},
+					"fixedSize": false,
+					"drawModifiers": [],
+					"properties": {}
+				}
+			],
+			"spriteOffsets": [
+				{
+					"x": 2,
+					"y": 2,
+					"angle": 0
+				},
+				{
+					"x": 0,
+					"y": 20,
+					"angle": 0
+				}
+			],
+			"flowChart": null,
+			"grid": null,
+			"alignment": {
+				"x": "center",
+				"y": "center"
+			},
+			"name": "SYMB_STOP10_clone_0",
+			"isTemplate": false,
+			"path": "",
+			"addToScene": true,
+			"properties": {
+				"instanceOf": "SYMB_STOP"
+			},
+			"functions": {
+				"onAddToScene": "function (data)\n{\n\tvar level = wade.retrieveLocalObject(\"Level\");\r\n\tif (level < 20){\r\n\tvar bObj = wade.getObjectByName(\"Lock\").clone(\r\n\tthis.getPosition().x, this.getPosition().y)\r\n\twade.addSceneObject(bObj)\r\n\t}\r\n\tthis.lStart = true\n}",
+				"onMouseDown": "function (data)\n{\n\t\n}",
+				"onClick": "function (data)\n{\n\tvar level = wade.retrieveLocalObject(\"Level\");\r\n\tif (level >= 20 && this.lStart){\r\n\twade.clearScene();\r\n\twade.loadScene(\"scene20.wsc\")\r\n\t}\n}",
+				"onMouseIn": "function (data)\n{\n\tvar level = wade.retrieveLocalObject(\"Level\");\n\tif(level >= 20)\n\t{\n\twade.app.onMoonPlace()\n\tthis.getSprite().setSize(150,150)\n\t}\n}",
+				"onMouseOut": "function (data)\n{\n\tthis.getSprite().setSize(120,120)\n}"
+			}
+		},
+		{
+			"type": "SceneObject",
+			"position": {
+				"x": -669.2927790496645,
+				"y": 0.5000962719002358
+			},
+			"rotation": 0,
+			"behaviors": [],
+			"sprites": [
+				{
+					"type": "Sprite",
+					"animations": {},
+					"currentAnimation": "default",
+					"sortPoint": {
+						"x": 0,
+						"y": 0
+					},
+					"layer": 1,
+					"autoResize": false,
+					"visible": true,
+					"image": "Moon1.png",
+					"imageArea": {
+						"minX": 0,
+						"minY": 0,
+						"maxX": 1,
+						"maxY": 1
+					},
+					"alwaysDraw": false,
+					"name": "",
+					"drawModifiers": [],
+					"pixelShader": "vec4 col = texture2D(uDiffuseSampler, uvAlphaTime.xy);\ncol.xyz *= tintColor;\ncol.w *= uvAlphaTime.z;\ngl_FragColor = col;",
+					"pixelShaderUniforms": {
+						"tintColor": "vec3"
+					},
+					"pixelPerfectMouseEvents": 0,
+					"properties": {
+						"tintColor": [
+							0.5,
+							0.5,
+							0.5
+						]
+					},
+					"size": {
+						"x": 120,
+						"y": 120
+					}
+				},
+				{
+					"type": "TextSprite",
+					"text": "21",
+					"name": "",
+					"font": "50px Arial",
+					"alignment": "center",
+					"color": "#fff",
+					"visible": true,
+					"layer": 1,
+					"maxWidth": 0,
+					"shadowColor": "#000",
+					"shadowBlur": 0,
+					"shadowOffset": {
+						"x": 0,
+						"y": 0
+					},
+					"lineSpacing": 1,
+					"maxLines": 0,
+					"firstLine": 0,
+					"outlineColor": "#000",
+					"outlineWidth": 2,
+					"boundsScale": {
+						"x": 1,
+						"y": 1
+					},
+					"sortPoint": {
+						"x": 0,
+						"y": 0
+					},
+					"fixedSize": false,
+					"drawModifiers": [],
+					"properties": {}
+				}
+			],
+			"spriteOffsets": [
+				{
+					"x": 2,
+					"y": 2,
+					"angle": 0
+				},
+				{
+					"x": 0,
+					"y": 20,
+					"angle": 0
+				}
+			],
+			"flowChart": null,
+			"grid": null,
+			"alignment": {
+				"x": "center",
+				"y": "center"
+			},
+			"name": "SYMB_STOP1_clone_1",
+			"isTemplate": false,
+			"path": "",
+			"addToScene": true,
+			"properties": {
+				"instanceOf": "SYMB_STOP1"
+			},
+			"functions": {
+				"onMouseDown": "function (data)\n{\n\t// var level = wade.retrieveLocalObject(\"Level\");\r\n\t// if (this.lStart){\r\n\t// this.lStart = false\r\n\t// wade.clearScene();\r\n\t// wade.loadScene(\"scene1.wsc\")\r\n\t// }\n}",
+				"onAddToScene": "function (data)\n{\n\tvar level = wade.retrieveLocalObject(\"Level\");\r\n\tif (level < 21){\r\n\tvar bObj = wade.getObjectByName(\"Lock\").clone(\r\n\tthis.getPosition().x, this.getPosition().y)\r\n\twade.addSceneObject(bObj)\r\n\t}\r\n\tthis.lStart = true\n}",
+				"onClick": "function (data)\n{\n\tvar level = wade.retrieveLocalObject(\"Level\");\r\n\tif (level >= 21 && this.lStart){\r\n\tthis.lStart = false\r\n\twade.clearScene();\r\n\twade.loadScene(\"scene21.wsc\",false,function(){}\r\n\t,true)\r\n\t}\n}",
+				"onMouseIn": "function (data)\n{\n\tvar level = wade.retrieveLocalObject(\"Level\");\n\tif(level >= 21)\n\t{\n\twade.app.onMoonPlace()\n\tthis.getSprite().setSize(150,150)\n\t}\n}",
+				"onMouseOut": "function (data)\n{\n\tthis.getSprite().setSize(120,120)\n}"
+			}
+		},
+		{
+			"type": "SceneObject",
+			"position": {
+				"x": -519.2927790496648,
+				"y": 0.5000962719002358
+			},
+			"rotation": 0,
+			"behaviors": [],
+			"sprites": [
+				{
+					"type": "Sprite",
+					"animations": {},
+					"currentAnimation": "default",
+					"sortPoint": {
+						"x": 0,
+						"y": 0
+					},
+					"layer": 1,
+					"autoResize": false,
+					"visible": true,
+					"image": "Moon1.png",
+					"imageArea": {
+						"minX": 0,
+						"minY": 0,
+						"maxX": 1,
+						"maxY": 1
+					},
+					"alwaysDraw": false,
+					"name": "",
+					"drawModifiers": [],
+					"pixelShader": "vec4 col = texture2D(uDiffuseSampler, uvAlphaTime.xy);\ncol.xyz *= tintColor;\ncol.w *= uvAlphaTime.z;\ngl_FragColor = col;",
+					"pixelShaderUniforms": {
+						"tintColor": "vec3"
+					},
+					"pixelPerfectMouseEvents": 0,
+					"properties": {
+						"tintColor": [
+							0.5,
+							0.5,
+							0.5
+						]
+					},
+					"size": {
+						"x": 120,
+						"y": 120
+					}
+				},
+				{
+					"type": "TextSprite",
+					"text": "22",
+					"name": "",
+					"font": "50px Arial",
+					"alignment": "center",
+					"color": "#fff",
+					"visible": true,
+					"layer": 1,
+					"maxWidth": 0,
+					"shadowColor": "#000",
+					"shadowBlur": 0,
+					"shadowOffset": {
+						"x": 0,
+						"y": 0
+					},
+					"lineSpacing": 1,
+					"maxLines": 0,
+					"firstLine": 0,
+					"outlineColor": "#000",
+					"outlineWidth": 2,
+					"boundsScale": {
+						"x": 1,
+						"y": 1
+					},
+					"sortPoint": {
+						"x": 0,
+						"y": 0
+					},
+					"fixedSize": false,
+					"drawModifiers": [],
+					"properties": {}
+				}
+			],
+			"spriteOffsets": [
+				{
+					"x": 2,
+					"y": 2,
+					"angle": 0
+				},
+				{
+					"x": 0,
+					"y": 20,
+					"angle": 0
+				}
+			],
+			"flowChart": null,
+			"grid": null,
+			"alignment": {
+				"x": "center",
+				"y": "center"
+			},
+			"name": "SYMB_STOP2_clone_1",
+			"isTemplate": false,
+			"path": "",
+			"addToScene": true,
+			"properties": {
+				"instanceOf": "SYMB_STOP"
+			},
+			"functions": {
+				"onMouseDown": "function (data)\n{\n\t\n}",
+				"onAddToScene": "function (data)\n{\n\tvar level = wade.retrieveLocalObject(\"Level\");\r\n\tif (level < 22){\r\n\tvar bObj = wade.getObjectByName(\"Lock\").clone(\r\n\tthis.getPosition().x, this.getPosition().y)\r\n\twade.addSceneObject(bObj)\r\n\t}\r\n\tthis.lStart = true\n}",
+				"onClick": "function (data)\n{\n\t\n}",
+				"onMouseUp": "function (data)\n{\n\tvar level = wade.retrieveLocalObject(\"Level\");\r\n\tif (level >= 22 && this.lStart){\r\n\tthis.lStart = false\r\n\twade.clearScene();\r\n\twade.loadScene(\"scene22.wsc\",false,function(){}\r\n\t,true)\r\n\t}\n}",
+				"onMouseIn": "function (data)\n{\n\tvar level = wade.retrieveLocalObject(\"Level\");\n\tif(level >= 22)\n\t{\n\twade.app.onMoonPlace()\n\tthis.getSprite().setSize(150,150)\n\t}\n}",
+				"onMouseOut": "function (data)\n{\n\tthis.getSprite().setSize(120,120)\n}"
+			}
+		},
+		{
+			"type": "SceneObject",
+			"position": {
+				"x": -369.2927790496654,
+				"y": 0.5000962719002358
+			},
+			"rotation": 0,
+			"behaviors": [],
+			"sprites": [
+				{
+					"type": "Sprite",
+					"animations": {},
+					"currentAnimation": "default",
+					"sortPoint": {
+						"x": 0,
+						"y": 0
+					},
+					"layer": 1,
+					"autoResize": false,
+					"visible": true,
+					"image": "Moon1.png",
+					"imageArea": {
+						"minX": 0,
+						"minY": 0,
+						"maxX": 1,
+						"maxY": 1
+					},
+					"alwaysDraw": false,
+					"name": "",
+					"drawModifiers": [],
+					"pixelShader": "vec4 col = texture2D(uDiffuseSampler, uvAlphaTime.xy);\ncol.xyz *= tintColor;\ncol.w *= uvAlphaTime.z;\ngl_FragColor = col;",
+					"pixelShaderUniforms": {
+						"tintColor": "vec3"
+					},
+					"pixelPerfectMouseEvents": 0,
+					"properties": {
+						"tintColor": [
+							0.5,
+							0.5,
+							0.5
+						]
+					},
+					"size": {
+						"x": 120,
+						"y": 120
+					}
+				},
+				{
+					"type": "TextSprite",
+					"text": "23",
+					"name": "",
+					"font": "50px Arial",
+					"alignment": "center",
+					"color": "#fff",
+					"visible": true,
+					"layer": 1,
+					"maxWidth": 0,
+					"shadowColor": "#000",
+					"shadowBlur": 0,
+					"shadowOffset": {
+						"x": 0,
+						"y": 0
+					},
+					"lineSpacing": 1,
+					"maxLines": 0,
+					"firstLine": 0,
+					"outlineColor": "#000",
+					"outlineWidth": 2,
+					"boundsScale": {
+						"x": 1,
+						"y": 1
+					},
+					"sortPoint": {
+						"x": 0,
+						"y": 0
+					},
+					"fixedSize": false,
+					"drawModifiers": [],
+					"properties": {}
+				}
+			],
+			"spriteOffsets": [
+				{
+					"x": 2,
+					"y": 2,
+					"angle": 0
+				},
+				{
+					"x": 0,
+					"y": 20,
+					"angle": 0
+				}
+			],
+			"flowChart": null,
+			"grid": null,
+			"alignment": {
+				"x": "center",
+				"y": "center"
+			},
+			"name": "SYMB_STOP3_clone_1",
+			"isTemplate": false,
+			"path": "",
+			"addToScene": true,
+			"properties": {
+				"instanceOf": "SYMB_STOP"
+			},
+			"functions": {
+				"onMouseDown": "function (data)\n{\n\t\n}",
+				"onAddToScene": "function (data)\n{\n\tvar level = wade.retrieveLocalObject(\"Level\");\r\n\tif (level < 23){\r\n\tvar bObj = wade.getObjectByName(\"Lock\").clone(\r\n\tthis.getPosition().x, this.getPosition().y)\r\n\twade.addSceneObject(bObj)\r\n\t}\r\n\tthis.lStart = true\n}",
+				"onClick": "function (data)\n{\n\tvar level = wade.retrieveLocalObject(\"Level\");\r\n\tif (level >= 23 && this.lStart){\r\n\tthis.lStart = false\r\n\twade.clearScene();\r\n\twade.loadScene(\"scene23.wsc\")\r\n\t}\n}",
+				"onMouseIn": "function (data)\n{\n\tvar level = wade.retrieveLocalObject(\"Level\");\n\tif(level >= 23)\n\t{\n\twade.app.onMoonPlace()\n\tthis.getSprite().setSize(150,150)\n\t}\n}",
+				"onMouseOut": "function (data)\n{\n\tthis.getSprite().setSize(120,120)\n}"
+			}
+		},
+		{
+			"type": "SceneObject",
+			"position": {
+				"x": -219.29277904966563,
+				"y": 0.5000962719002358
+			},
+			"rotation": 0,
+			"behaviors": [],
+			"sprites": [
+				{
+					"type": "Sprite",
+					"animations": {},
+					"currentAnimation": "default",
+					"sortPoint": {
+						"x": 0,
+						"y": 0
+					},
+					"layer": 1,
+					"autoResize": false,
+					"visible": true,
+					"image": "Moon1.png",
+					"imageArea": {
+						"minX": 0,
+						"minY": 0,
+						"maxX": 1,
+						"maxY": 1
+					},
+					"alwaysDraw": false,
+					"name": "",
+					"drawModifiers": [],
+					"pixelShader": "vec4 col = texture2D(uDiffuseSampler, uvAlphaTime.xy);\ncol.xyz *= tintColor;\ncol.w *= uvAlphaTime.z;\ngl_FragColor = col;",
+					"pixelShaderUniforms": {
+						"tintColor": "vec3"
+					},
+					"pixelPerfectMouseEvents": 0,
+					"properties": {
+						"tintColor": [
+							0.5,
+							0.5,
+							0.5
+						]
+					},
+					"size": {
+						"x": 120,
+						"y": 120
+					}
+				},
+				{
+					"type": "TextSprite",
+					"text": "24",
+					"name": "",
+					"font": "50px Arial",
+					"alignment": "center",
+					"color": "#fff",
+					"visible": true,
+					"layer": 1,
+					"maxWidth": 0,
+					"shadowColor": "#000",
+					"shadowBlur": 0,
+					"shadowOffset": {
+						"x": 0,
+						"y": 0
+					},
+					"lineSpacing": 1,
+					"maxLines": 0,
+					"firstLine": 0,
+					"outlineColor": "#000",
+					"outlineWidth": 2,
+					"boundsScale": {
+						"x": 1,
+						"y": 1
+					},
+					"sortPoint": {
+						"x": 0,
+						"y": 0
+					},
+					"fixedSize": false,
+					"drawModifiers": [],
+					"properties": {}
+				}
+			],
+			"spriteOffsets": [
+				{
+					"x": 2,
+					"y": 2,
+					"angle": 0
+				},
+				{
+					"x": 0,
+					"y": 20,
+					"angle": 0
+				}
+			],
+			"flowChart": null,
+			"grid": null,
+			"alignment": {
+				"x": "center",
+				"y": "center"
+			},
+			"name": "SYMB_STOP4_clone_1",
+			"isTemplate": false,
+			"path": "",
+			"addToScene": true,
+			"properties": {
+				"instanceOf": "SYMB_STOP"
+			},
+			"functions": {
+				"onMouseDown": "function (data)\n{\n\t\n}",
+				"onAddToScene": "function (data)\n{\n\tvar level = wade.retrieveLocalObject(\"Level\");\r\n\tif (level < 24){\r\n\tvar bObj = wade.getObjectByName(\"Lock\").clone(\r\n\tthis.getPosition().x, this.getPosition().y)\r\n\twade.addSceneObject(bObj)\r\n\t}\r\n\tthis.lStart = true\n}",
+				"onClick": "function (data)\n{\n\t\n}",
+				"onMouseUp": "function (data)\n{\n\tvar level = wade.retrieveLocalObject(\"Level\");\r\n\tif (level >= 24 && this.lStart){\r\n\tthis.lStart = false\r\n\twade.clearScene();\r\n\twade.loadScene(\"scene24.wsc\",false,function(){}\r\n\t,true)\r\n\t}\n}",
+				"onMouseIn": "function (data)\n{\n\tvar level = wade.retrieveLocalObject(\"Level\");\n\tif(level >= 24)\n\t{\n\twade.app.onMoonPlace()\n\tthis.getSprite().setSize(150,150)\n\t}\n}",
+				"onMouseOut": "function (data)\n{\n\tthis.getSprite().setSize(120,120)\n}"
+			}
+		},
+		{
+			"type": "SceneObject",
+			"position": {
+				"x": -69.29277904966472,
+				"y": 0.5000962719002358
+			},
+			"rotation": 0,
+			"behaviors": [],
+			"sprites": [
+				{
+					"type": "Sprite",
+					"animations": {},
+					"currentAnimation": "default",
+					"sortPoint": {
+						"x": 0,
+						"y": 0
+					},
+					"layer": 1,
+					"autoResize": false,
+					"visible": true,
+					"image": "Moon1.png",
+					"imageArea": {
+						"minX": 0,
+						"minY": 0,
+						"maxX": 1,
+						"maxY": 1
+					},
+					"alwaysDraw": false,
+					"name": "",
+					"drawModifiers": [],
+					"pixelShader": "vec4 col = texture2D(uDiffuseSampler, uvAlphaTime.xy);\ncol.xyz *= tintColor;\ncol.w *= uvAlphaTime.z;\ngl_FragColor = col;",
+					"pixelShaderUniforms": {
+						"tintColor": "vec3"
+					},
+					"pixelPerfectMouseEvents": 0,
+					"properties": {
+						"tintColor": [
+							0.5,
+							0.5,
+							0.5
+						]
+					},
+					"size": {
+						"x": 120,
+						"y": 120
+					}
+				},
+				{
+					"type": "TextSprite",
+					"text": "25",
+					"name": "",
+					"font": "50px Arial",
+					"alignment": "center",
+					"color": "#fff",
+					"visible": true,
+					"layer": 1,
+					"maxWidth": 0,
+					"shadowColor": "#000",
+					"shadowBlur": 0,
+					"shadowOffset": {
+						"x": 0,
+						"y": 0
+					},
+					"lineSpacing": 1,
+					"maxLines": 0,
+					"firstLine": 0,
+					"outlineColor": "#000",
+					"outlineWidth": 2,
+					"boundsScale": {
+						"x": 1,
+						"y": 1
+					},
+					"sortPoint": {
+						"x": 0,
+						"y": 0
+					},
+					"fixedSize": false,
+					"drawModifiers": [],
+					"properties": {}
+				}
+			],
+			"spriteOffsets": [
+				{
+					"x": 2,
+					"y": 2,
+					"angle": 0
+				},
+				{
+					"x": 0,
+					"y": 20,
+					"angle": 0
+				}
+			],
+			"flowChart": null,
+			"grid": null,
+			"alignment": {
+				"x": "center",
+				"y": "center"
+			},
+			"name": "SYMB_STOP5_clone_1",
+			"isTemplate": false,
+			"path": "",
+			"addToScene": true,
+			"properties": {
+				"instanceOf": "SYMB_STOP"
+			},
+			"functions": {
+				"onAddToScene": "function (data)\n{\n\tvar level = wade.retrieveLocalObject(\"Level\");\r\n\tif (level < 25){\r\n\tvar bObj = wade.getObjectByName(\"Lock\").clone(\r\n\tthis.getPosition().x, this.getPosition().y)\r\n\twade.addSceneObject(bObj)\r\n\tconsole.log(level)\r\n\t}\r\n\tthis.lStart = true\n}",
+				"onMouseDown": "function (data)\n{\n\t\n}",
+				"onClick": "function (data)\n{\n\tvar level = wade.retrieveLocalObject(\"Level\");\r\n\tif (level >= 25){\r\n\twade.clearScene();\r\n\twade.loadScene(\"scene25.wsc\")\r\n\t}\n}",
+				"onMouseIn": "function (data)\n{\n\tvar level = wade.retrieveLocalObject(\"Level\");\n\tif(level >= 25)\n\t{\n\twade.app.onMoonPlace()\n\tthis.getSprite().setSize(150,150)\n\t}\n}",
+				"onMouseOut": "function (data)\n{\n\tthis.getSprite().setSize(120,120)\n}"
+			}
+		},
+		{
+			"type": "SceneObject",
+			"position": {
+				"x": 80.70722095033528,
+				"y": 0.5000962719002358
+			},
+			"rotation": 0,
+			"behaviors": [],
+			"sprites": [
+				{
+					"type": "Sprite",
+					"animations": {},
+					"currentAnimation": "default",
+					"sortPoint": {
+						"x": 0,
+						"y": 0
+					},
+					"layer": 1,
+					"autoResize": false,
+					"visible": true,
+					"image": "Moon1.png",
+					"imageArea": {
+						"minX": 0,
+						"minY": 0,
+						"maxX": 1,
+						"maxY": 1
+					},
+					"alwaysDraw": false,
+					"name": "",
+					"drawModifiers": [],
+					"pixelShader": "vec4 col = texture2D(uDiffuseSampler, uvAlphaTime.xy);\ncol.xyz *= tintColor;\ncol.w *= uvAlphaTime.z;\ngl_FragColor = col;",
+					"pixelShaderUniforms": {
+						"tintColor": "vec3"
+					},
+					"pixelPerfectMouseEvents": 0,
+					"properties": {
+						"tintColor": [
+							1,
+							0.5,
+							0
+						]
+					},
+					"size": {
+						"x": 120,
+						"y": 120
+					}
+				},
+				{
+					"type": "TextSprite",
+					"text": "26",
+					"name": "",
+					"font": "50px Arial",
+					"alignment": "center",
+					"color": "#fff",
+					"visible": true,
+					"layer": 1,
+					"maxWidth": 0,
+					"shadowColor": "#000",
+					"shadowBlur": 0,
+					"shadowOffset": {
+						"x": 0,
+						"y": 0
+					},
+					"lineSpacing": 1,
+					"maxLines": 0,
+					"firstLine": 0,
+					"outlineColor": "#000",
+					"outlineWidth": 2,
+					"boundsScale": {
+						"x": 1,
+						"y": 1
+					},
+					"sortPoint": {
+						"x": 0,
+						"y": 0
+					},
+					"fixedSize": false,
+					"drawModifiers": [],
+					"properties": {}
+				}
+			],
+			"spriteOffsets": [
+				{
+					"x": 2,
+					"y": 2,
+					"angle": 0
+				},
+				{
+					"x": 0,
+					"y": 20,
+					"angle": 0
+				}
+			],
+			"flowChart": null,
+			"grid": null,
+			"alignment": {
+				"x": "center",
+				"y": "center"
+			},
+			"name": "SYMB_STOP6_clone_1",
+			"isTemplate": false,
+			"path": "",
+			"addToScene": true,
+			"properties": {
+				"instanceOf": "SYMB_STOP1"
+			},
+			"functions": {
+				"onMouseDown": "function (data)\n{\n\tvar level = wade.retrieveLocalObject(\"Level\");\r\n\tif (level >= 26){\r\n\twade.clearScene();\r\n\twade.loadScene(\"scene26.wsc\")\r\n\t}\n}",
+				"onAddToScene": "function (data)\n{\n\tvar level = wade.retrieveLocalObject(\"Level\");\r\n\tif (level < 26){\r\n\tvar bObj = wade.getObjectByName(\"Lock\").clone(\r\n\tthis.getPosition().x, this.getPosition().y)\r\n\twade.addSceneObject(bObj)\r\n\t}\r\n\tthis.lStart = true\n}",
+				"onMouseIn": "function (data)\n{\n\tvar level = wade.retrieveLocalObject(\"Level\");\n\tif(level >= 26)\n\t{\n\twade.app.onMoonPlace()\n\tthis.getSprite().setSize(150,150)\n\t}\n}",
+				"onMouseOut": "function (data)\n{\n\tthis.getSprite().setSize(120,120)\n}"
+			}
+		},
+		{
+			"type": "SceneObject",
+			"position": {
+				"x": 230.70722095033437,
+				"y": 0.5000962719002358
+			},
+			"rotation": 0,
+			"behaviors": [],
+			"sprites": [
+				{
+					"type": "Sprite",
+					"animations": {},
+					"currentAnimation": "default",
+					"sortPoint": {
+						"x": 0,
+						"y": 0
+					},
+					"layer": 1,
+					"autoResize": false,
+					"visible": true,
+					"image": "Moon1.png",
+					"imageArea": {
+						"minX": 0,
+						"minY": 0,
+						"maxX": 1,
+						"maxY": 1
+					},
+					"alwaysDraw": false,
+					"name": "",
+					"drawModifiers": [],
+					"pixelShader": "vec4 col = texture2D(uDiffuseSampler, uvAlphaTime.xy);\ncol.xyz *= tintColor;\ncol.w *= uvAlphaTime.z;\ngl_FragColor = col;",
+					"pixelShaderUniforms": {
+						"tintColor": "vec3"
+					},
+					"pixelPerfectMouseEvents": 0,
+					"properties": {
+						"tintColor": [
+							1,
+							0.5,
+							0
+						]
+					},
+					"size": {
+						"x": 120,
+						"y": 120
+					}
+				},
+				{
+					"type": "TextSprite",
+					"text": "27",
+					"name": "",
+					"font": "50px Arial",
+					"alignment": "center",
+					"color": "#fff",
+					"visible": true,
+					"layer": 1,
+					"maxWidth": 0,
+					"shadowColor": "#000",
+					"shadowBlur": 0,
+					"shadowOffset": {
+						"x": 0,
+						"y": 0
+					},
+					"lineSpacing": 1,
+					"maxLines": 0,
+					"firstLine": 0,
+					"outlineColor": "#000",
+					"outlineWidth": 2,
+					"boundsScale": {
+						"x": 1,
+						"y": 1
+					},
+					"sortPoint": {
+						"x": 0,
+						"y": 0
+					},
+					"fixedSize": false,
+					"drawModifiers": [],
+					"properties": {}
+				}
+			],
+			"spriteOffsets": [
+				{
+					"x": 2,
+					"y": 2,
+					"angle": 0
+				},
+				{
+					"x": 0,
+					"y": 20,
+					"angle": 0
+				}
+			],
+			"flowChart": null,
+			"grid": null,
+			"alignment": {
+				"x": "center",
+				"y": "center"
+			},
+			"name": "SYMB_STOP7_clone_1",
+			"isTemplate": false,
+			"path": "",
+			"addToScene": true,
+			"properties": {
+				"instanceOf": "SYMB_STOP"
+			},
+			"functions": {
+				"onMouseDown": "function (data)\n{\n\t\n}",
+				"onAddToScene": "function (data)\n{\n\tvar level = wade.retrieveLocalObject(\"Level\");\r\n\tif (level < 27){\r\n\tvar bObj = wade.getObjectByName(\"Lock\").clone(\r\n\tthis.getPosition().x, this.getPosition().y)\r\n\twade.addSceneObject(bObj)\r\n\t}\r\n\tthis.lStart = true\n}",
+				"onClick": "function (data)\n{\n\tvar level = wade.retrieveLocalObject(\"Level\");\r\n\tif (level >= 27 && this.lStart){\r\n\tthis.lStart = false\r\n\twade.clearScene();\r\n\twade.loadScene(\"scene27.wsc\")\r\n\t}\n}",
+				"onMouseIn": "function (data)\n{\n\tvar level = wade.retrieveLocalObject(\"Level\");\n\tif(level >= 20)\n\t{\n\twade.app.onMoonPlace()\n\tthis.getSprite().setSize(150,150)\n\t}\n}",
+				"onMouseOut": "function (data)\n{\n\tthis.getSprite().setSize(120,120)\n}"
+			}
+		},
+		{
+			"type": "SceneObject",
+			"position": {
+				"x": 380.7072209503346,
+				"y": 0.5000962719002358
+			},
+			"rotation": 0,
+			"behaviors": [],
+			"sprites": [
+				{
+					"type": "Sprite",
+					"animations": {},
+					"currentAnimation": "default",
+					"sortPoint": {
+						"x": 0,
+						"y": 0
+					},
+					"layer": 1,
+					"autoResize": false,
+					"visible": true,
+					"image": "Moon1.png",
+					"imageArea": {
+						"minX": 0,
+						"minY": 0,
+						"maxX": 1,
+						"maxY": 1
+					},
+					"alwaysDraw": false,
+					"name": "",
+					"drawModifiers": [],
+					"pixelShader": "vec4 col = texture2D(uDiffuseSampler, uvAlphaTime.xy);\ncol.xyz *= tintColor;\ncol.w *= uvAlphaTime.z;\ngl_FragColor = col;",
+					"pixelShaderUniforms": {
+						"tintColor": "vec3"
+					},
+					"pixelPerfectMouseEvents": 0,
+					"properties": {
+						"tintColor": [
+							1,
+							0.5,
+							0
+						]
+					},
+					"size": {
+						"x": 120,
+						"y": 120
+					}
+				},
+				{
+					"type": "TextSprite",
+					"text": "28",
+					"name": "",
+					"font": "50px Arial",
+					"alignment": "center",
+					"color": "#fff",
+					"visible": true,
+					"layer": 1,
+					"maxWidth": 0,
+					"shadowColor": "#000",
+					"shadowBlur": 0,
+					"shadowOffset": {
+						"x": 0,
+						"y": 0
+					},
+					"lineSpacing": 1,
+					"maxLines": 0,
+					"firstLine": 0,
+					"outlineColor": "#000",
+					"outlineWidth": 2,
+					"boundsScale": {
+						"x": 1,
+						"y": 1
+					},
+					"sortPoint": {
+						"x": 0,
+						"y": 0
+					},
+					"fixedSize": false,
+					"drawModifiers": [],
+					"properties": {}
+				}
+			],
+			"spriteOffsets": [
+				{
+					"x": 2,
+					"y": 2,
+					"angle": 0
+				},
+				{
+					"x": 0,
+					"y": 20,
+					"angle": 0
+				}
+			],
+			"flowChart": null,
+			"grid": null,
+			"alignment": {
+				"x": "center",
+				"y": "center"
+			},
+			"name": "SYMB_STOP8_clone_1",
+			"isTemplate": false,
+			"path": "",
+			"addToScene": true,
+			"properties": {
+				"instanceOf": "SYMB_STOP"
+			},
+			"functions": {
+				"onMouseDown": "function (data)\n{\n\t\n}",
+				"onAddToScene": "function (data)\n{\n\tvar level = wade.retrieveLocalObject(\"Level\");\r\n\tif (level < 28){\r\n\tvar bObj = wade.getObjectByName(\"Lock\").clone(\r\n\tthis.getPosition().x, this.getPosition().y)\r\n\twade.addSceneObject(bObj)\r\n\t}\r\n\tthis.lStart = true\n}",
+				"onClick": "function (data)\n{\n\tvar level = wade.retrieveLocalObject(\"Level\");\r\n\tif (level >= 28 && this.lStart){\r\n\tthis.lStart = false\r\n\twade.clearScene();\r\n\twade.loadScene(\"scene28.wsc\")\r\n\t}\n}",
+				"onMouseIn": "function (data)\n{\n\tvar level = wade.retrieveLocalObject(\"Level\");\n\tif(level >= 28)\n\t{\n\twade.app.onMoonPlace()\n\tthis.getSprite().setSize(150,150)\n\t}\n}",
+				"onMouseOut": "function (data)\n{\n\tthis.getSprite().setSize(120,120)\n}"
+			}
+		},
+		{
+			"type": "SceneObject",
+			"position": {
+				"x": 530.7072209503355,
+				"y": 0.5000962719002358
+			},
+			"rotation": 0,
+			"behaviors": [],
+			"sprites": [
+				{
+					"type": "Sprite",
+					"animations": {},
+					"currentAnimation": "default",
+					"sortPoint": {
+						"x": 0,
+						"y": 0
+					},
+					"layer": 1,
+					"autoResize": false,
+					"visible": true,
+					"image": "Moon1.png",
+					"imageArea": {
+						"minX": 0,
+						"minY": 0,
+						"maxX": 1,
+						"maxY": 1
+					},
+					"alwaysDraw": false,
+					"name": "",
+					"drawModifiers": [],
+					"pixelShader": "vec4 col = texture2D(uDiffuseSampler, uvAlphaTime.xy);\ncol.xyz *= tintColor;\ncol.w *= uvAlphaTime.z;\ngl_FragColor = col;",
+					"pixelShaderUniforms": {
+						"tintColor": "vec3"
+					},
+					"pixelPerfectMouseEvents": 0,
+					"properties": {
+						"tintColor": [
+							1,
+							0.5,
+							0
+						]
+					},
+					"size": {
+						"x": 120,
+						"y": 120
+					}
+				},
+				{
+					"type": "TextSprite",
+					"text": "29",
+					"name": "",
+					"font": "50px Arial",
+					"alignment": "center",
+					"color": "#fff",
+					"visible": true,
+					"layer": 1,
+					"maxWidth": 0,
+					"shadowColor": "#000",
+					"shadowBlur": 0,
+					"shadowOffset": {
+						"x": 0,
+						"y": 0
+					},
+					"lineSpacing": 1,
+					"maxLines": 0,
+					"firstLine": 0,
+					"outlineColor": "#000",
+					"outlineWidth": 2,
+					"boundsScale": {
+						"x": 1,
+						"y": 1
+					},
+					"sortPoint": {
+						"x": 0,
+						"y": 0
+					},
+					"fixedSize": false,
+					"drawModifiers": [],
+					"properties": {}
+				}
+			],
+			"spriteOffsets": [
+				{
+					"x": 2,
+					"y": 2,
+					"angle": 0
+				},
+				{
+					"x": 0,
+					"y": 20,
+					"angle": 0
+				}
+			],
+			"flowChart": null,
+			"grid": null,
+			"alignment": {
+				"x": "center",
+				"y": "center"
+			},
+			"name": "SYMB_STOP9_clone_1",
+			"isTemplate": false,
+			"path": "",
+			"addToScene": true,
+			"properties": {
+				"instanceOf": "SYMB_STOP"
+			},
+			"functions": {
+				"onMouseDown": "function (data)\n{\n\t\n}",
+				"onAddToScene": "function (data)\n{\n\tvar level = wade.retrieveLocalObject(\"Level\");\r\n\tif (level < 29){\r\n\tvar bObj = wade.getObjectByName(\"Lock\").clone(\r\n\tthis.getPosition().x, this.getPosition().y)\r\n\twade.addSceneObject(bObj)\r\n\t}\r\n\tthis.lStart = true\n}",
+				"onClick": "function (data)\n{\n\tvar level = wade.retrieveLocalObject(\"Level\");\r\n\tif (level >= 29 && this.lStart){\r\n\tthis.lStart = false\r\n\twade.clearScene();\r\n\twade.loadScene(\"scene29.wsc\")\r\n\t}\n}",
+				"onMouseIn": "function (data)\n{\n\tvar level = wade.retrieveLocalObject(\"Level\");\n\tif(level >= 29)\n\t{\n\twade.app.onMoonPlace()\n\tthis.getSprite().setSize(150,150)\n\t}\n}",
+				"onMouseOut": "function (data)\n{\n\tthis.getSprite().setSize(120,120)\n}"
+			}
+		},
+		{
+			"type": "SceneObject",
+			"position": {
+				"x": 680.7072209503355,
+				"y": 0.5000962719002358
+			},
+			"rotation": 0,
+			"behaviors": [],
+			"sprites": [
+				{
+					"type": "Sprite",
+					"animations": {},
+					"currentAnimation": "default",
+					"sortPoint": {
+						"x": 0,
+						"y": 0
+					},
+					"layer": 1,
+					"autoResize": false,
+					"visible": true,
+					"image": "Moon1.png",
+					"imageArea": {
+						"minX": 0,
+						"minY": 0,
+						"maxX": 1,
+						"maxY": 1
+					},
+					"alwaysDraw": false,
+					"name": "",
+					"drawModifiers": [],
+					"pixelShader": "vec4 col = texture2D(uDiffuseSampler, uvAlphaTime.xy);\ncol.xyz *= tintColor;\ncol.w *= uvAlphaTime.z;\ngl_FragColor = col;",
+					"pixelShaderUniforms": {
+						"tintColor": "vec3"
+					},
+					"pixelPerfectMouseEvents": 0,
+					"properties": {
+						"tintColor": [
+							1,
+							0.5,
+							0
+						]
+					},
+					"size": {
+						"x": 120,
+						"y": 120
+					}
+				},
+				{
+					"type": "TextSprite",
+					"text": "30",
+					"name": "",
+					"font": "50px Arial",
+					"alignment": "center",
+					"color": "#fff",
+					"visible": true,
+					"layer": 1,
+					"maxWidth": 0,
+					"shadowColor": "#000",
+					"shadowBlur": 0,
+					"shadowOffset": {
+						"x": 0,
+						"y": 0
+					},
+					"lineSpacing": 1,
+					"maxLines": 0,
+					"firstLine": 0,
+					"outlineColor": "#000",
+					"outlineWidth": 2,
+					"boundsScale": {
+						"x": 1,
+						"y": 1
+					},
+					"sortPoint": {
+						"x": 0,
+						"y": 0
+					},
+					"fixedSize": false,
+					"drawModifiers": [],
+					"properties": {}
+				}
+			],
+			"spriteOffsets": [
+				{
+					"x": 2,
+					"y": 2,
+					"angle": 0
+				},
+				{
+					"x": 0,
+					"y": 20,
+					"angle": 0
+				}
+			],
+			"flowChart": null,
+			"grid": null,
+			"alignment": {
+				"x": "center",
+				"y": "center"
+			},
+			"name": "SYMB_STOP10_clone_1",
+			"isTemplate": false,
+			"path": "",
+			"addToScene": true,
+			"properties": {
+				"instanceOf": "SYMB_STOP"
+			},
+			"functions": {
+				"onAddToScene": "function (data)\n{\n\tvar level = wade.retrieveLocalObject(\"Level\");\r\n\tif (level < 30){\r\n\tvar bObj = wade.getObjectByName(\"Lock\").clone(\r\n\tthis.getPosition().x, this.getPosition().y)\r\n\twade.addSceneObject(bObj)\r\n\t}\r\n\tthis.lStart = true\n}",
+				"onMouseDown": "function (data)\n{\n\t\n}",
+				"onClick": "function (data)\n{\n\tvar level = wade.retrieveLocalObject(\"Level\");\r\n\tif (level >= 30 && this.lStart){\r\n\twade.clearScene();\r\n\twade.loadScene(\"scene30.wsc\")\r\n\t}\n}",
+				"onMouseIn": "function (data)\n{\n\tvar level = wade.retrieveLocalObject(\"Level\");\n\tif(level >= 30)\n\t{\n\twade.app.onMoonPlace()\n\tthis.getSprite().setSize(150,150)\n\t}\n}",
+				"onMouseOut": "function (data)\n{\n\tthis.getSprite().setSize(120,120)\n}"
+			}
+		},
+		{
+			"type": "SceneObject",
+			"position": {
+				"x": 0,
+				"y": -600
+			},
+			"rotation": 0,
+			"behaviors": [],
+			"sprites": [
+				{
+					"type": "Sprite",
+					"animations": {},
+					"currentAnimation": "default",
+					"sortPoint": {
+						"x": 0,
+						"y": 0
+					},
+					"layer": 2,
+					"autoResize": false,
+					"visible": true,
+					"image": "MoveWithMoons.png",
+					"imageArea": {
+						"minX": 0,
+						"minY": 0,
+						"maxX": 1,
+						"maxY": 1
+					},
+					"alwaysDraw": false,
+					"name": "",
+					"drawModifiers": [
+						{
+							"type": "alpha",
+							"alpha": 1
+						}
+					],
+					"pixelShader": "gl_FragColor = texture2D(uDiffuseSampler, uvAlphaTime.xy);\ngl_FragColor.w *= uvAlphaTime.z;",
+					"pixelShaderUniforms": {
+						"color": "vec3",
+						"tolerance": "float"
+					},
+					"pixelPerfectMouseEvents": 0,
+					"properties": {
+						"color": [
+							1,
+							0.1,
+							0.1
+						],
+						"tolerance": 0.5
+					},
+					"size": {
+						"x": 616.9031631660159,
+						"y": 616.9031631660159
+					}
+				}
+			],
+			"spriteOffsets": [
+				{
+					"x": 0,
+					"y": 0,
+					"angle": 0
+				}
+			],
+			"flowChart": null,
+			"grid": null,
+			"alignment": {
+				"x": "center",
+				"y": "center"
+			},
+			"name": "SceneObject_0",
+			"isTemplate": false,
+			"path": "",
+			"addToScene": {
+				"autoListen": true,
+				"params": null
+			},
+			"properties": {}
+		},
+		{
+			"type": "SceneObject",
+			"position": {
+				"x": 0,
+				"y": -300
+			},
+			"rotation": 0,
+			"behaviors": [],
+			"sprites": [
+				{
+					"type": "Sprite",
+					"animations": {},
+					"currentAnimation": "default",
+					"sortPoint": {
+						"x": 0,
+						"y": 0
+					},
+					"layer": 1,
+					"autoResize": false,
+					"visible": false,
+					"image": "procedural_square",
+					"imageArea": {
+						"minX": 0,
+						"minY": 0,
+						"maxX": 1,
+						"maxY": 1
+					},
+					"alwaysDraw": false,
+					"name": "",
+					"drawModifiers": [],
+					"pixelShader": "",
+					"pixelShaderUniforms": null,
+					"pixelPerfectMouseEvents": 0,
+					"properties": {},
+					"size": {
+						"x": 64,
+						"y": 64
+					}
+				}
+			],
+			"spriteOffsets": [
+				{
+					"x": 0,
+					"y": 0,
+					"angle": 0
+				}
+			],
+			"flowChart": null,
+			"grid": null,
+			"alignment": {
+				"x": "center",
+				"y": "center"
+			},
+			"name": "SceneObject_1",
+			"isTemplate": false,
+			"path": "",
+			"addToScene": {
+				"autoListen": true,
+				"params": null
+			},
+			"properties": {},
+			"functions": {
+				"onAddToScene": "function (data)\n{\n\twade.setCameraPosition({\n\tx:this.getPosition().x,y:this.getPosition().y,z:1})\n}",
+				"onRemoveFromScene": "function (data)\n{\n\twade.setCameraPosition({\n\tx:0,y:0,z:1})\n}"
+			}
+		},
+		{
+			"type": "SceneObject",
+			"position": {
+				"x": -3.5795674753016153,
+				"y": -483.24160916571805
+			},
+			"rotation": 0,
+			"behaviors": [],
+			"sprites": [
+				{
+					"type": "Sprite",
+					"animations": {},
+					"currentAnimation": "default",
+					"sortPoint": {
+						"x": 0,
+						"y": 0
+					},
+					"layer": 1,
+					"autoResize": false,
+					"visible": true,
+					"image": "uiPack2.png",
+					"imageArea": {
+						"minX": 0.6615763546798029,
+						"minY": 0.8009188361408882,
+						"maxX": 0.7088669950738916,
+						"maxY": 0.9035222052067381
+					},
+					"alwaysDraw": false,
+					"name": "",
+					"drawModifiers": [],
+					"pixelShader": "",
+					"pixelShaderUniforms": null,
+					"pixelPerfectMouseEvents": 0,
+					"properties": {},
+					"size": {
+						"x": 85.74708501362984,
+						"y": 118.99595471279243
+					}
+				}
+			],
+			"spriteOffsets": [
+				{
+					"x": 0,
+					"y": 0,
+					"angle": 0
+				}
+			],
+			"flowChart": null,
+			"grid": null,
+			"alignment": {
+				"x": "center",
+				"y": "center"
+			},
+			"name": "Lock",
+			"isTemplate": true,
+			"path": "",
+			"addToScene": true,
+			"properties": {}
+		},
+		{
+			"type": "SceneObject",
+			"position": {
+				"x": -730,
+				"y": -800
+			},
+			"rotation": 0,
+			"behaviors": [],
+			"sprites": [
+				{
+					"type": "Sprite",
+					"animations": {},
+					"currentAnimation": "default",
+					"sortPoint": {
+						"x": 0,
+						"y": 0
+					},
+					"layer": 1,
+					"autoResize": false,
+					"visible": false,
+					"image": "uiPack2.png",
+					"imageArea": {
+						"minX": 0.8004926108374384,
+						"minY": 0.28407350689127103,
+						"maxX": 0.8374384236453202,
+						"maxY": 0.3330781010719755
+					},
+					"alwaysDraw": false,
+					"name": "",
+					"drawModifiers": [],
+					"pixelShader": "",
+					"pixelShaderUniforms": null,
+					"pixelPerfectMouseEvents": 0,
+					"properties": {},
+					"size": {
+						"x": 77,
+						"y": 77
+					}
+				},
+				{
+					"type": "Sprite",
+					"animations": {},
+					"currentAnimation": "default",
+					"sortPoint": {
+						"x": 0,
+						"y": 0
+					},
+					"layer": 1,
+					"autoResize": false,
+					"visible": true,
+					"image": "uiPack2.png",
+					"imageArea": {
+						"minX": 0.7261083743842365,
+						"minY": 0.04900459418070444,
+						"maxX": 0.7699507389162562,
+						"maxY": 0.11408882082695254
+					},
+					"alwaysDraw": false,
+					"name": "",
+					"drawModifiers": [],
+					"pixelShader": "",
+					"pixelShaderUniforms": null,
+					"pixelPerfectMouseEvents": 0,
+					"properties": {},
+					"size": {
+						"x": 77,
+						"y": 77
+					}
+				}
+			],
+			"spriteOffsets": [
+				{
+					"x": 0,
+					"y": 0,
+					"angle": 0
+				},
+				{
+					"x": 0,
+					"y": 0,
+					"angle": 0
+				}
+			],
+			"flowChart": null,
+			"grid": null,
+			"alignment": {
+				"x": "center",
+				"y": "center"
+			},
+			"name": "SYMB_VOLUME",
+			"isTemplate": false,
+			"path": "",
+			"addToScene": true,
+			"properties": {},
+			"functions": {
+				"onClick": "function (data)\n{\n\t\n}",
+				"onMouseDown": "function (data)\n{\n\tif (this.getSprite(0).isVisible())\n\t{\n\tthis.getSprite(0).setVisible(false)\n\tthis.getSprite(1).setVisible(true)\n\twade.preloadAudio(\n\t\"Never_Could_Have_Happened_Before.mp3\",true,true)\n\twade.storeLocalObject(\"muted\",false)\n\t}\n\telse\n\t{\n\tthis.getSprite(0).setVisible(true)\n\tthis.getSprite(1).setVisible(false)\n\twade.stopAudio()\n\twade.storeLocalObject(\"muted\",true)\n\t}\n}",
+				"onAddToScene": "function (data)\n{\n\tif (!wade.retrieveLocalObject(\"muted\"))\n\t{\n\tthis.getSprite(0).setVisible(false)\n\tthis.getSprite(1).setVisible(true)\n\t}\n\telse\n\t{\n\tthis.getSprite(0).setVisible(true)\n\tthis.getSprite(1).setVisible(false)\n\t}\n}",
+				"onUpdate": "function (data)\n{\n\t\n}"
+			}
+		},
+		{
+			"type": "SceneObject",
+			"position": {
+				"x": -665.6053451641003,
+				"y": 148.0920506087908
+			},
+			"rotation": 0,
+			"behaviors": [],
+			"sprites": [
+				{
+					"type": "Sprite",
+					"animations": {},
+					"currentAnimation": "default",
+					"sortPoint": {
+						"x": 0,
+						"y": 0
+					},
+					"layer": 1,
+					"autoResize": false,
+					"visible": true,
+					"image": "Moon1.png",
+					"imageArea": {
+						"minX": 0,
+						"minY": 0,
+						"maxX": 1,
+						"maxY": 1
+					},
+					"alwaysDraw": false,
+					"name": "",
+					"drawModifiers": [],
+					"pixelShader": "vec4 col = texture2D(uDiffuseSampler, uvAlphaTime.xy);\ncol.xyz *= tintColor;\ncol.w *= uvAlphaTime.z;\ngl_FragColor = col;",
+					"pixelShaderUniforms": {
+						"tintColor": "vec3"
+					},
+					"pixelPerfectMouseEvents": 0,
+					"properties": {
+						"tintColor": [
+							1.2,
+							1.2,
+							0.5
+						]
+					},
+					"size": {
+						"x": 120,
+						"y": 120
+					}
+				},
+				{
+					"type": "TextSprite",
+					"text": "31",
+					"name": "",
+					"font": "50px Arial",
+					"alignment": "center",
+					"color": "#fff",
+					"visible": true,
+					"layer": 1,
+					"maxWidth": 0,
+					"shadowColor": "#000",
+					"shadowBlur": 0,
+					"shadowOffset": {
+						"x": 0,
+						"y": 0
+					},
+					"lineSpacing": 1,
+					"maxLines": 0,
+					"firstLine": 0,
+					"outlineColor": "#000",
+					"outlineWidth": 2,
+					"boundsScale": {
+						"x": 1,
+						"y": 1
+					},
+					"sortPoint": {
+						"x": 0,
+						"y": 0
+					},
+					"fixedSize": false,
+					"drawModifiers": [],
+					"properties": {}
+				}
+			],
+			"spriteOffsets": [
+				{
+					"x": 2,
+					"y": 2,
+					"angle": 0
+				},
+				{
+					"x": 0,
+					"y": 20,
+					"angle": 0
+				}
+			],
+			"flowChart": null,
+			"grid": null,
+			"alignment": {
+				"x": "center",
+				"y": "center"
+			},
+			"name": "SYMB_STOP1_clone_2",
+			"isTemplate": false,
+			"path": "",
+			"addToScene": true,
+			"properties": {
+				"instanceOf": "SYMB_STOP1"
+			},
+			"functions": {
+				"onMouseDown": "function (data)\n{\n\t// var level = wade.retrieveLocalObject(\"Level\");\r\n\t// if (this.lStart){\r\n\t// this.lStart = false\r\n\t// wade.clearScene();\r\n\t// wade.loadScene(\"scene1.wsc\")\r\n\t// }\n}",
+				"onAddToScene": "function (data)\n{\n\tvar level = wade.retrieveLocalObject(\"Level\");\r\n\tif (level < 31){\r\n\tvar bObj = wade.getObjectByName(\"Lock\").clone(\r\n\tthis.getPosition().x, this.getPosition().y)\r\n\twade.addSceneObject(bObj)\r\n\t}\r\n\tthis.lStart = true\n}",
+				"onClick": "function (data)\n{\n\tvar level = wade.retrieveLocalObject(\"Level\");\r\n\tif (level >= 31 && this.lStart){\r\n\tthis.lStart = false\r\n\twade.clearScene();\r\n\twade.loadScene(\"scene31.wsc\",false,function(){}\r\n\t,true)\r\n\t}\n}",
+				"onMouseIn": "function (data)\n{\n\tvar level = wade.retrieveLocalObject(\"Level\");\n\tif(level >= 31)\n\t{\n\twade.app.onMoonPlace()\n\tthis.getSprite().setSize(150,150)\n\t}\n}",
+				"onMouseOut": "function (data)\n{\n\tthis.getSprite().setSize(120,120)\n}"
+			}
+		},
+		{
+			"type": "SceneObject",
+			"position": {
+				"x": -515.6053451641005,
+				"y": 148.0920506087908
+			},
+			"rotation": 0,
+			"behaviors": [],
+			"sprites": [
+				{
+					"type": "Sprite",
+					"animations": {},
+					"currentAnimation": "default",
+					"sortPoint": {
+						"x": 0,
+						"y": 0
+					},
+					"layer": 1,
+					"autoResize": false,
+					"visible": true,
+					"image": "Moon1.png",
+					"imageArea": {
+						"minX": 0,
+						"minY": 0,
+						"maxX": 1,
+						"maxY": 1
+					},
+					"alwaysDraw": false,
+					"name": "",
+					"drawModifiers": [],
+					"pixelShader": "vec4 col = texture2D(uDiffuseSampler, uvAlphaTime.xy);\ncol.xyz *= tintColor;\ncol.w *= uvAlphaTime.z;\ngl_FragColor = col;",
+					"pixelShaderUniforms": {
+						"tintColor": "vec3"
+					},
+					"pixelPerfectMouseEvents": 0,
+					"properties": {
+						"tintColor": [
+							1.2,
+							1.2,
+							0.5
+						]
+					},
+					"size": {
+						"x": 120,
+						"y": 120
+					}
+				},
+				{
+					"type": "TextSprite",
+					"text": "32",
+					"name": "",
+					"font": "50px Arial",
+					"alignment": "center",
+					"color": "#fff",
+					"visible": true,
+					"layer": 1,
+					"maxWidth": 0,
+					"shadowColor": "#000",
+					"shadowBlur": 0,
+					"shadowOffset": {
+						"x": 0,
+						"y": 0
+					},
+					"lineSpacing": 1,
+					"maxLines": 0,
+					"firstLine": 0,
+					"outlineColor": "#000",
+					"outlineWidth": 2,
+					"boundsScale": {
+						"x": 1,
+						"y": 1
+					},
+					"sortPoint": {
+						"x": 0,
+						"y": 0
+					},
+					"fixedSize": false,
+					"drawModifiers": [],
+					"properties": {}
+				}
+			],
+			"spriteOffsets": [
+				{
+					"x": 2,
+					"y": 2,
+					"angle": 0
+				},
+				{
+					"x": 0,
+					"y": 20,
+					"angle": 0
+				}
+			],
+			"flowChart": null,
+			"grid": null,
+			"alignment": {
+				"x": "center",
+				"y": "center"
+			},
+			"name": "SYMB_STOP2_clone_2",
+			"isTemplate": false,
+			"path": "",
+			"addToScene": true,
+			"properties": {
+				"instanceOf": "SYMB_STOP"
+			},
+			"functions": {
+				"onMouseDown": "function (data)\n{\n\t\n}",
+				"onAddToScene": "function (data)\n{\n\tvar level = wade.retrieveLocalObject(\"Level\");\r\n\tif (level < 32){\r\n\tvar bObj = wade.getObjectByName(\"Lock\").clone(\r\n\tthis.getPosition().x, this.getPosition().y)\r\n\twade.addSceneObject(bObj)\r\n\t}\r\n\tthis.lStart = true\n}",
+				"onClick": "function (data)\n{\n\t\n}",
+				"onMouseUp": "function (data)\n{\n\tvar level = wade.retrieveLocalObject(\"Level\");\r\n\tif (level >= 32 && this.lStart){\r\n\tthis.lStart = false\r\n\twade.clearScene();\r\n\twade.loadScene(\"scene32.wsc\",false,function(){}\r\n\t,true)\r\n\t}\n}",
+				"onMouseIn": "function (data)\n{\n\tvar level = wade.retrieveLocalObject(\"Level\");\n\tif(level >= 32)\n\t{\n\twade.app.onMoonPlace()\n\tthis.getSprite().setSize(150,150)\n\t}\n}",
+				"onMouseOut": "function (data)\n{\n\tthis.getSprite().setSize(120,120)\n}"
+			}
+		},
+		{
+			"type": "SceneObject",
+			"position": {
+				"x": -365.60534516410144,
+				"y": 148.0920506087908
+			},
+			"rotation": 0,
+			"behaviors": [],
+			"sprites": [
+				{
+					"type": "Sprite",
+					"animations": {},
+					"currentAnimation": "default",
+					"sortPoint": {
+						"x": 0,
+						"y": 0
+					},
+					"layer": 1,
+					"autoResize": false,
+					"visible": true,
+					"image": "Moon1.png",
+					"imageArea": {
+						"minX": 0,
+						"minY": 0,
+						"maxX": 1,
+						"maxY": 1
+					},
+					"alwaysDraw": false,
+					"name": "",
+					"drawModifiers": [],
+					"pixelShader": "vec4 col = texture2D(uDiffuseSampler, uvAlphaTime.xy);\ncol.xyz *= tintColor;\ncol.w *= uvAlphaTime.z;\ngl_FragColor = col;",
+					"pixelShaderUniforms": {
+						"tintColor": "vec3"
+					},
+					"pixelPerfectMouseEvents": 0,
+					"properties": {
+						"tintColor": [
+							1.2,
+							1.2,
+							0.5
+						]
+					},
+					"size": {
+						"x": 120,
+						"y": 120
+					}
+				},
+				{
+					"type": "TextSprite",
+					"text": "33",
+					"name": "",
+					"font": "50px Arial",
+					"alignment": "center",
+					"color": "#fff",
+					"visible": true,
+					"layer": 1,
+					"maxWidth": 0,
+					"shadowColor": "#000",
+					"shadowBlur": 0,
+					"shadowOffset": {
+						"x": 0,
+						"y": 0
+					},
+					"lineSpacing": 1,
+					"maxLines": 0,
+					"firstLine": 0,
+					"outlineColor": "#000",
+					"outlineWidth": 2,
+					"boundsScale": {
+						"x": 1,
+						"y": 1
+					},
+					"sortPoint": {
+						"x": 0,
+						"y": 0
+					},
+					"fixedSize": false,
+					"drawModifiers": [],
+					"properties": {}
+				}
+			],
+			"spriteOffsets": [
+				{
+					"x": 2,
+					"y": 2,
+					"angle": 0
+				},
+				{
+					"x": 0,
+					"y": 20,
+					"angle": 0
+				}
+			],
+			"flowChart": null,
+			"grid": null,
+			"alignment": {
+				"x": "center",
+				"y": "center"
+			},
+			"name": "SYMB_STOP3_clone_2",
+			"isTemplate": false,
+			"path": "",
+			"addToScene": true,
+			"properties": {
+				"instanceOf": "SYMB_STOP"
+			},
+			"functions": {
+				"onMouseDown": "function (data)\n{\n\t\n}",
+				"onAddToScene": "function (data)\n{\n\tvar level = wade.retrieveLocalObject(\"Level\");\r\n\tif (level < 33){\r\n\tvar bObj = wade.getObjectByName(\"Lock\").clone(\r\n\tthis.getPosition().x, this.getPosition().y)\r\n\twade.addSceneObject(bObj)\r\n\t}\r\n\tthis.lStart = true\n}",
+				"onClick": "function (data)\n{\n\tvar level = wade.retrieveLocalObject(\"Level\");\r\n\tif (level >= 33 && this.lStart){\r\n\tthis.lStart = false\r\n\twade.clearScene();\r\n\twade.loadScene(\"scene33.wsc\")\r\n\t}\n}",
+				"onMouseIn": "function (data)\n{\n\tvar level = wade.retrieveLocalObject(\"Level\");\n\tif(level >= 33)\n\t{\n\twade.app.onMoonPlace()\n\tthis.getSprite().setSize(150,150)\n\t}\n}",
+				"onMouseOut": "function (data)\n{\n\tthis.getSprite().setSize(120,120)\n}"
+			}
+		},
+		{
+			"type": "SceneObject",
+			"position": {
+				"x": -215.6053451641018,
+				"y": 148.0920506087908
+			},
+			"rotation": 0,
+			"behaviors": [],
+			"sprites": [
+				{
+					"type": "Sprite",
+					"animations": {},
+					"currentAnimation": "default",
+					"sortPoint": {
+						"x": 0,
+						"y": 0
+					},
+					"layer": 1,
+					"autoResize": false,
+					"visible": true,
+					"image": "Moon1.png",
+					"imageArea": {
+						"minX": 0,
+						"minY": 0,
+						"maxX": 1,
+						"maxY": 1
+					},
+					"alwaysDraw": false,
+					"name": "",
+					"drawModifiers": [],
+					"pixelShader": "vec4 col = texture2D(uDiffuseSampler, uvAlphaTime.xy);\ncol.xyz *= tintColor;\ncol.w *= uvAlphaTime.z;\ngl_FragColor = col;",
+					"pixelShaderUniforms": {
+						"tintColor": "vec3"
+					},
+					"pixelPerfectMouseEvents": 0,
+					"properties": {
+						"tintColor": [
+							1.2,
+							1.2,
+							0.5
+						]
+					},
+					"size": {
+						"x": 120,
+						"y": 120
+					}
+				},
+				{
+					"type": "TextSprite",
+					"text": "34",
+					"name": "",
+					"font": "50px Arial",
+					"alignment": "center",
+					"color": "#fff",
+					"visible": true,
+					"layer": 1,
+					"maxWidth": 0,
+					"shadowColor": "#000",
+					"shadowBlur": 0,
+					"shadowOffset": {
+						"x": 0,
+						"y": 0
+					},
+					"lineSpacing": 1,
+					"maxLines": 0,
+					"firstLine": 0,
+					"outlineColor": "#000",
+					"outlineWidth": 2,
+					"boundsScale": {
+						"x": 1,
+						"y": 1
+					},
+					"sortPoint": {
+						"x": 0,
+						"y": 0
+					},
+					"fixedSize": false,
+					"drawModifiers": [],
+					"properties": {}
+				}
+			],
+			"spriteOffsets": [
+				{
+					"x": 2,
+					"y": 2,
+					"angle": 0
+				},
+				{
+					"x": 0,
+					"y": 20,
+					"angle": 0
+				}
+			],
+			"flowChart": null,
+			"grid": null,
+			"alignment": {
+				"x": "center",
+				"y": "center"
+			},
+			"name": "SYMB_STOP4_clone_2",
+			"isTemplate": false,
+			"path": "",
+			"addToScene": true,
+			"properties": {
+				"instanceOf": "SYMB_STOP"
+			},
+			"functions": {
+				"onMouseDown": "function (data)\n{\n\t\n}",
+				"onAddToScene": "function (data)\n{\n\tvar level = wade.retrieveLocalObject(\"Level\");\r\n\tif (level < 34){\r\n\tvar bObj = wade.getObjectByName(\"Lock\").clone(\r\n\tthis.getPosition().x, this.getPosition().y)\r\n\twade.addSceneObject(bObj)\r\n\t}\r\n\tthis.lStart = true\n}",
+				"onClick": "function (data)\n{\n\t\n}",
+				"onMouseUp": "function (data)\n{\n\tvar level = wade.retrieveLocalObject(\"Level\");\r\n\tif (level >= 34 && this.lStart){\r\n\tthis.lStart = false\r\n\twade.clearScene();\r\n\twade.loadScene(\"scene34.wsc\",false,function(){}\r\n\t,true)\r\n\t}\n}",
+				"onMouseIn": "function (data)\n{\n\tvar level = wade.retrieveLocalObject(\"Level\");\n\tif(level >= 34)\n\t{\n\twade.app.onMoonPlace()\n\tthis.getSprite().setSize(150,150)\n\t}\n}",
+				"onMouseOut": "function (data)\n{\n\tthis.getSprite().setSize(120,120)\n}"
+			}
+		},
+		{
+			"type": "SceneObject",
+			"position": {
+				"x": -65.60534516410114,
+				"y": 148.0920506087908
+			},
+			"rotation": 0,
+			"behaviors": [],
+			"sprites": [
+				{
+					"type": "Sprite",
+					"animations": {},
+					"currentAnimation": "default",
+					"sortPoint": {
+						"x": 0,
+						"y": 0
+					},
+					"layer": 1,
+					"autoResize": false,
+					"visible": true,
+					"image": "Moon1.png",
+					"imageArea": {
+						"minX": 0,
+						"minY": 0,
+						"maxX": 1,
+						"maxY": 1
+					},
+					"alwaysDraw": false,
+					"name": "",
+					"drawModifiers": [],
+					"pixelShader": "vec4 col = texture2D(uDiffuseSampler, uvAlphaTime.xy);\ncol.xyz *= tintColor;\ncol.w *= uvAlphaTime.z;\ngl_FragColor = col;",
+					"pixelShaderUniforms": {
+						"tintColor": "vec3"
+					},
+					"pixelPerfectMouseEvents": 0,
+					"properties": {
+						"tintColor": [
+							1.2,
+							1.2,
+							0.5
+						]
+					},
+					"size": {
+						"x": 120,
+						"y": 120
+					}
+				},
+				{
+					"type": "TextSprite",
+					"text": "35",
+					"name": "",
+					"font": "50px Arial",
+					"alignment": "center",
+					"color": "#fff",
+					"visible": true,
+					"layer": 1,
+					"maxWidth": 0,
+					"shadowColor": "#000",
+					"shadowBlur": 0,
+					"shadowOffset": {
+						"x": 0,
+						"y": 0
+					},
+					"lineSpacing": 1,
+					"maxLines": 0,
+					"firstLine": 0,
+					"outlineColor": "#000",
+					"outlineWidth": 2,
+					"boundsScale": {
+						"x": 1,
+						"y": 1
+					},
+					"sortPoint": {
+						"x": 0,
+						"y": 0
+					},
+					"fixedSize": false,
+					"drawModifiers": [],
+					"properties": {}
+				}
+			],
+			"spriteOffsets": [
+				{
+					"x": 2,
+					"y": 2,
+					"angle": 0
+				},
+				{
+					"x": 0,
+					"y": 20,
+					"angle": 0
+				}
+			],
+			"flowChart": null,
+			"grid": null,
+			"alignment": {
+				"x": "center",
+				"y": "center"
+			},
+			"name": "SYMB_STOP5_clone_2",
+			"isTemplate": false,
+			"path": "",
+			"addToScene": true,
+			"properties": {
+				"instanceOf": "SYMB_STOP"
+			},
+			"functions": {
+				"onAddToScene": "function (data)\n{\n\tvar level = wade.retrieveLocalObject(\"Level\");\r\n\tif (level < 35){\r\n\tvar bObj = wade.getObjectByName(\"Lock\").clone(\r\n\tthis.getPosition().x, this.getPosition().y)\r\n\twade.addSceneObject(bObj)\r\n\tconsole.log(level)\r\n\t}\r\n\tthis.lStart = true\n}",
+				"onMouseDown": "function (data)\n{\n\t\n}",
+				"onClick": "function (data)\n{\n\tvar level = wade.retrieveLocalObject(\"Level\");\r\n\tif (level >= 35){\r\n\twade.clearScene();\r\n\twade.loadScene(\"scene35.wsc\")\r\n\t}\n}",
+				"onMouseIn": "function (data)\n{\n\tvar level = wade.retrieveLocalObject(\"Level\");\n\tif(level >= 35)\n\t{\n\twade.app.onMoonPlace()\n\tthis.getSprite().setSize(150,150)\n\t}\n}",
+				"onMouseOut": "function (data)\n{\n\tthis.getSprite().setSize(120,120)\n}"
+			}
+		},
+		{
+			"type": "SceneObject",
+			"position": {
+				"x": 84.39465483589886,
+				"y": 148.0920506087908
+			},
+			"rotation": 0,
+			"behaviors": [],
+			"sprites": [
+				{
+					"type": "Sprite",
+					"animations": {},
+					"currentAnimation": "default",
+					"sortPoint": {
+						"x": 0,
+						"y": 0
+					},
+					"layer": 1,
+					"autoResize": false,
+					"visible": true,
+					"image": "Moon1.png",
+					"imageArea": {
+						"minX": 0,
+						"minY": 0,
+						"maxX": 1,
+						"maxY": 1
+					},
+					"alwaysDraw": false,
+					"name": "",
+					"drawModifiers": [],
+					"pixelShader": "vec4 col = texture2D(uDiffuseSampler, uvAlphaTime.xy);\ncol.xyz *= tintColor;\ncol.w *= uvAlphaTime.z;\ngl_FragColor = col;",
+					"pixelShaderUniforms": {
+						"tintColor": "vec3"
+					},
+					"pixelPerfectMouseEvents": 0,
+					"properties": {
+						"tintColor": [
+							0.2,
+							0.2,
+							0.2
+						]
+					},
+					"size": {
+						"x": 120,
+						"y": 120
+					}
+				},
+				{
+					"type": "TextSprite",
+					"text": "36",
+					"name": "",
+					"font": "50px Arial",
+					"alignment": "center",
+					"color": "#fff",
+					"visible": true,
+					"layer": 1,
+					"maxWidth": 0,
+					"shadowColor": "#000",
+					"shadowBlur": 0,
+					"shadowOffset": {
+						"x": 0,
+						"y": 0
+					},
+					"lineSpacing": 1,
+					"maxLines": 0,
+					"firstLine": 0,
+					"outlineColor": "#000",
+					"outlineWidth": 2,
+					"boundsScale": {
+						"x": 1,
+						"y": 1
+					},
+					"sortPoint": {
+						"x": 0,
+						"y": 0
+					},
+					"fixedSize": false,
+					"drawModifiers": [],
+					"properties": {}
+				}
+			],
+			"spriteOffsets": [
+				{
+					"x": 2,
+					"y": 2,
+					"angle": 0
+				},
+				{
+					"x": 0,
+					"y": 20,
+					"angle": 0
+				}
+			],
+			"flowChart": null,
+			"grid": null,
+			"alignment": {
+				"x": "center",
+				"y": "center"
+			},
+			"name": "SYMB_STOP6_clone_2",
+			"isTemplate": false,
+			"path": "",
+			"addToScene": true,
+			"properties": {
+				"instanceOf": "SYMB_STOP1"
+			},
+			"functions": {
+				"onMouseDown": "function (data)\n{\n\tvar level = wade.retrieveLocalObject(\"Level\");\r\n\tif (level >= 36){\r\n\twade.clearScene();\r\n\twade.loadScene(\"scene36.wsc\")\r\n\t}\n}",
+				"onAddToScene": "function (data)\n{\n\tvar level = wade.retrieveLocalObject(\"Level\");\r\n\tif (level < 36){\r\n\tvar bObj = wade.getObjectByName(\"Lock\").clone(\r\n\tthis.getPosition().x, this.getPosition().y)\r\n\twade.addSceneObject(bObj)\r\n\t}\r\n\tthis.lStart = true\n}",
+				"onMouseIn": "function (data)\n{\n\tvar level = wade.retrieveLocalObject(\"Level\");\n\tif(level >= 36)\n\t{\n\twade.app.onMoonPlace()\n\tthis.getSprite().setSize(150,150)\n\t}\n}",
+				"onMouseOut": "function (data)\n{\n\tthis.getSprite().setSize(120,120)\n}"
+			}
+		},
+		{
+			"type": "SceneObject",
+			"position": {
+				"x": 234.3946548358982,
+				"y": 148.0920506087908
+			},
+			"rotation": 0,
+			"behaviors": [],
+			"sprites": [
+				{
+					"type": "Sprite",
+					"animations": {},
+					"currentAnimation": "default",
+					"sortPoint": {
+						"x": 0,
+						"y": 0
+					},
+					"layer": 1,
+					"autoResize": false,
+					"visible": true,
+					"image": "Moon1.png",
+					"imageArea": {
+						"minX": 0,
+						"minY": 0,
+						"maxX": 1,
+						"maxY": 1
+					},
+					"alwaysDraw": false,
+					"name": "",
+					"drawModifiers": [],
+					"pixelShader": "vec4 col = texture2D(uDiffuseSampler, uvAlphaTime.xy);\ncol.xyz *= tintColor;\ncol.w *= uvAlphaTime.z;\ngl_FragColor = col;",
+					"pixelShaderUniforms": {
+						"tintColor": "vec3"
+					},
+					"pixelPerfectMouseEvents": 0,
+					"properties": {
+						"tintColor": [
+							0.2,
+							0.2,
+							0.2
+						]
+					},
+					"size": {
+						"x": 120,
+						"y": 120
+					}
+				},
+				{
+					"type": "TextSprite",
+					"text": "37",
+					"name": "",
+					"font": "50px Arial",
+					"alignment": "center",
+					"color": "#fff",
+					"visible": true,
+					"layer": 1,
+					"maxWidth": 0,
+					"shadowColor": "#000",
+					"shadowBlur": 0,
+					"shadowOffset": {
+						"x": 0,
+						"y": 0
+					},
+					"lineSpacing": 1,
+					"maxLines": 0,
+					"firstLine": 0,
+					"outlineColor": "#000",
+					"outlineWidth": 2,
+					"boundsScale": {
+						"x": 1,
+						"y": 1
+					},
+					"sortPoint": {
+						"x": 0,
+						"y": 0
+					},
+					"fixedSize": false,
+					"drawModifiers": [],
+					"properties": {}
+				}
+			],
+			"spriteOffsets": [
+				{
+					"x": 2,
+					"y": 2,
+					"angle": 0
+				},
+				{
+					"x": 0,
+					"y": 20,
+					"angle": 0
+				}
+			],
+			"flowChart": null,
+			"grid": null,
+			"alignment": {
+				"x": "center",
+				"y": "center"
+			},
+			"name": "SYMB_STOP7_clone_2",
+			"isTemplate": false,
+			"path": "",
+			"addToScene": true,
+			"properties": {
+				"instanceOf": "SYMB_STOP"
+			},
+			"functions": {
+				"onMouseDown": "function (data)\n{\n\t\n}",
+				"onAddToScene": "function (data)\n{\n\tvar level = wade.retrieveLocalObject(\"Level\");\r\n\tif (level < 37){\r\n\tvar bObj = wade.getObjectByName(\"Lock\").clone(\r\n\tthis.getPosition().x, this.getPosition().y)\r\n\twade.addSceneObject(bObj)\r\n\t}\r\n\tthis.lStart = true\n}",
+				"onClick": "function (data)\n{\n\tvar level = wade.retrieveLocalObject(\"Level\");\r\n\tif (level >= 37 && this.lStart){\r\n\tthis.lStart = false\r\n\twade.clearScene();\r\n\twade.loadScene(\"scene37.wsc\")\r\n\t}\n}",
+				"onMouseIn": "function (data)\n{\n\tvar level = wade.retrieveLocalObject(\"Level\");\n\tif(level >= 37)\n\t{\n\twade.app.onMoonPlace()\n\tthis.getSprite().setSize(150,150)\n\t}\n}",
+				"onMouseOut": "function (data)\n{\n\tthis.getSprite().setSize(120,120)\n}"
+			}
+		},
+		{
+			"type": "SceneObject",
+			"position": {
+				"x": 384.39465483589856,
+				"y": 148.0920506087908
+			},
+			"rotation": 0,
+			"behaviors": [],
+			"sprites": [
+				{
+					"type": "Sprite",
+					"animations": {},
+					"currentAnimation": "default",
+					"sortPoint": {
+						"x": 0,
+						"y": 0
+					},
+					"layer": 1,
+					"autoResize": false,
+					"visible": true,
+					"image": "Moon1.png",
+					"imageArea": {
+						"minX": 0,
+						"minY": 0,
+						"maxX": 1,
+						"maxY": 1
+					},
+					"alwaysDraw": false,
+					"name": "",
+					"drawModifiers": [],
+					"pixelShader": "vec4 col = texture2D(uDiffuseSampler, uvAlphaTime.xy);\ncol.xyz *= tintColor;\ncol.w *= uvAlphaTime.z;\ngl_FragColor = col;",
+					"pixelShaderUniforms": {
+						"tintColor": "vec3"
+					},
+					"pixelPerfectMouseEvents": 0,
+					"properties": {
+						"tintColor": [
+							0.2,
+							0.2,
+							0.2
+						]
+					},
+					"size": {
+						"x": 120,
+						"y": 120
+					}
+				},
+				{
+					"type": "TextSprite",
+					"text": "38",
+					"name": "",
+					"font": "50px Arial",
+					"alignment": "center",
+					"color": "#fff",
+					"visible": true,
+					"layer": 1,
+					"maxWidth": 0,
+					"shadowColor": "#000",
+					"shadowBlur": 0,
+					"shadowOffset": {
+						"x": 0,
+						"y": 0
+					},
+					"lineSpacing": 1,
+					"maxLines": 0,
+					"firstLine": 0,
+					"outlineColor": "#000",
+					"outlineWidth": 2,
+					"boundsScale": {
+						"x": 1,
+						"y": 1
+					},
+					"sortPoint": {
+						"x": 0,
+						"y": 0
+					},
+					"fixedSize": false,
+					"drawModifiers": [],
+					"properties": {}
+				}
+			],
+			"spriteOffsets": [
+				{
+					"x": 2,
+					"y": 2,
+					"angle": 0
+				},
+				{
+					"x": 0,
+					"y": 20,
+					"angle": 0
+				}
+			],
+			"flowChart": null,
+			"grid": null,
+			"alignment": {
+				"x": "center",
+				"y": "center"
+			},
+			"name": "SYMB_STOP8_clone_2",
+			"isTemplate": false,
+			"path": "",
+			"addToScene": true,
+			"properties": {
+				"instanceOf": "SYMB_STOP"
+			},
+			"functions": {
+				"onMouseDown": "function (data)\n{\n\t\n}",
+				"onAddToScene": "function (data)\n{\n\tvar level = wade.retrieveLocalObject(\"Level\");\r\n\tif (level < 38){\r\n\tvar bObj = wade.getObjectByName(\"Lock\").clone(\r\n\tthis.getPosition().x, this.getPosition().y)\r\n\twade.addSceneObject(bObj)\r\n\t}\r\n\tthis.lStart = true\n}",
+				"onClick": "function (data)\n{\n\tvar level = wade.retrieveLocalObject(\"Level\");\r\n\tif (level >= 38 && this.lStart){\r\n\tthis.lStart = false\r\n\twade.clearScene();\r\n\twade.loadScene(\"scene38.wsc\")\r\n\t}\n}",
+				"onMouseIn": "function (data)\n{\n\tvar level = wade.retrieveLocalObject(\"Level\");\n\tif(level >= 38)\n\t{\n\twade.app.onMoonPlace()\n\tthis.getSprite().setSize(150,150)\n\t}\n}",
+				"onMouseOut": "function (data)\n{\n\tthis.getSprite().setSize(120,120)\n}"
+			}
+		},
+		{
+			"type": "SceneObject",
+			"position": {
+				"x": 534.3946548358997,
+				"y": 148.0920506087908
+			},
+			"rotation": 0,
+			"behaviors": [],
+			"sprites": [
+				{
+					"type": "Sprite",
+					"animations": {},
+					"currentAnimation": "default",
+					"sortPoint": {
+						"x": 0,
+						"y": 0
+					},
+					"layer": 1,
+					"autoResize": false,
+					"visible": true,
+					"image": "Moon1.png",
+					"imageArea": {
+						"minX": 0,
+						"minY": 0,
+						"maxX": 1,
+						"maxY": 1
+					},
+					"alwaysDraw": false,
+					"name": "",
+					"drawModifiers": [],
+					"pixelShader": "vec4 col = texture2D(uDiffuseSampler, uvAlphaTime.xy);\ncol.xyz *= tintColor;\ncol.w *= uvAlphaTime.z;\ngl_FragColor = col;",
+					"pixelShaderUniforms": {
+						"tintColor": "vec3"
+					},
+					"pixelPerfectMouseEvents": 0,
+					"properties": {
+						"tintColor": [
+							0.2,
+							0.2,
+							0.2
+						]
+					},
+					"size": {
+						"x": 120,
+						"y": 120
+					}
+				},
+				{
+					"type": "TextSprite",
+					"text": "39",
+					"name": "",
+					"font": "50px Arial",
+					"alignment": "center",
+					"color": "#fff",
+					"visible": true,
+					"layer": 1,
+					"maxWidth": 0,
+					"shadowColor": "#000",
+					"shadowBlur": 0,
+					"shadowOffset": {
+						"x": 0,
+						"y": 0
+					},
+					"lineSpacing": 1,
+					"maxLines": 0,
+					"firstLine": 0,
+					"outlineColor": "#000",
+					"outlineWidth": 2,
+					"boundsScale": {
+						"x": 1,
+						"y": 1
+					},
+					"sortPoint": {
+						"x": 0,
+						"y": 0
+					},
+					"fixedSize": false,
+					"drawModifiers": [],
+					"properties": {}
+				}
+			],
+			"spriteOffsets": [
+				{
+					"x": 2,
+					"y": 2,
+					"angle": 0
+				},
+				{
+					"x": 0,
+					"y": 20,
+					"angle": 0
+				}
+			],
+			"flowChart": null,
+			"grid": null,
+			"alignment": {
+				"x": "center",
+				"y": "center"
+			},
+			"name": "SYMB_STOP9_clone_2",
+			"isTemplate": false,
+			"path": "",
+			"addToScene": true,
+			"properties": {
+				"instanceOf": "SYMB_STOP"
+			},
+			"functions": {
+				"onMouseDown": "function (data)\n{\n\t\n}",
+				"onAddToScene": "function (data)\n{\n\tvar level = wade.retrieveLocalObject(\"Level\");\r\n\tif (level < 39){\r\n\tvar bObj = wade.getObjectByName(\"Lock\").clone(\r\n\tthis.getPosition().x, this.getPosition().y)\r\n\twade.addSceneObject(bObj)\r\n\t}\r\n\tthis.lStart = true\n}",
+				"onClick": "function (data)\n{\n\tvar level = wade.retrieveLocalObject(\"Level\");\r\n\tif (level >= 39 && this.lStart){\r\n\tthis.lStart = false\r\n\twade.clearScene();\r\n\twade.loadScene(\"scene39.wsc\")\r\n\t}\n}",
+				"onMouseIn": "function (data)\n{\n\tvar level = wade.retrieveLocalObject(\"Level\");\n\tif(level >= 39)\n\t{\n\twade.app.onMoonPlace()\n\tthis.getSprite().setSize(150,150)\n\t}\n}",
+				"onMouseOut": "function (data)\n{\n\tthis.getSprite().setSize(120,120)\n}"
+			}
+		},
+		{
+			"type": "SceneObject",
+			"position": {
+				"x": 684.3946548358997,
+				"y": 148.0920506087908
+			},
+			"rotation": 0,
+			"behaviors": [],
+			"sprites": [
+				{
+					"type": "Sprite",
+					"animations": {},
+					"currentAnimation": "default",
+					"sortPoint": {
+						"x": 0,
+						"y": 0
+					},
+					"layer": 1,
+					"autoResize": false,
+					"visible": true,
+					"image": "Moon1.png",
+					"imageArea": {
+						"minX": 0,
+						"minY": 0,
+						"maxX": 1,
+						"maxY": 1
+					},
+					"alwaysDraw": false,
+					"name": "",
+					"drawModifiers": [],
+					"pixelShader": "vec4 col = texture2D(uDiffuseSampler, uvAlphaTime.xy);\ncol.xyz *= tintColor;\ncol.w *= uvAlphaTime.z;\ngl_FragColor = col;",
+					"pixelShaderUniforms": {
+						"tintColor": "vec3"
+					},
+					"pixelPerfectMouseEvents": 0,
+					"properties": {
+						"tintColor": [
+							0.2,
+							0.2,
+							0.2
+						]
+					},
+					"size": {
+						"x": 120,
+						"y": 120
+					}
+				},
+				{
+					"type": "TextSprite",
+					"text": "40",
+					"name": "",
+					"font": "50px Arial",
+					"alignment": "center",
+					"color": "#fff",
+					"visible": true,
+					"layer": 1,
+					"maxWidth": 0,
+					"shadowColor": "#000",
+					"shadowBlur": 0,
+					"shadowOffset": {
+						"x": 0,
+						"y": 0
+					},
+					"lineSpacing": 1,
+					"maxLines": 0,
+					"firstLine": 0,
+					"outlineColor": "#000",
+					"outlineWidth": 2,
+					"boundsScale": {
+						"x": 1,
+						"y": 1
+					},
+					"sortPoint": {
+						"x": 0,
+						"y": 0
+					},
+					"fixedSize": false,
+					"drawModifiers": [],
+					"properties": {}
+				}
+			],
+			"spriteOffsets": [
+				{
+					"x": 2,
+					"y": 2,
+					"angle": 0
+				},
+				{
+					"x": 0,
+					"y": 20,
+					"angle": 0
+				}
+			],
+			"flowChart": null,
+			"grid": null,
+			"alignment": {
+				"x": "center",
+				"y": "center"
+			},
+			"name": "SYMB_STOP10_clone_2",
+			"isTemplate": false,
+			"path": "",
+			"addToScene": true,
+			"properties": {
+				"instanceOf": "SYMB_STOP"
+			},
+			"functions": {
+				"onAddToScene": "function (data)\n{\n\tvar level = wade.retrieveLocalObject(\"Level\");\r\n\tif (level < 40){\r\n\tvar bObj = wade.getObjectByName(\"Lock\").clone(\r\n\tthis.getPosition().x, this.getPosition().y)\r\n\twade.addSceneObject(bObj)\r\n\t}\r\n\tthis.lStart = true\n}",
+				"onMouseDown": "function (data)\n{\n\t\n}",
+				"onClick": "function (data)\n{\n\tvar level = wade.retrieveLocalObject(\"Level\");\r\n\tif (level >= 40 && this.lStart){\r\n\twade.clearScene();\r\n\twade.loadScene(\"scene40.wsc\")\r\n\t}\n}",
+				"onMouseIn": "function (data)\n{\n\tvar level = wade.retrieveLocalObject(\"Level\");\n\tif(level >= 40)\n\t{\n\twade.app.onMoonPlace()\n\tthis.getSprite().setSize(150,150)\n\t}\n}",
+				"onMouseOut": "function (data)\n{\n\tthis.getSprite().setSize(120,120)\n}"
+			}
+		},
+		{
+			"type": "SceneObject",
+			"position": {
+				"x": 0,
+				"y": -200
+			},
+			"rotation": 0,
+			"behaviors": [],
+			"sprites": [
+				{
+					"type": "Sprite",
+					"animations": {},
+					"currentAnimation": "default",
+					"sortPoint": {
+						"x": 0,
+						"y": 0
+					},
+					"layer": 6,
+					"autoResize": false,
+					"visible": true,
+					"image": "StarsBackground.png",
+					"imageArea": {
+						"minX": 0,
+						"minY": 0,
+						"maxX": 1,
+						"maxY": 1
+					},
+					"alwaysDraw": false,
+					"name": "",
+					"drawModifiers": [
+						{
+							"type": "alpha",
+							"alpha": 1
+						}
+					],
+					"pixelShader": "",
+					"pixelShaderUniforms": null,
+					"pixelPerfectMouseEvents": 0,
+					"properties": {},
+					"size": {
+						"x": 2000,
+						"y": 1484
+					}
+				}
+			],
+			"spriteOffsets": [
+				{
+					"x": 0,
+					"y": 0,
+					"angle": 0
+				}
+			],
+			"flowChart": null,
+			"grid": null,
+			"alignment": {
+				"x": "center",
+				"y": "center"
+			},
+			"name": "BackgroudStars",
+			"isTemplate": false,
+			"path": "",
+			"addToScene": {
+				"autoListen": true,
+				"params": null
+			},
+			"properties": {}
+		},
+		{
+			"type": "SceneObject",
+			"position": {
+				"x": -630,
+				"y": -800
+			},
+			"rotation": 0,
+			"behaviors": [],
+			"sprites": [
+				{
+					"type": "Sprite",
+					"animations": {},
+					"currentAnimation": "default",
+					"sortPoint": {
+						"x": 0,
+						"y": 0
+					},
+					"layer": 1,
+					"autoResize": false,
+					"visible": false,
+					"image": "uiPack2.png",
+					"imageArea": {
+						"minX": 0.8004926108374384,
+						"minY": 0.28407350689127103,
+						"maxX": 0.8374384236453202,
+						"maxY": 0.3330781010719755
+					},
+					"alwaysDraw": false,
+					"name": "",
+					"drawModifiers": [],
+					"pixelShader": "",
+					"pixelShaderUniforms": null,
+					"pixelPerfectMouseEvents": 0,
+					"properties": {},
+					"size": {
+						"x": 77,
+						"y": 77
+					}
+				},
+				{
+					"type": "Sprite",
+					"animations": {},
+					"currentAnimation": "default",
+					"sortPoint": {
+						"x": 0,
+						"y": 0
+					},
+					"layer": 1,
+					"autoResize": false,
+					"visible": true,
+					"image": "uiPack2.png",
+					"imageArea": {
+						"minX": 0.7261083743842365,
+						"minY": 0.04900459418070444,
+						"maxX": 0.7699507389162562,
+						"maxY": 0.11408882082695254
+					},
+					"alwaysDraw": false,
+					"name": "",
+					"drawModifiers": [],
+					"pixelShader": "",
+					"pixelShaderUniforms": null,
+					"pixelPerfectMouseEvents": 0,
+					"properties": {},
+					"size": {
+						"x": 77,
+						"y": 77
+					}
+				},
+				{
+					"type": "TextSprite",
+					"text": "SFX",
+					"name": "",
+					"font": "40px Arial",
+					"alignment": "center",
+					"color": "#fff",
+					"visible": true,
+					"layer": 1,
+					"maxWidth": 0,
+					"shadowColor": "#fff",
+					"shadowBlur": 0,
+					"shadowOffset": {
+						"x": 0,
+						"y": 0
+					},
+					"lineSpacing": 1,
+					"maxLines": 0,
+					"firstLine": 0,
+					"outlineColor": "#ffffff",
+					"outlineWidth": 4,
+					"boundsScale": {
+						"x": 1,
+						"y": 1
+					},
+					"sortPoint": {
+						"x": 0,
+						"y": 0
+					},
+					"fixedSize": false,
+					"drawModifiers": [],
+					"properties": {}
+				}
+			],
+			"spriteOffsets": [
+				{
+					"x": 0,
+					"y": 0,
+					"angle": 0
+				},
+				{
+					"x": 0,
+					"y": 0,
+					"angle": 0
+				},
+				{
+					"x": -4,
+					"y": 65,
+					"angle": 0
+				}
+			],
+			"flowChart": null,
+			"grid": null,
+			"alignment": {
+				"x": "center",
+				"y": "center"
+			},
+			"name": "SYMB_VOLUME_clone0",
+			"isTemplate": false,
+			"path": "",
+			"addToScene": true,
+			"properties": {
+				"instanceOf": "SYMB_VOLUME"
+			},
+			"functions": {
+				"onClick": "function (data)\n{\n\t\n}",
+				"onMouseDown": "function (data)\n{\n\tif (this.getSprite(0).isVisible())\n\t{\n\tthis.getSprite(0).setVisible(false)\n\tthis.getSprite(1).setVisible(true)\n\twade.storeLocalObject(\"SFXmuted\",false)\n\t}\n\telse\n\t{\n\tthis.getSprite(0).setVisible(true)\n\tthis.getSprite(1).setVisible(false)\n\twade.storeLocalObject(\"SFXmuted\",true)\n\t}\n}",
+				"onAddToScene": "function (data)\n{\n\tif (!wade.retrieveLocalObject(\"SFXmuted\"))\n\t{\n\tthis.getSprite(0).setVisible(false)\n\tthis.getSprite(1).setVisible(true)\n\t}\n\telse\n\t{\n\tthis.getSprite(0).setVisible(true)\n\tthis.getSprite(1).setVisible(false)\n\t}\n}",
+				"onUpdate": "function (data)\n{\n\tif (this.getSprite(0).isVisible())\n\twade.app.muted = true\n\telse\n\twade.app.muted = false\n}"
+			}
+		},
+		{
+			"type": "SceneObject",
+			"position": {
+				"x": 630,
+				"y": -800
+			},
+			"rotation": 0,
+			"behaviors": [],
+			"sprites": [
+				{
+					"type": "TextSprite",
+					"text": "How to play",
+					"name": "",
+					"font": "60px Arial",
+					"alignment": "center",
+					"color": "#fff",
+					"visible": true,
+					"layer": 1,
+					"maxWidth": 0,
+					"shadowColor": "#fff",
+					"shadowBlur": 0,
+					"shadowOffset": {
+						"x": 0,
+						"y": 0
+					},
+					"lineSpacing": 1,
+					"maxLines": 0,
+					"firstLine": 0,
+					"outlineColor": "#ffffff",
+					"outlineWidth": 4,
+					"boundsScale": {
+						"x": 1,
+						"y": 1
+					},
+					"sortPoint": {
+						"x": 0,
+						"y": 0
+					},
+					"fixedSize": false,
+					"drawModifiers": [],
+					"properties": {}
+				}
+			],
+			"spriteOffsets": [
+				{
+					"x": -50,
+					"y": 0,
+					"angle": 0
+				}
+			],
+			"flowChart": null,
+			"grid": null,
+			"alignment": {
+				"x": "center",
+				"y": "center"
+			},
+			"name": "HowToPlay",
+			"isTemplate": false,
+			"path": "",
+			"addToScene": true,
+			"properties": {
+				"instanceOf": "SYMB_VOLUME"
+			},
+			"functions": {
+				"onClick": "function (data)\n{\n\twade.clearScene();\r\n\twade.loadScene(\"sceneTUT.wsc\",false,function(){}\r\n\t,true)\n}",
+				"onMouseDown": "function (data)\n{\n\t\n}",
+				"onAddToScene": "function (data)\n{\n\t\n}",
+				"onUpdate": "function (data)\n{\n\t\n}"
+			}
+		}
+	],
+	"paths": [],
+	"sceneObjectGroups": [
+		{
+			"type": "SceneObjectGroup",
+			"name": "Group_0",
+			"sceneObjectNames": [
+				"SYMB_STOP1_clone_0",
+				"SYMB_STOP2_clone_0",
+				"SYMB_STOP3_clone_0",
+				"SYMB_STOP4_clone_0",
+				"SYMB_STOP5_clone_0",
+				"SYMB_STOP6_clone_0",
+				"SYMB_STOP7_clone_0",
+				"SYMB_STOP8_clone_0",
+				"SYMB_STOP9_clone_0",
+				"SYMB_STOP10_clone_0"
+			]
+		},
+		{
+			"type": "SceneObjectGroup",
+			"name": "Group_1",
+			"sceneObjectNames": []
+		},
+		{
+			"type": "SceneObjectGroup",
+			"name": "Group_2",
+			"sceneObjectNames": [
+				"SYMB_STOP1_clone_2",
+				"SYMB_STOP2_clone_2",
+				"SYMB_STOP3_clone_2",
+				"SYMB_STOP4_clone_2",
+				"SYMB_STOP5_clone_2",
+				"SYMB_STOP6_clone_2",
+				"SYMB_STOP7_clone_2",
+				"SYMB_STOP8_clone_2",
+				"SYMB_STOP9_clone_2",
+				"SYMB_STOP10_clone_2"
+			]
+		}
+	],
+	"layers": [
+		null,
+		{
+			"scaleFactor": 1,
+			"translateFactor": 1,
+			"renderMode": "webgl",
+			"useQuadtree": true,
+			"resolutionFactor": 1,
+			"blur": 0,
+			"postProcessShader": "",
+			"postProcessShaderUniforms": null,
+			"properties": {}
+		},
+		{
+			"scaleFactor": 1,
+			"translateFactor": 1,
+			"renderMode": "webgl",
+			"useQuadtree": true,
+			"resolutionFactor": 1,
+			"blur": 0,
+			"postProcessShader": "",
+			"postProcessShaderUniforms": null,
+			"properties": {}
+		},
+		null,
+		null,
+		null,
+		{
+			"scaleFactor": 1,
+			"translateFactor": 1,
+			"renderMode": "webgl",
+			"useQuadtree": true,
+			"resolutionFactor": 1,
+			"blur": 0,
+			"postProcessShader": "",
+			"postProcessShaderUniforms": null,
+			"properties": {}
+		}
+	],
+	"minScreenSize": {
+		"x": 2000,
+		"y": 1100
+	},
+	"maxScreenSize": {
+		"x": 2000,
+		"y": 1100
+	},
+	"orientation": "none",
+	"windowMode": "full",
+	"defaultLayer": 1,
+	"timeline": {
+		"events": []
+	},
+	"scripts": [
+		"wade.physics.js"
+	],
+	"images": [],
+	"loadGlTextures": false
+}

@@ -1,0 +1,3409 @@
+{
+	"sceneObjects": [
+		{
+			"type": "SceneObject",
+			"position": {
+				"x": 0,
+				"y": -458
+			},
+			"rotation": 3.15,
+			"behaviors": [
+				{
+					"name": "PhysicsObject",
+					"properties": {
+						"customEditor": {
+							"title": "Edit Physics Shapes",
+							"module": "physicsShapeEditor"
+						},
+						"bodyType": "dynamic",
+						"bodyType_options": [
+							"static",
+							"dynamic",
+							"kinematic"
+						],
+						"bullet": false,
+						"gravityScale": 0,
+						"linearDamping": 0,
+						"angularDamping": 0,
+						"fixedRotation": false,
+						"allowSleeping": true,
+						"active": true,
+						"fixtures": {
+							"0": {
+								"density": 1,
+								"friction": 0,
+								"restitution": 0.4,
+								"shapeType": "polygon",
+								"shapeType_options": [
+									"box",
+									"circle",
+									"polygon",
+									"edge",
+									"chain",
+									"loopChain"
+								],
+								"spriteIndex": 0,
+								"isSensor": false,
+								"autoCalculateShape": false,
+								"filter": {
+									"groupIndex": 0,
+									"categoryBits": 1,
+									"maskBits": 65535
+								},
+								"offset": {
+									"x": 0,
+									"y": 0,
+									"ang": 0
+								},
+								"vertices": [
+									{
+										"x": 13.162500000000001,
+										"y": 0.6062500000000028
+									},
+									{
+										"x": 22.475000000000005,
+										"y": 34.487500000000004
+									},
+									{
+										"x": 10.962500000000002,
+										"y": 37.181250000000006
+									}
+								]
+							},
+							"1": {
+								"density": 1,
+								"friction": 0.5,
+								"restitution": 1,
+								"shapeType": "polygon",
+								"shapeType_options": [
+									"box",
+									"circle",
+									"polygon",
+									"edge",
+									"chain",
+									"loopChain"
+								],
+								"spriteIndex": 0,
+								"isSensor": false,
+								"autoCalculateShape": false,
+								"filter": {
+									"groupIndex": 0,
+									"categoryBits": 1,
+									"maskBits": 65535
+								},
+								"offset": {
+									"x": 0,
+									"y": 0,
+									"ang": 0
+								},
+								"vertices": [
+									{
+										"x": 13.162500000000001,
+										"y": 0.6062500000000028
+									},
+									{
+										"x": 22.475000000000005,
+										"y": 34.487500000000004
+									},
+									{
+										"x": 10.962500000000002,
+										"y": 37.181250000000006
+									}
+								]
+							},
+							"2": {
+								"density": 1,
+								"friction": 0.5,
+								"restitution": 1,
+								"shapeType": "polygon",
+								"shapeType_options": [
+									"box",
+									"circle",
+									"polygon",
+									"edge",
+									"chain",
+									"loopChain"
+								],
+								"spriteIndex": 0,
+								"isSensor": false,
+								"autoCalculateShape": false,
+								"filter": {
+									"groupIndex": 0,
+									"categoryBits": 1,
+									"maskBits": 65535
+								},
+								"offset": {
+									"x": 0,
+									"y": 0,
+									"ang": 0
+								},
+								"vertices": [
+									{
+										"x": 10.962500000000002,
+										"y": 37.181250000000006
+									},
+									{
+										"x": -0.5499999999999999,
+										"y": 39.875
+									},
+									{
+										"x": -0.5499999999999999,
+										"y": 39.875
+									},
+									{
+										"x": -22.05,
+										"y": 33.6875
+									},
+									{
+										"x": -3.3,
+										"y": -32.724999999999994
+									},
+									{
+										"x": -3.3,
+										"y": -32.724999999999994
+									},
+									{
+										"x": 3.8499999999999996,
+										"y": -33.275
+									},
+									{
+										"x": 13.162500000000001,
+										"y": 0.6062500000000028
+									}
+								]
+							},
+							"3": {
+								"density": 1,
+								"friction": 0.5,
+								"restitution": 1,
+								"shapeType": "polygon",
+								"shapeType_options": [
+									"box",
+									"circle",
+									"polygon",
+									"edge",
+									"chain",
+									"loopChain"
+								],
+								"spriteIndex": 0,
+								"isSensor": false,
+								"autoCalculateShape": false,
+								"filter": {
+									"groupIndex": 0,
+									"categoryBits": 1,
+									"maskBits": 65535
+								},
+								"offset": {
+									"x": 0,
+									"y": 0,
+									"ang": 0
+								},
+								"vertices": [
+									{
+										"x": 10.962500000000002,
+										"y": 37.181250000000006
+									},
+									{
+										"x": -0.5499999999999999,
+										"y": 39.875
+									},
+									{
+										"x": -0.5499999999999999,
+										"y": 39.875
+									},
+									{
+										"x": -22.05,
+										"y": 33.6875
+									},
+									{
+										"x": -3.3,
+										"y": -32.724999999999994
+									},
+									{
+										"x": -3.3,
+										"y": -32.724999999999994
+									},
+									{
+										"x": 3.8499999999999996,
+										"y": -33.275
+									},
+									{
+										"x": 13.162500000000001,
+										"y": 0.6062500000000028
+									}
+								]
+							},
+							"isPseudoArray": true,
+							"length": 4,
+							"elementTemplate": {
+								"density": 1,
+								"friction": 0.5,
+								"restitution": 1,
+								"shapeType": "box",
+								"shapeType_options": [
+									"box",
+									"circle",
+									"polygon",
+									"edge",
+									"chain",
+									"loopChain"
+								],
+								"spriteIndex": 0,
+								"isSensor": false,
+								"autoCalculateShape": true,
+								"filter": {
+									"groupIndex": 0,
+									"categoryBits": 1,
+									"maskBits": 65535
+								},
+								"offset": {
+									"x": 0,
+									"y": 0,
+									"ang": 0
+								},
+								"vertices": [
+									{
+										"x": 0,
+										"y": 0
+									}
+								]
+							}
+						}
+					},
+					"functions": {
+						"onAddToScene": {
+							"name": "onAddToScene",
+							"args": [
+								"a"
+							]
+						},
+						"onRemoveFromScene": {
+							"name": "onRemoveFromScene",
+							"args": []
+						},
+						"isAwake": {
+							"name": "isAwake",
+							"args": []
+						},
+						"setAwake": {
+							"name": "setAwake",
+							"args": [
+								"b"
+							]
+						},
+						"addFixture": {
+							"name": "addFixture",
+							"args": [
+								"b"
+							]
+						},
+						"removeFixture": {
+							"name": "removeFixture",
+							"args": [
+								"b"
+							]
+						},
+						"getFixtureList": {
+							"name": "getFixtureList",
+							"args": []
+						},
+						"getJointList": {
+							"name": "getJointList",
+							"args": []
+						},
+						"getDefinition": {
+							"name": "getDefinition",
+							"args": []
+						},
+						"applyForce": {
+							"name": "applyForce",
+							"args": [
+								"b",
+								"c",
+								"d"
+							]
+						},
+						"applyImpulse": {
+							"name": "applyImpulse",
+							"args": [
+								"b",
+								"c",
+								"d"
+							]
+						},
+						"applyTorque": {
+							"name": "applyTorque",
+							"args": [
+								"b"
+							]
+						},
+						"addMouseJoint": {
+							"name": "addMouseJoint",
+							"args": [
+								"b"
+							]
+						},
+						"updateMouseJoint": {
+							"name": "updateMouseJoint",
+							"args": [
+								"a",
+								"b"
+							]
+						},
+						"removeMouseJoint": {
+							"name": "removeMouseJoint",
+							"args": [
+								"a"
+							]
+						},
+						"onUpdate": {
+							"name": "onUpdate",
+							"args": []
+						},
+						"draw_": {
+							"name": "draw_",
+							"args": [
+								"b",
+								"c"
+							]
+						},
+						"clone": {
+							"name": "clone",
+							"args": [
+								"b"
+							]
+						},
+						"addJoint": {
+							"name": "addJoint",
+							"args": [
+								"a"
+							]
+						},
+						"removeJoint": {
+							"name": "removeJoint",
+							"args": [
+								"a"
+							]
+						},
+						"getB2dBody": {
+							"name": "getB2dBody",
+							"args": []
+						}
+					},
+					"tips": {}
+				}
+			],
+			"sprites": [
+				{
+					"type": "Sprite",
+					"animations": {},
+					"currentAnimation": "default",
+					"sortPoint": {
+						"x": 0,
+						"y": 0
+					},
+					"layer": 1,
+					"autoResize": false,
+					"visible": true,
+					"image": "SpaceShip.png",
+					"imageArea": {
+						"minX": 0,
+						"minY": 0,
+						"maxX": 1,
+						"maxY": 1
+					},
+					"alwaysDraw": false,
+					"name": "",
+					"drawModifiers": [],
+					"pixelShader": "",
+					"pixelShaderUniforms": null,
+					"pixelPerfectMouseEvents": 0,
+					"properties": {},
+					"size": {
+						"x": 100,
+						"y": 100
+					}
+				}
+			],
+			"spriteOffsets": [
+				{
+					"x": 0,
+					"y": 0,
+					"angle": 0
+				}
+			],
+			"flowChart": null,
+			"grid": null,
+			"alignment": {
+				"x": "center",
+				"y": "center"
+			},
+			"name": "Ship1",
+			"isTemplate": true,
+			"path": "",
+			"addToScene": {
+				"autoListen": true,
+				"params": null
+			},
+			"properties": {},
+			"functions": {
+				"onAddToScene": "function (data)\n{\n\tthis.move = false\n\tthis.moonNum = 0\n}",
+				"onUpdate": "function (data)\n{\n\tif (!this.move)\n\t{\n\tthis.setRotation(3.15)\n\tthis.rotateTo(3.15)\n\tthis.setPosition(0,-458)\n\t}\n}",
+				"onKeyDown": "function (data)\n{\n\tif (this.move === false && data.keyName == \"space\") {\n\tthis.move = true;\n\tconsole.log(this.move)\n\twade.getObjectByName(\"Ship\").getBehavior()\n\t.applyImpulse({x:0, y:1},5,{x:0, y:1})\n\t}\n}"
+			}
+		},
+		{
+			"type": "SceneObject",
+			"position": {
+				"x": 0,
+				"y": -650
+			},
+			"rotation": 0,
+			"behaviors": [],
+			"sprites": [
+				{
+					"type": "TextSprite",
+					"text": "0.00",
+					"name": "",
+					"font": "80px Arial",
+					"alignment": "center",
+					"color": "#ffffff",
+					"visible": true,
+					"layer": 1,
+					"maxWidth": 0,
+					"shadowColor": "#000",
+					"shadowBlur": 0,
+					"shadowOffset": {
+						"x": 0,
+						"y": 0
+					},
+					"lineSpacing": 1,
+					"maxLines": 0,
+					"firstLine": 0,
+					"outlineColor": "#ffffff",
+					"outlineWidth": 2,
+					"boundsScale": {
+						"x": 1,
+						"y": 1
+					},
+					"sortPoint": {
+						"x": 0,
+						"y": 0
+					},
+					"fixedSize": false,
+					"drawModifiers": [],
+					"properties": {}
+				}
+			],
+			"spriteOffsets": [
+				{
+					"x": 0,
+					"y": 0,
+					"angle": 0
+				}
+			],
+			"flowChart": null,
+			"grid": null,
+			"alignment": {
+				"x": "center",
+				"y": "center"
+			},
+			"name": "SceneObject_0",
+			"isTemplate": false,
+			"path": "",
+			"addToScene": {
+				"autoListen": true,
+				"params": null
+			},
+			"properties": {},
+			"functions": {
+				"onAddToScene": "function (data)\n{\n\t\n}",
+				"onUpdate": "function (data)\n{\n\tvar Ship = wade.getObjectByName(\"Ship\");\r\n\tvar text =  Math.abs(Ship.getVelocity().x) + \r\n\tMath.abs(Ship.getVelocity().y)\r\n\ttext = Math.round(text\r\n\t* 100) / 100\r\n\tthis.getSprite().setText(text)\n}"
+			}
+		},
+		{
+			"type": "SceneObject",
+			"position": {
+				"x": 852.1280503065948,
+				"y": -111.26446591218519
+			},
+			"rotation": 0,
+			"behaviors": [
+				{
+					"name": "PhysicsObject",
+					"properties": {
+						"customEditor": {
+							"title": "Edit Physics Shapes",
+							"module": "physicsShapeEditor"
+						},
+						"bodyType": "static",
+						"bodyType_options": [
+							"static",
+							"dynamic",
+							"kinematic"
+						],
+						"bullet": false,
+						"gravityScale": 1,
+						"linearDamping": 0,
+						"angularDamping": 0,
+						"fixedRotation": false,
+						"allowSleeping": true,
+						"active": true,
+						"fixtures": {
+							"0": {
+								"density": 1,
+								"friction": 0.5,
+								"restitution": 1,
+								"shapeType": "polygon",
+								"shapeType_options": [
+									"box",
+									"circle",
+									"polygon",
+									"edge",
+									"chain",
+									"loopChain"
+								],
+								"spriteIndex": 0,
+								"isSensor": false,
+								"autoCalculateShape": false,
+								"filter": {
+									"groupIndex": 0,
+									"categoryBits": 1,
+									"maskBits": 65535
+								},
+								"offset": {
+									"x": 0,
+									"y": 0,
+									"ang": 0
+								},
+								"vertices": [
+									{
+										"x": -53,
+										"y": 79.5
+									},
+									{
+										"x": -52.5,
+										"y": 10.5
+									},
+									{
+										"x": -52,
+										"y": -58.5
+									},
+									{
+										"x": 42,
+										"y": -59.5
+									},
+									{
+										"x": 45,
+										"y": 78.5
+									}
+								]
+							},
+							"isPseudoArray": true,
+							"length": 1,
+							"elementTemplate": {
+								"density": 1,
+								"friction": 0.5,
+								"restitution": 1,
+								"shapeType": "box",
+								"shapeType_options": [
+									"box",
+									"circle",
+									"polygon",
+									"edge",
+									"chain",
+									"loopChain"
+								],
+								"spriteIndex": 0,
+								"isSensor": false,
+								"autoCalculateShape": true,
+								"filter": {
+									"groupIndex": 0,
+									"categoryBits": 1,
+									"maskBits": 65535
+								},
+								"offset": {
+									"x": 0,
+									"y": 0,
+									"ang": 0
+								},
+								"vertices": [
+									{
+										"x": 0,
+										"y": 0
+									}
+								]
+							}
+						}
+					},
+					"functions": {
+						"onAddToScene": {
+							"name": "onAddToScene",
+							"args": [
+								"a"
+							]
+						},
+						"onRemoveFromScene": {
+							"name": "onRemoveFromScene",
+							"args": []
+						},
+						"isAwake": {
+							"name": "isAwake",
+							"args": []
+						},
+						"setAwake": {
+							"name": "setAwake",
+							"args": [
+								"b"
+							]
+						},
+						"addFixture": {
+							"name": "addFixture",
+							"args": [
+								"b"
+							]
+						},
+						"removeFixture": {
+							"name": "removeFixture",
+							"args": [
+								"b"
+							]
+						},
+						"getFixtureList": {
+							"name": "getFixtureList",
+							"args": []
+						},
+						"getJointList": {
+							"name": "getJointList",
+							"args": []
+						},
+						"getDefinition": {
+							"name": "getDefinition",
+							"args": []
+						},
+						"applyForce": {
+							"name": "applyForce",
+							"args": [
+								"b",
+								"c",
+								"d"
+							]
+						},
+						"applyImpulse": {
+							"name": "applyImpulse",
+							"args": [
+								"b",
+								"c",
+								"d"
+							]
+						},
+						"applyTorque": {
+							"name": "applyTorque",
+							"args": [
+								"b"
+							]
+						},
+						"addMouseJoint": {
+							"name": "addMouseJoint",
+							"args": [
+								"b"
+							]
+						},
+						"updateMouseJoint": {
+							"name": "updateMouseJoint",
+							"args": [
+								"a",
+								"b"
+							]
+						},
+						"removeMouseJoint": {
+							"name": "removeMouseJoint",
+							"args": [
+								"a"
+							]
+						},
+						"onUpdate": {
+							"name": "onUpdate",
+							"args": []
+						},
+						"draw_": {
+							"name": "draw_",
+							"args": [
+								"b",
+								"c"
+							]
+						},
+						"clone": {
+							"name": "clone",
+							"args": [
+								"b"
+							]
+						},
+						"addJoint": {
+							"name": "addJoint",
+							"args": [
+								"a"
+							]
+						},
+						"removeJoint": {
+							"name": "removeJoint",
+							"args": [
+								"a"
+							]
+						},
+						"getB2dBody": {
+							"name": "getB2dBody",
+							"args": []
+						}
+					},
+					"tips": {}
+				}
+			],
+			"sprites": [
+				{
+					"type": "Sprite",
+					"animations": {},
+					"currentAnimation": "default",
+					"sortPoint": {
+						"x": 0,
+						"y": 0
+					},
+					"layer": 1,
+					"autoResize": false,
+					"visible": true,
+					"image": "FinishFlag.png",
+					"imageArea": {
+						"minX": 0,
+						"minY": 0,
+						"maxX": 1,
+						"maxY": 1
+					},
+					"alwaysDraw": false,
+					"name": "",
+					"drawModifiers": [],
+					"pixelShader": "",
+					"pixelShaderUniforms": null,
+					"pixelPerfectMouseEvents": 0,
+					"properties": {},
+					"size": {
+						"x": 160,
+						"y": 160
+					}
+				},
+				{
+					"type": "Sprite",
+					"animations": {},
+					"currentAnimation": "default",
+					"sortPoint": {
+						"x": 0,
+						"y": 0
+					},
+					"layer": 3,
+					"autoResize": false,
+					"visible": true,
+					"image": "MoonBackground.png",
+					"imageArea": {
+						"minX": 0,
+						"minY": 0,
+						"maxX": 1,
+						"maxY": 1
+					},
+					"alwaysDraw": false,
+					"name": "",
+					"drawModifiers": [
+						{
+							"type": "alpha",
+							"alpha": 0.4
+						}
+					],
+					"pixelShader": "",
+					"pixelShaderUniforms": null,
+					"pixelPerfectMouseEvents": 0,
+					"properties": {},
+					"size": {
+						"x": 525,
+						"y": 525
+					}
+				}
+			],
+			"spriteOffsets": [
+				{
+					"x": 0,
+					"y": 0,
+					"angle": 0
+				},
+				{
+					"x": 0,
+					"y": 0,
+					"angle": 0
+				}
+			],
+			"flowChart": null,
+			"grid": null,
+			"alignment": {
+				"x": "center",
+				"y": "center"
+			},
+			"name": "Objective",
+			"isTemplate": false,
+			"path": "",
+			"addToScene": {
+				"autoListen": true,
+				"params": null
+			},
+			"properties": {},
+			"functions": {
+				"onCollision": "function (data)\n{\n\t// if (!wade.getObjectByName(\"MiddleObjective\").\r\n\t// isVisible()){\r\n\tvar level = wade.retrieveLocalObject(\"Level\");\r\n\tif (level < 29){\r\n\tlevel = 29;\r\n\twade.storeLocalObject(\"Level\", level)\r\n\t}\r\n\twade.app.onWin()\r\n\twade.clearScene()\r\n\twade.loadScene('scene0.wsc',false,function(){}\r\n\t,true)\r\n\t// }\n}",
+				"onUpdate": "function (data)\n{\n\tvar Ship = wade.getObjectByName(\"Ship\");\r\n\tif (Ship.move === true && wade.vec2.equal(this.getPosition(),\r\n\tShip.getPosition(), 300))\r\n\t{\r\n\tShip.getBehavior().applyForce(\r\n\t{x:(Ship.getPosition().x) - this.getPosition().x\r\n\t, y:(Ship.getPosition().y) - this.getPosition().y},\r\n\t2,\r\n\t{x:(Ship.getPosition().x) - this.getPosition().x\r\n\t, y:(Ship.getPosition().y) - this.getPosition().y}\r\n\t);\r\n\t}\n}"
+			}
+		},
+		{
+			"type": "SceneObject",
+			"position": {
+				"x": 800,
+				"y": -650
+			},
+			"rotation": 0,
+			"behaviors": [],
+			"sprites": [
+				{
+					"type": "TextSprite",
+					"text": "0.00",
+					"name": "",
+					"font": "80px Arial",
+					"alignment": "center",
+					"color": "#ffffff",
+					"visible": true,
+					"layer": 1,
+					"maxWidth": 0,
+					"shadowColor": "#000",
+					"shadowBlur": 0,
+					"shadowOffset": {
+						"x": 0,
+						"y": 0
+					},
+					"lineSpacing": 1,
+					"maxLines": 0,
+					"firstLine": 0,
+					"outlineColor": "#ffffff",
+					"outlineWidth": 2,
+					"boundsScale": {
+						"x": 1,
+						"y": 1
+					},
+					"sortPoint": {
+						"x": 0,
+						"y": 0
+					},
+					"fixedSize": false,
+					"drawModifiers": [],
+					"properties": {}
+				}
+			],
+			"spriteOffsets": [
+				{
+					"x": 0,
+					"y": 0,
+					"angle": 0
+				}
+			],
+			"flowChart": null,
+			"grid": null,
+			"alignment": {
+				"x": "center",
+				"y": "center"
+			},
+			"name": "SceneObject_1",
+			"isTemplate": false,
+			"path": "",
+			"addToScene": {
+				"autoListen": true,
+				"params": null
+			},
+			"properties": {
+				"instanceOf": "SceneObject_0"
+			},
+			"functions": {
+				"onAddToScene": "function (data)\n{\n\t\n}",
+				"onUpdate": "function (data)\n{\n\tvar Ship = wade.getObjectByName(\"Ship\");\r\n\tthis.getSprite().setText(4 - Ship.moonNum)\n}"
+			}
+		},
+		{
+			"type": "SceneObject",
+			"position": {
+				"x": -335.9104941950844,
+				"y": 120.1658420499968
+			},
+			"rotation": 0,
+			"behaviors": [],
+			"sprites": [
+				{
+					"type": "Sprite",
+					"animations": {},
+					"currentAnimation": "default",
+					"sortPoint": {
+						"x": 0,
+						"y": 0
+					},
+					"layer": 2,
+					"autoResize": false,
+					"visible": true,
+					"image": "PurplePortal.png",
+					"imageArea": {
+						"minX": 0,
+						"minY": 0,
+						"maxX": 1,
+						"maxY": 1
+					},
+					"alwaysDraw": false,
+					"name": "",
+					"drawModifiers": [],
+					"pixelShader": "",
+					"pixelShaderUniforms": null,
+					"pixelPerfectMouseEvents": 0,
+					"properties": {},
+					"size": {
+						"x": 232.45617658543907,
+						"y": 232.45617658543907
+					}
+				}
+			],
+			"spriteOffsets": [
+				{
+					"x": 0,
+					"y": 0,
+					"angle": 0
+				}
+			],
+			"flowChart": null,
+			"grid": null,
+			"alignment": {
+				"x": "center",
+				"y": "center"
+			},
+			"name": "Portal1",
+			"isTemplate": false,
+			"path": "",
+			"addToScene": {
+				"autoListen": true,
+				"params": null
+			},
+			"properties": {},
+			"functions": {
+				"onUpdate": "function (data)\n{\n\tvar Ship = wade.getObjectByName(\"Ship\");\n\tvar OtherPortal = wade.getObjectByName(\"Portal2\");\n\tif (wade.vec2.equal(this.getPosition(),\n\tShip.getPosition(), 80)){\n\twade.app.onTeleport()\n\tShip.setPosition(OtherPortal.getPosition(),\n\tOtherPortal.getPosition().y);\n\tthis.portalMoving = true;\n\t}\n}",
+				"onAddToScene": "function (data)\n{\n\tthis.portalMoving = false;\n}"
+			}
+		},
+		{
+			"type": "SceneObject",
+			"position": {
+				"x": 467.53241354331374,
+				"y": -681.4358387175108
+			},
+			"rotation": 0,
+			"behaviors": [],
+			"sprites": [
+				{
+					"type": "Sprite",
+					"animations": {},
+					"currentAnimation": "default",
+					"sortPoint": {
+						"x": 0,
+						"y": 0
+					},
+					"layer": 2,
+					"autoResize": false,
+					"visible": true,
+					"image": "PurplePortal.png",
+					"imageArea": {
+						"minX": 0,
+						"minY": 0,
+						"maxX": 1,
+						"maxY": 1
+					},
+					"alwaysDraw": false,
+					"name": "",
+					"drawModifiers": [],
+					"pixelShader": "vec4 col = texture2D(uDiffuseSampler, uvAlphaTime.xy);\ncol.xyz *= tintColor;\ncol.w *= uvAlphaTime.z;\ngl_FragColor = col;",
+					"pixelShaderUniforms": {
+						"tintColor": "vec3"
+					},
+					"pixelPerfectMouseEvents": 0,
+					"properties": {
+						"tintColor": [
+							0,
+							0,
+							0.8
+						]
+					},
+					"size": {
+						"x": 232.45617658543907,
+						"y": 232.45617658543907
+					}
+				}
+			],
+			"spriteOffsets": [
+				{
+					"x": 0,
+					"y": 0,
+					"angle": 0
+				}
+			],
+			"flowChart": null,
+			"grid": null,
+			"alignment": {
+				"x": "center",
+				"y": "center"
+			},
+			"name": "Portal2",
+			"isTemplate": false,
+			"path": "",
+			"addToScene": {
+				"autoListen": true,
+				"params": null
+			},
+			"properties": {
+				"instanceOf": "Portal1"
+			},
+			"functions": {
+				"onUpdate": "function (data)\n{\n\t// var Ship = wade.getObjectByName(\"Ship\");\r\n\t// var OtherPortal  = wade.getObjectByName(\"Portal1\");\r\n\t// if (Ship.move === true && wade.vec2.equal\r\n\t// (this.getPosition(),Ship.getPosition(), 80)\r\n\t// && OtherPortal.PortalMoving)\r\n\t// {\r\n\t// Ship.setPosition(OtherPortal);\r\n\t// }\n}"
+			}
+		},
+		{
+			"type": "SceneObject",
+			"position": {
+				"x": -478.4449128814055,
+				"y": -361.1028657106757
+			},
+			"rotation": 0,
+			"behaviors": [
+				{
+					"name": "PhysicsObject",
+					"properties": {
+						"customEditor": {
+							"title": "Edit Physics Shapes",
+							"module": "physicsShapeEditor"
+						},
+						"bodyType": "static",
+						"bodyType_options": [
+							"static",
+							"dynamic",
+							"kinematic"
+						],
+						"bullet": false,
+						"gravityScale": 0,
+						"linearDamping": 0,
+						"angularDamping": 0,
+						"fixedRotation": false,
+						"allowSleeping": true,
+						"active": true,
+						"fixtures": {
+							"0": {
+								"density": 0,
+								"friction": 0.5,
+								"restitution": 0,
+								"shapeType": "circle",
+								"shapeType_options": [
+									"box",
+									"circle",
+									"polygon",
+									"edge",
+									"chain",
+									"loopChain"
+								],
+								"spriteIndex": 0,
+								"isSensor": false,
+								"autoCalculateShape": true,
+								"filter": {
+									"groupIndex": 0,
+									"categoryBits": 1,
+									"maskBits": 65535
+								},
+								"offset": {
+									"x": 0,
+									"y": 0,
+									"ang": 0
+								},
+								"vertices": [
+									{
+										"x": 0,
+										"y": 0
+									},
+									{
+										"x": 110,
+										"y": 0
+									}
+								]
+							},
+							"isPseudoArray": true,
+							"length": 1,
+							"elementTemplate": {
+								"density": 1,
+								"friction": 0.5,
+								"restitution": 1,
+								"shapeType": "box",
+								"shapeType_options": [
+									"box",
+									"circle",
+									"polygon",
+									"edge",
+									"chain",
+									"loopChain"
+								],
+								"spriteIndex": 0,
+								"isSensor": false,
+								"autoCalculateShape": true,
+								"filter": {
+									"groupIndex": 0,
+									"categoryBits": 1,
+									"maskBits": 65535
+								},
+								"offset": {
+									"x": 0,
+									"y": 0,
+									"ang": 0
+								},
+								"vertices": [
+									{
+										"x": 0,
+										"y": 0
+									}
+								]
+							}
+						}
+					},
+					"functions": {
+						"onAddToScene": {
+							"name": "onAddToScene",
+							"args": [
+								"a"
+							]
+						},
+						"onRemoveFromScene": {
+							"name": "onRemoveFromScene",
+							"args": []
+						},
+						"isAwake": {
+							"name": "isAwake",
+							"args": []
+						},
+						"setAwake": {
+							"name": "setAwake",
+							"args": [
+								"b"
+							]
+						},
+						"addFixture": {
+							"name": "addFixture",
+							"args": [
+								"b"
+							]
+						},
+						"removeFixture": {
+							"name": "removeFixture",
+							"args": [
+								"b"
+							]
+						},
+						"getFixtureList": {
+							"name": "getFixtureList",
+							"args": []
+						},
+						"getJointList": {
+							"name": "getJointList",
+							"args": []
+						},
+						"getDefinition": {
+							"name": "getDefinition",
+							"args": []
+						},
+						"applyForce": {
+							"name": "applyForce",
+							"args": [
+								"b",
+								"c",
+								"d"
+							]
+						},
+						"applyImpulse": {
+							"name": "applyImpulse",
+							"args": [
+								"b",
+								"c",
+								"d"
+							]
+						},
+						"applyTorque": {
+							"name": "applyTorque",
+							"args": [
+								"b"
+							]
+						},
+						"addMouseJoint": {
+							"name": "addMouseJoint",
+							"args": [
+								"b"
+							]
+						},
+						"updateMouseJoint": {
+							"name": "updateMouseJoint",
+							"args": [
+								"a",
+								"b"
+							]
+						},
+						"removeMouseJoint": {
+							"name": "removeMouseJoint",
+							"args": [
+								"a"
+							]
+						},
+						"onUpdate": {
+							"name": "onUpdate",
+							"args": []
+						},
+						"draw_": {
+							"name": "draw_",
+							"args": [
+								"b",
+								"c"
+							]
+						},
+						"clone": {
+							"name": "clone",
+							"args": [
+								"b"
+							]
+						},
+						"addJoint": {
+							"name": "addJoint",
+							"args": [
+								"a"
+							]
+						},
+						"removeJoint": {
+							"name": "removeJoint",
+							"args": [
+								"a"
+							]
+						},
+						"getB2dBody": {
+							"name": "getB2dBody",
+							"args": []
+						}
+					},
+					"tips": {}
+				}
+			],
+			"sprites": [
+				{
+					"type": "Sprite",
+					"animations": {},
+					"currentAnimation": "default",
+					"sortPoint": {
+						"x": 0,
+						"y": 0
+					},
+					"layer": 1,
+					"autoResize": false,
+					"visible": true,
+					"image": "Moon1.png",
+					"imageArea": {
+						"minX": 0,
+						"minY": 0,
+						"maxX": 1,
+						"maxY": 1
+					},
+					"alwaysDraw": false,
+					"name": "",
+					"drawModifiers": [],
+					"pixelShader": "vec4 col = texture2D(uDiffuseSampler, uvAlphaTime.xy);\ncol.xyz *= tintColor;\ncol.w *= uvAlphaTime.z;\ngl_FragColor = col;",
+					"pixelShaderUniforms": {
+						"tintColor": "vec3"
+					},
+					"pixelPerfectMouseEvents": 0,
+					"properties": {
+						"tintColor": [
+							0.9,
+							0.3,
+							0.3
+						]
+					},
+					"size": {
+						"x": 113.27925279925384,
+						"y": 113.27925279925384
+					}
+				}
+			],
+			"spriteOffsets": [
+				{
+					"x": 0,
+					"y": 0,
+					"angle": 0
+				}
+			],
+			"flowChart": null,
+			"grid": null,
+			"alignment": {
+				"x": "center",
+				"y": "center"
+			},
+			"name": "Asteroid ",
+			"isTemplate": true,
+			"path": "",
+			"addToScene": {
+				"autoListen": true,
+				"params": null
+			},
+			"properties": {
+				"instanceOf": "SceneObject_0"
+			},
+			"functions": {
+				"onAddToScene": "function (data)\n{\n\tthis.died = false\n}",
+				"onUpdate": "function (data)\n{\n\t// var Ship = wade.getObjectByName(\"Ship\");\r\n\t// if (Ship.move === true && wade.vec2.equal(this.getPosition(),\r\n\t// Ship.getPosition(), 300))\r\n\t// Ship.getBehavior().applyForce(\r\n\t// {x:-(Ship.getPosition().x) + this.getPosition().x,\r\n\t// y:-(Ship.getPosition().y) + this.getPosition().y},\r\n\t// 4,\r\n\t// {x:-(Ship.getPosition().x) + this.getPosition().x\r\n\t// , y:-(Ship.getPosition().y) + this.getPosition().y}\r\n\t// );\n}",
+				"onMouseDown": "function (data)\n{\n\t\n}",
+				"onMouseMove": "function (data)\n{\n\t\n}",
+				"onCollision": "function (data)\n{\n\tvar Ship = wade.getObjectByName(\"Ship\")\n\tShip.setPosition(0,-458)\n\tShip.setVelocity(0,0)\n\tShip.setRotation(3.15)\n\tShip.rotateTo(3.15)\n\tShip.move = false\n}"
+			}
+		},
+		{
+			"type": "SceneObject",
+			"position": {
+				"x": -32.105189154816685,
+				"y": -117.93431221695715
+			},
+			"rotation": 0,
+			"behaviors": [],
+			"sprites": [
+				{
+					"type": "Sprite",
+					"animations": {},
+					"currentAnimation": "default",
+					"sortPoint": {
+						"x": 0,
+						"y": 0
+					},
+					"layer": 2,
+					"autoResize": false,
+					"visible": true,
+					"image": "PlacementArea.png",
+					"imageArea": {
+						"minX": 0,
+						"minY": 0,
+						"maxX": 1,
+						"maxY": 1
+					},
+					"alwaysDraw": false,
+					"name": "",
+					"drawModifiers": [],
+					"pixelShader": "// This shader exposes 3 parameters\n// hue: usually in the range -1 to 1\n// saturation: usually in the range 0 to 2\n// brightness: usually in the range -1 to 1\n\n// get original color from the texture\nvec4 color = texture2D(uDiffuseSampler, uvAlphaTime.xy);\n\n// convert to hsv\nvec3 c = color.xyz;\nvec4 K = vec4(0.0, -1.0 / 3.0, 2.0 / 3.0, -1.0);\nvec4 p = mix(vec4(c.bg, K.wz), vec4(c.gb, K.xy), step(c.b, c.g));\nvec4 q = mix(vec4(p.xyw, c.r), vec4(c.r, p.yzx), step(p.x, c.r));\nfloat d = q.x - min(q.w, q.y);\nfloat e = 1.0e-10;\nc = vec3(abs(q.z + (q.w - q.y) / (6.0 * d + e)), d / (q.x + e), q.x);\n\n// apply color correction\nc.x += hue;\nc.y *= saturation;\nc.z -= brightness;\n\n// convert back to rgb\nK = vec4(1.0, 2.0 / 3.0, 1.0 / 3.0, 3.0);\nvec3 r = abs(fract(c.xxx + K.xyz) * 6.0 - K.www);\ncolor.xyz = c.z * mix(K.xxx, clamp(r - K.xxx, 0.0, 1.0), c.y);\ncolor.w *= uvAlphaTime.z;\n\ngl_FragColor = color;\n\n// Thanks to lolengine.net for the rgb<->hsb conversion code",
+					"pixelShaderUniforms": {
+						"hue": "float",
+						"saturation": "float",
+						"brightness": "float"
+					},
+					"pixelPerfectMouseEvents": 0,
+					"properties": {
+						"hue": 0,
+						"saturation": 1,
+						"brightness": 0
+					},
+					"size": {
+						"x": 341.1906250872137,
+						"y": 339.3858767016165
+					}
+				}
+			],
+			"spriteOffsets": [
+				{
+					"x": 0,
+					"y": 0,
+					"angle": 0
+				}
+			],
+			"flowChart": null,
+			"grid": null,
+			"alignment": {
+				"x": "center",
+				"y": "center"
+			},
+			"name": "GameMan_clone0",
+			"isTemplate": false,
+			"path": "",
+			"addToScene": {
+				"autoListen": true,
+				"params": null
+			},
+			"properties": {
+				"instanceOf": "GameMan"
+			},
+			"functions": {
+				"onAddToScene": "function (data)\n{\n\t\n}",
+				"onMouseDown": "function (data)\n{\n\tif (wade.getObjectByName(\"Ship\").moonNum < 4\r\n\t&& !wade.getObjectByName(\"Ship\").move \r\n\t&& wade.isMouseDown(0))\r\n\t{\r\n\twade.getObjectByName(\"Ship\").moonNum += 1;\r\n\tthis.movespot = data.screenPosition;\r\n\tvar moon = wade.getSceneObject(\"Moon\").clone();\r\n\tmoon.setPosition(this.movespot.x, this.movespot.y);\r\n\twade.addSceneObject(moon, true);\r\n\tconsole.log(this.movespot)\r\n\t}\n}",
+				"onUpdate": "function (data)\n{\n\t// if (wade.isMouseDown()){\n\t// var data = wade.getMousePosition\n\t// this.moonNum += 1;\n\t// this.movespot = data.screenPosition;\n\t// var moon = wade.getSceneObject(\"Moon\").clone();\n\t// moon.setPosition(this.movespot.x, this.movespot.y);\n\t// wade.addSceneObject(moon, true);\n\t// console.log(this.movespot)\n\t// }\n}",
+				"onKeyDown": "function (data)\n{\n\tif (data.keyName == 'r'){\n\tvar Ship = wade.getObjectByName(\"Ship\")\n\tShip.setPosition(0,-458)\n\tShip.setVelocity(0,0)\n\tShip.setRotation(3.15)\n\tShip.rotateTo(3.15)\n\tShip.move = false\n\t}\n\twade.app.onWin2()\n}",
+				"onMouseIn": "function (data)\n{\n\twade.getObjectByName(\"Ship\").mousein = true\n}",
+				"onMouseOut": "function (data)\n{\n\twade.getObjectByName(\"Ship\").mousein = false\n}"
+			}
+		},
+		{
+			"type": "SceneObject",
+			"position": {
+				"x": -571.01248052354,
+				"y": -46.47962323050484
+			},
+			"rotation": 0,
+			"behaviors": [],
+			"sprites": [
+				{
+					"type": "Sprite",
+					"animations": {},
+					"currentAnimation": "default",
+					"sortPoint": {
+						"x": 0,
+						"y": 0
+					},
+					"layer": 1,
+					"autoResize": false,
+					"visible": true,
+					"image": "MiddleFlag.png",
+					"imageArea": {
+						"minX": 0,
+						"minY": 0,
+						"maxX": 1,
+						"maxY": 1
+					},
+					"alwaysDraw": false,
+					"name": "",
+					"drawModifiers": [],
+					"pixelShader": "",
+					"pixelShaderUniforms": null,
+					"pixelPerfectMouseEvents": 0,
+					"properties": {},
+					"size": {
+						"x": 160,
+						"y": 160
+					}
+				}
+			],
+			"spriteOffsets": [
+				{
+					"x": 0,
+					"y": 0,
+					"angle": 0
+				}
+			],
+			"flowChart": null,
+			"grid": null,
+			"alignment": {
+				"x": "center",
+				"y": "center"
+			},
+			"name": "MiddleObjective",
+			"isTemplate": false,
+			"path": "",
+			"addToScene": {
+				"autoListen": true,
+				"params": null
+			},
+			"properties": {
+				"instanceOf": "Objective"
+			},
+			"functions": {
+				"onCollision": "function (data)\n{\n\t\n}",
+				"onUpdate": "function (data)\n{\n\tvar Ship = wade.getObjectByName(\"Ship\");\r\n\tif (Ship.move === true && wade.vec2.equal(this.getPosition(),\r\n\tShip.getPosition(), 110) && this.isVisible()){\r\n\tthis.getSprite().setVisible(false);\r\n\twade.app.onObj()\r\n\t}\r\n\tif (!Ship.move)\r\n\tthis.getSprite().setVisible(true);\n}"
+			}
+		},
+		{
+			"type": "SceneObject",
+			"position": {
+				"x": 841.002070942841,
+				"y": -637.4024319990784
+			},
+			"rotation": 0,
+			"behaviors": [
+				{
+					"name": "PhysicsObject",
+					"properties": {
+						"customEditor": {
+							"title": "Edit Physics Shapes",
+							"module": "physicsShapeEditor"
+						},
+						"bodyType": "static",
+						"bodyType_options": [
+							"static",
+							"dynamic",
+							"kinematic"
+						],
+						"bullet": false,
+						"gravityScale": 0,
+						"linearDamping": 0,
+						"angularDamping": 0,
+						"fixedRotation": false,
+						"allowSleeping": true,
+						"active": false,
+						"fixtures": {
+							"0": {
+								"density": 1,
+								"friction": 0.5,
+								"restitution": 1,
+								"shapeType": "circle",
+								"shapeType_options": [
+									"box",
+									"circle",
+									"polygon",
+									"edge",
+									"chain",
+									"loopChain"
+								],
+								"spriteIndex": 0,
+								"isSensor": true,
+								"autoCalculateShape": false,
+								"filter": {
+									"groupIndex": 0,
+									"categoryBits": 1,
+									"maskBits": 65535
+								},
+								"offset": {
+									"x": 0,
+									"y": 0,
+									"ang": 0
+								},
+								"vertices": [
+									{
+										"x": 0,
+										"y": 0
+									},
+									{
+										"x": 107.9325,
+										"y": 0
+									}
+								]
+							},
+							"isPseudoArray": true,
+							"length": 1,
+							"elementTemplate": {
+								"density": 1,
+								"friction": 0.5,
+								"restitution": 1,
+								"shapeType": "box",
+								"shapeType_options": [
+									"box",
+									"circle",
+									"polygon",
+									"edge",
+									"chain",
+									"loopChain"
+								],
+								"spriteIndex": 0,
+								"isSensor": false,
+								"autoCalculateShape": true,
+								"filter": {
+									"groupIndex": 0,
+									"categoryBits": 1,
+									"maskBits": 65535
+								},
+								"offset": {
+									"x": 0,
+									"y": 0,
+									"ang": 0
+								},
+								"vertices": [
+									{
+										"x": 0,
+										"y": 0
+									}
+								]
+							}
+						}
+					},
+					"functions": {
+						"onAddToScene": {
+							"name": "onAddToScene",
+							"args": [
+								"a"
+							]
+						},
+						"onRemoveFromScene": {
+							"name": "onRemoveFromScene",
+							"args": []
+						},
+						"isAwake": {
+							"name": "isAwake",
+							"args": []
+						},
+						"setAwake": {
+							"name": "setAwake",
+							"args": [
+								"b"
+							]
+						},
+						"addFixture": {
+							"name": "addFixture",
+							"args": [
+								"b"
+							]
+						},
+						"removeFixture": {
+							"name": "removeFixture",
+							"args": [
+								"b"
+							]
+						},
+						"getFixtureList": {
+							"name": "getFixtureList",
+							"args": []
+						},
+						"getJointList": {
+							"name": "getJointList",
+							"args": []
+						},
+						"getDefinition": {
+							"name": "getDefinition",
+							"args": []
+						},
+						"applyForce": {
+							"name": "applyForce",
+							"args": [
+								"b",
+								"c",
+								"d"
+							]
+						},
+						"applyImpulse": {
+							"name": "applyImpulse",
+							"args": [
+								"b",
+								"c",
+								"d"
+							]
+						},
+						"applyTorque": {
+							"name": "applyTorque",
+							"args": [
+								"b"
+							]
+						},
+						"addMouseJoint": {
+							"name": "addMouseJoint",
+							"args": [
+								"b"
+							]
+						},
+						"updateMouseJoint": {
+							"name": "updateMouseJoint",
+							"args": [
+								"a",
+								"b"
+							]
+						},
+						"removeMouseJoint": {
+							"name": "removeMouseJoint",
+							"args": [
+								"a"
+							]
+						},
+						"onUpdate": {
+							"name": "onUpdate",
+							"args": []
+						},
+						"draw_": {
+							"name": "draw_",
+							"args": [
+								"b",
+								"c"
+							]
+						},
+						"clone": {
+							"name": "clone",
+							"args": [
+								"b"
+							]
+						},
+						"addJoint": {
+							"name": "addJoint",
+							"args": [
+								"a"
+							]
+						},
+						"removeJoint": {
+							"name": "removeJoint",
+							"args": [
+								"a"
+							]
+						},
+						"getB2dBody": {
+							"name": "getB2dBody",
+							"args": []
+						}
+					},
+					"tips": {}
+				}
+			],
+			"sprites": [
+				{
+					"type": "Sprite",
+					"animations": {},
+					"currentAnimation": "default",
+					"sortPoint": {
+						"x": 0,
+						"y": 0
+					},
+					"layer": 2,
+					"autoResize": false,
+					"visible": true,
+					"image": "PurplePortal.png",
+					"imageArea": {
+						"minX": 0,
+						"minY": 0,
+						"maxX": 1,
+						"maxY": 1
+					},
+					"alwaysDraw": false,
+					"name": "",
+					"drawModifiers": [],
+					"pixelShader": "vec4 col = texture2D(uDiffuseSampler, uvAlphaTime.xy);\ncol.xyz *= tintColor;\ncol.w *= uvAlphaTime.z;\ngl_FragColor = col;",
+					"pixelShaderUniforms": {
+						"tintColor": "vec3"
+					},
+					"pixelPerfectMouseEvents": 0,
+					"properties": {
+						"tintColor": [
+							0.3,
+							0.3,
+							0
+						]
+					},
+					"size": {
+						"x": 180,
+						"y": 180
+					}
+				},
+				{
+					"type": "Sprite",
+					"animations": {},
+					"currentAnimation": "default",
+					"sortPoint": {
+						"x": 0,
+						"y": 0
+					},
+					"layer": 3,
+					"autoResize": false,
+					"visible": true,
+					"image": "MoonBackground.png",
+					"imageArea": {
+						"minX": 0,
+						"minY": 0,
+						"maxX": 1,
+						"maxY": 1
+					},
+					"alwaysDraw": false,
+					"name": "",
+					"drawModifiers": [
+						{
+							"type": "alpha",
+							"alpha": 0.4
+						}
+					],
+					"pixelShader": "",
+					"pixelShaderUniforms": null,
+					"pixelPerfectMouseEvents": 0,
+					"properties": {},
+					"size": {
+						"x": 525,
+						"y": 525
+					}
+				}
+			],
+			"spriteOffsets": [
+				{
+					"x": 0,
+					"y": 0,
+					"angle": 0
+				},
+				{
+					"x": 0,
+					"y": 0,
+					"angle": 0
+				}
+			],
+			"flowChart": null,
+			"grid": null,
+			"alignment": {
+				"x": "center",
+				"y": "center"
+			},
+			"name": "Moon",
+			"isTemplate": true,
+			"path": "",
+			"addToScene": {
+				"autoListen": true,
+				"params": null
+			},
+			"properties": {
+				"instanceOf": "SceneObject_0"
+			},
+			"functions": {
+				"onAddToScene": "function (data)\n{\n\twade.app.onMoonPlace()\n\tthis.canMove = false;\n\tthis.mousein = false;\n}",
+				"onUpdate": "function (data)\n{\n\tvar Ship = wade.getObjectByName(\"Ship\");\r\n\tvar GMan = wade.getObjectByName(\"GameMan\");\r\n\tvar GMan2 = wade.getObjectByName(\"GameMan_clone0\");\r\n\tif (Ship.move === true && wade.vec2.equal(this.getPosition(),\r\n\tShip.getPosition(), 300))\r\n\t{\r\n\tShip.getBehavior().applyForce(\r\n\t{x:-(Ship.getPosition().x) + this.getPosition().x\r\n\t, y:-(Ship.getPosition().y) + this.getPosition().y},\r\n\t7,\r\n\t{x:-(Ship.getPosition().x) + this.getPosition().x\r\n\t, y:-(Ship.getPosition().y) + this.getPosition().y}\r\n\t);\r\n\t}\r\n\tif(wade.vec2.equal(this.getPosition(),\r\n\tShip.getPosition(), 80))\r\n\t{\r\n\tShip.moveTo(this.getPosition().x,this.getPosition().y,\r\n\t200)\r\n\t}\r\n\tif(wade.vec2.equal(this.getPosition(),\r\n\tShip.getPosition()))\r\n\t{\r\n\tvar Ship = wade.getObjectByName(\"Ship\")\r\n\tShip.setPosition(0,-458)\r\n\tShip.setVelocity(0,0)\r\n\tShip.setRotation(3.15)\r\n\tShip.rotateTo(3.15)\r\n\tShip.move = false\r\n\t}\r\n\t// if (this.getMovementSpeed() !== 0)\r\n\t// this.getBehavior().getFixtureList().SetSensor(true);\r\n\t// else\r\n\t// this.getBehavior().getFixtureList().SetSensor(false);\r\n\tif (!Ship.move){\r\n\tthis.onMouseDown = function(){\r\n\tif(wade.vec2.equal(this.getPosition(),\r\n\twade.getMousePosition(), 100) && wade.isMouseDown(2))\r\n\tthis.mouseDown = true\r\n\tif (wade.isMouseDown(2) && wade.isKeyDown('d') && wade.vec2.\r\n\tequal(this.getPosition(), wade.getMousePosition(), 100)\r\n\t&& !Ship.move)\r\n\t{\r\n\tconsole.log(\"delete\")\r\n\tShip.moonNum -= 1;\r\n\twade.removeSceneObject(this)\r\n\tthis.getBehavior().getFixtureList().SetSensor(true);\r\n\t}\r\n\t}\r\n\tthis.onMouseUp = function(){\r\n\tthis.mouseDown = false\r\n\t}\r\n\tif (\r\n\tShip.mousein &&\r\n\tthis.mouseDown)\r\n\tthis.moveTo(wade.getMousePosition().x,\r\n\twade.getMousePosition().y, 500)\r\n\t}\n}",
+				"onMouseDown": "function (data)\n{\n\t\n}",
+				"onMouseMove": "function (data)\n{\n\t// if (this.canMove && \n\t// wade.getObjectByName(\"GameMan\").mousein &&\n\t// !wade.getObjectByName(\"Ship\").move && \n\t// wade.vec2.equal(this.getPosition(),\n\t// data.position, 250)){\n\t// this.moveTo(data.screenPosition)\n\t// }\n}",
+				"onMouseUp": "function (data)\n{\n\t\n}",
+				"onCollision": "function (data)\n{\n\t\n}"
+			}
+		},
+		{
+			"type": "SceneObject",
+			"position": {
+				"x": 333.6330501032813,
+				"y": 22.971473357266355
+			},
+			"rotation": 0,
+			"behaviors": [
+				{
+					"name": "PhysicsObject",
+					"properties": {
+						"customEditor": {
+							"title": "Edit Physics Shapes",
+							"module": "physicsShapeEditor"
+						},
+						"bodyType": "static",
+						"bodyType_options": [
+							"static",
+							"dynamic",
+							"kinematic"
+						],
+						"bullet": false,
+						"gravityScale": 0,
+						"linearDamping": 0,
+						"angularDamping": 0,
+						"fixedRotation": false,
+						"allowSleeping": true,
+						"active": true,
+						"fixtures": {
+							"0": {
+								"density": 0,
+								"friction": 0.5,
+								"restitution": 0,
+								"shapeType": "circle",
+								"shapeType_options": [
+									"box",
+									"circle",
+									"polygon",
+									"edge",
+									"chain",
+									"loopChain"
+								],
+								"spriteIndex": 0,
+								"isSensor": false,
+								"autoCalculateShape": true,
+								"filter": {
+									"groupIndex": 0,
+									"categoryBits": 1,
+									"maskBits": 65535
+								},
+								"offset": {
+									"x": 0,
+									"y": 0,
+									"ang": 0
+								},
+								"vertices": [
+									{
+										"x": 0,
+										"y": 0
+									},
+									{
+										"x": 110,
+										"y": 0
+									}
+								]
+							},
+							"isPseudoArray": true,
+							"length": 1,
+							"elementTemplate": {
+								"density": 1,
+								"friction": 0.5,
+								"restitution": 1,
+								"shapeType": "box",
+								"shapeType_options": [
+									"box",
+									"circle",
+									"polygon",
+									"edge",
+									"chain",
+									"loopChain"
+								],
+								"spriteIndex": 0,
+								"isSensor": false,
+								"autoCalculateShape": true,
+								"filter": {
+									"groupIndex": 0,
+									"categoryBits": 1,
+									"maskBits": 65535
+								},
+								"offset": {
+									"x": 0,
+									"y": 0,
+									"ang": 0
+								},
+								"vertices": [
+									{
+										"x": 0,
+										"y": 0
+									}
+								]
+							}
+						}
+					},
+					"functions": {
+						"onAddToScene": {
+							"name": "onAddToScene",
+							"args": [
+								"a"
+							]
+						},
+						"onRemoveFromScene": {
+							"name": "onRemoveFromScene",
+							"args": []
+						},
+						"isAwake": {
+							"name": "isAwake",
+							"args": []
+						},
+						"setAwake": {
+							"name": "setAwake",
+							"args": [
+								"b"
+							]
+						},
+						"addFixture": {
+							"name": "addFixture",
+							"args": [
+								"b"
+							]
+						},
+						"removeFixture": {
+							"name": "removeFixture",
+							"args": [
+								"b"
+							]
+						},
+						"getFixtureList": {
+							"name": "getFixtureList",
+							"args": []
+						},
+						"getJointList": {
+							"name": "getJointList",
+							"args": []
+						},
+						"getDefinition": {
+							"name": "getDefinition",
+							"args": []
+						},
+						"applyForce": {
+							"name": "applyForce",
+							"args": [
+								"b",
+								"c",
+								"d"
+							]
+						},
+						"applyImpulse": {
+							"name": "applyImpulse",
+							"args": [
+								"b",
+								"c",
+								"d"
+							]
+						},
+						"applyTorque": {
+							"name": "applyTorque",
+							"args": [
+								"b"
+							]
+						},
+						"addMouseJoint": {
+							"name": "addMouseJoint",
+							"args": [
+								"b"
+							]
+						},
+						"updateMouseJoint": {
+							"name": "updateMouseJoint",
+							"args": [
+								"a",
+								"b"
+							]
+						},
+						"removeMouseJoint": {
+							"name": "removeMouseJoint",
+							"args": [
+								"a"
+							]
+						},
+						"onUpdate": {
+							"name": "onUpdate",
+							"args": []
+						},
+						"draw_": {
+							"name": "draw_",
+							"args": [
+								"b",
+								"c"
+							]
+						},
+						"clone": {
+							"name": "clone",
+							"args": [
+								"b"
+							]
+						},
+						"addJoint": {
+							"name": "addJoint",
+							"args": [
+								"a"
+							]
+						},
+						"removeJoint": {
+							"name": "removeJoint",
+							"args": [
+								"a"
+							]
+						},
+						"getB2dBody": {
+							"name": "getB2dBody",
+							"args": []
+						}
+					},
+					"tips": {}
+				}
+			],
+			"sprites": [
+				{
+					"type": "Sprite",
+					"animations": {},
+					"currentAnimation": "default",
+					"sortPoint": {
+						"x": 0,
+						"y": 0
+					},
+					"layer": 1,
+					"autoResize": false,
+					"visible": true,
+					"image": "Moon1.png",
+					"imageArea": {
+						"minX": 0,
+						"minY": 0,
+						"maxX": 1,
+						"maxY": 1
+					},
+					"alwaysDraw": false,
+					"name": "",
+					"drawModifiers": [],
+					"pixelShader": "vec4 col = texture2D(uDiffuseSampler, uvAlphaTime.xy);\ncol.xyz *= tintColor;\ncol.w *= uvAlphaTime.z;\ngl_FragColor = col;",
+					"pixelShaderUniforms": {
+						"tintColor": "vec3"
+					},
+					"pixelPerfectMouseEvents": 0,
+					"properties": {
+						"tintColor": [
+							0.9,
+							0.3,
+							0.3
+						]
+					},
+					"size": {
+						"x": 113.8681619921225,
+						"y": 113.8681619921225
+					}
+				}
+			],
+			"spriteOffsets": [
+				{
+					"x": 0,
+					"y": 0,
+					"angle": 0
+				}
+			],
+			"flowChart": null,
+			"grid": null,
+			"alignment": {
+				"x": "center",
+				"y": "center"
+			},
+			"name": "Asteroid _clone0",
+			"isTemplate": true,
+			"path": "",
+			"addToScene": {
+				"autoListen": true,
+				"params": null
+			},
+			"properties": {
+				"instanceOf": "SceneObject_0"
+			},
+			"functions": {
+				"onAddToScene": "function (data)\n{\n\tthis.died = false\n}",
+				"onUpdate": "function (data)\n{\n\t// var Ship = wade.getObjectByName(\"Ship\");\r\n\t// if (Ship.move === true && wade.vec2.equal(this.getPosition(),\r\n\t// Ship.getPosition(), 300))\r\n\t// Ship.getBehavior().applyForce(\r\n\t// {x:-(Ship.getPosition().x) + this.getPosition().x,\r\n\t// y:-(Ship.getPosition().y) + this.getPosition().y},\r\n\t// 4,\r\n\t// {x:-(Ship.getPosition().x) + this.getPosition().x\r\n\t// , y:-(Ship.getPosition().y) + this.getPosition().y}\r\n\t// );\n}",
+				"onMouseDown": "function (data)\n{\n\t\n}",
+				"onMouseMove": "function (data)\n{\n\t\n}",
+				"onCollision": "function (data)\n{\n\tvar Ship = wade.getObjectByName(\"Ship\")\n\tShip.setPosition(0,-458)\n\tShip.setVelocity(0,0)\n\tShip.setRotation(3.15)\n\tShip.rotateTo(3.15)\n\tShip.move = false\n}"
+			}
+		},
+		{
+			"type": "SceneObject",
+			"position": {
+				"x": 141.65213195966717,
+				"y": -362.52316367608915
+			},
+			"rotation": 0,
+			"behaviors": [
+				{
+					"name": "PhysicsObject",
+					"properties": {
+						"customEditor": {
+							"title": "Edit Physics Shapes",
+							"module": "physicsShapeEditor"
+						},
+						"bodyType": "static",
+						"bodyType_options": [
+							"static",
+							"dynamic",
+							"kinematic"
+						],
+						"bullet": false,
+						"gravityScale": 0,
+						"linearDamping": 0,
+						"angularDamping": 0,
+						"fixedRotation": false,
+						"allowSleeping": true,
+						"active": true,
+						"fixtures": {
+							"0": {
+								"density": 0,
+								"friction": 0.5,
+								"restitution": 0,
+								"shapeType": "circle",
+								"shapeType_options": [
+									"box",
+									"circle",
+									"polygon",
+									"edge",
+									"chain",
+									"loopChain"
+								],
+								"spriteIndex": 0,
+								"isSensor": false,
+								"autoCalculateShape": true,
+								"filter": {
+									"groupIndex": 0,
+									"categoryBits": 1,
+									"maskBits": 65535
+								},
+								"offset": {
+									"x": 0,
+									"y": 0,
+									"ang": 0
+								},
+								"vertices": [
+									{
+										"x": 0,
+										"y": 0
+									},
+									{
+										"x": 110,
+										"y": 0
+									}
+								]
+							},
+							"isPseudoArray": true,
+							"length": 1,
+							"elementTemplate": {
+								"density": 1,
+								"friction": 0.5,
+								"restitution": 1,
+								"shapeType": "box",
+								"shapeType_options": [
+									"box",
+									"circle",
+									"polygon",
+									"edge",
+									"chain",
+									"loopChain"
+								],
+								"spriteIndex": 0,
+								"isSensor": false,
+								"autoCalculateShape": true,
+								"filter": {
+									"groupIndex": 0,
+									"categoryBits": 1,
+									"maskBits": 65535
+								},
+								"offset": {
+									"x": 0,
+									"y": 0,
+									"ang": 0
+								},
+								"vertices": [
+									{
+										"x": 0,
+										"y": 0
+									}
+								]
+							}
+						}
+					},
+					"functions": {
+						"onAddToScene": {
+							"name": "onAddToScene",
+							"args": [
+								"a"
+							]
+						},
+						"onRemoveFromScene": {
+							"name": "onRemoveFromScene",
+							"args": []
+						},
+						"isAwake": {
+							"name": "isAwake",
+							"args": []
+						},
+						"setAwake": {
+							"name": "setAwake",
+							"args": [
+								"b"
+							]
+						},
+						"addFixture": {
+							"name": "addFixture",
+							"args": [
+								"b"
+							]
+						},
+						"removeFixture": {
+							"name": "removeFixture",
+							"args": [
+								"b"
+							]
+						},
+						"getFixtureList": {
+							"name": "getFixtureList",
+							"args": []
+						},
+						"getJointList": {
+							"name": "getJointList",
+							"args": []
+						},
+						"getDefinition": {
+							"name": "getDefinition",
+							"args": []
+						},
+						"applyForce": {
+							"name": "applyForce",
+							"args": [
+								"b",
+								"c",
+								"d"
+							]
+						},
+						"applyImpulse": {
+							"name": "applyImpulse",
+							"args": [
+								"b",
+								"c",
+								"d"
+							]
+						},
+						"applyTorque": {
+							"name": "applyTorque",
+							"args": [
+								"b"
+							]
+						},
+						"addMouseJoint": {
+							"name": "addMouseJoint",
+							"args": [
+								"b"
+							]
+						},
+						"updateMouseJoint": {
+							"name": "updateMouseJoint",
+							"args": [
+								"a",
+								"b"
+							]
+						},
+						"removeMouseJoint": {
+							"name": "removeMouseJoint",
+							"args": [
+								"a"
+							]
+						},
+						"onUpdate": {
+							"name": "onUpdate",
+							"args": []
+						},
+						"draw_": {
+							"name": "draw_",
+							"args": [
+								"b",
+								"c"
+							]
+						},
+						"clone": {
+							"name": "clone",
+							"args": [
+								"b"
+							]
+						},
+						"addJoint": {
+							"name": "addJoint",
+							"args": [
+								"a"
+							]
+						},
+						"removeJoint": {
+							"name": "removeJoint",
+							"args": [
+								"a"
+							]
+						},
+						"getB2dBody": {
+							"name": "getB2dBody",
+							"args": []
+						}
+					},
+					"tips": {}
+				}
+			],
+			"sprites": [
+				{
+					"type": "Sprite",
+					"animations": {},
+					"currentAnimation": "default",
+					"sortPoint": {
+						"x": 0,
+						"y": 0
+					},
+					"layer": 1,
+					"autoResize": false,
+					"visible": true,
+					"image": "Moon1.png",
+					"imageArea": {
+						"minX": 0,
+						"minY": 0,
+						"maxX": 1,
+						"maxY": 1
+					},
+					"alwaysDraw": false,
+					"name": "",
+					"drawModifiers": [],
+					"pixelShader": "vec4 col = texture2D(uDiffuseSampler, uvAlphaTime.xy);\ncol.xyz *= tintColor;\ncol.w *= uvAlphaTime.z;\ngl_FragColor = col;",
+					"pixelShaderUniforms": {
+						"tintColor": "vec3"
+					},
+					"pixelPerfectMouseEvents": 0,
+					"properties": {
+						"tintColor": [
+							0.9,
+							0.3,
+							0.3
+						]
+					},
+					"size": {
+						"x": 113.27925279925384,
+						"y": 113.27925279925384
+					}
+				}
+			],
+			"spriteOffsets": [
+				{
+					"x": 0,
+					"y": 0,
+					"angle": 0
+				}
+			],
+			"flowChart": null,
+			"grid": null,
+			"alignment": {
+				"x": "center",
+				"y": "center"
+			},
+			"name": "Asteroid _clone1",
+			"isTemplate": true,
+			"path": "",
+			"addToScene": {
+				"autoListen": true,
+				"params": null
+			},
+			"properties": {
+				"instanceOf": "SceneObject_0"
+			},
+			"functions": {
+				"onAddToScene": "function (data)\n{\n\tthis.died = false\n}",
+				"onUpdate": "function (data)\n{\n\t// var Ship = wade.getObjectByName(\"Ship\");\r\n\t// if (Ship.move === true && wade.vec2.equal(this.getPosition(),\r\n\t// Ship.getPosition(), 300))\r\n\t// Ship.getBehavior().applyForce(\r\n\t// {x:-(Ship.getPosition().x) + this.getPosition().x,\r\n\t// y:-(Ship.getPosition().y) + this.getPosition().y},\r\n\t// 4,\r\n\t// {x:-(Ship.getPosition().x) + this.getPosition().x\r\n\t// , y:-(Ship.getPosition().y) + this.getPosition().y}\r\n\t// );\n}",
+				"onMouseDown": "function (data)\n{\n\t\n}",
+				"onMouseMove": "function (data)\n{\n\t\n}",
+				"onCollision": "function (data)\n{\n\tvar Ship = wade.getObjectByName(\"Ship\")\n\tShip.setPosition(0,-458)\n\tShip.setVelocity(0,0)\n\tShip.setRotation(3.15)\n\tShip.rotateTo(3.15)\n\tShip.move = false\n}"
+			}
+		},
+		{
+			"type": "SceneObject",
+			"position": {
+				"x": -402.4965739185858,
+				"y": -249.58326849885148
+			},
+			"rotation": 0,
+			"behaviors": [
+				{
+					"name": "PhysicsObject",
+					"properties": {
+						"customEditor": {
+							"title": "Edit Physics Shapes",
+							"module": "physicsShapeEditor"
+						},
+						"bodyType": "static",
+						"bodyType_options": [
+							"static",
+							"dynamic",
+							"kinematic"
+						],
+						"bullet": false,
+						"gravityScale": 0,
+						"linearDamping": 0,
+						"angularDamping": 0,
+						"fixedRotation": false,
+						"allowSleeping": true,
+						"active": true,
+						"fixtures": {
+							"0": {
+								"density": 0,
+								"friction": 0.5,
+								"restitution": 0,
+								"shapeType": "circle",
+								"shapeType_options": [
+									"box",
+									"circle",
+									"polygon",
+									"edge",
+									"chain",
+									"loopChain"
+								],
+								"spriteIndex": 0,
+								"isSensor": false,
+								"autoCalculateShape": true,
+								"filter": {
+									"groupIndex": 0,
+									"categoryBits": 1,
+									"maskBits": 65535
+								},
+								"offset": {
+									"x": 0,
+									"y": 0,
+									"ang": 0
+								},
+								"vertices": [
+									{
+										"x": 0,
+										"y": 0
+									},
+									{
+										"x": 110,
+										"y": 0
+									}
+								]
+							},
+							"isPseudoArray": true,
+							"length": 1,
+							"elementTemplate": {
+								"density": 1,
+								"friction": 0.5,
+								"restitution": 1,
+								"shapeType": "box",
+								"shapeType_options": [
+									"box",
+									"circle",
+									"polygon",
+									"edge",
+									"chain",
+									"loopChain"
+								],
+								"spriteIndex": 0,
+								"isSensor": false,
+								"autoCalculateShape": true,
+								"filter": {
+									"groupIndex": 0,
+									"categoryBits": 1,
+									"maskBits": 65535
+								},
+								"offset": {
+									"x": 0,
+									"y": 0,
+									"ang": 0
+								},
+								"vertices": [
+									{
+										"x": 0,
+										"y": 0
+									}
+								]
+							}
+						}
+					},
+					"functions": {
+						"onAddToScene": {
+							"name": "onAddToScene",
+							"args": [
+								"a"
+							]
+						},
+						"onRemoveFromScene": {
+							"name": "onRemoveFromScene",
+							"args": []
+						},
+						"isAwake": {
+							"name": "isAwake",
+							"args": []
+						},
+						"setAwake": {
+							"name": "setAwake",
+							"args": [
+								"b"
+							]
+						},
+						"addFixture": {
+							"name": "addFixture",
+							"args": [
+								"b"
+							]
+						},
+						"removeFixture": {
+							"name": "removeFixture",
+							"args": [
+								"b"
+							]
+						},
+						"getFixtureList": {
+							"name": "getFixtureList",
+							"args": []
+						},
+						"getJointList": {
+							"name": "getJointList",
+							"args": []
+						},
+						"getDefinition": {
+							"name": "getDefinition",
+							"args": []
+						},
+						"applyForce": {
+							"name": "applyForce",
+							"args": [
+								"b",
+								"c",
+								"d"
+							]
+						},
+						"applyImpulse": {
+							"name": "applyImpulse",
+							"args": [
+								"b",
+								"c",
+								"d"
+							]
+						},
+						"applyTorque": {
+							"name": "applyTorque",
+							"args": [
+								"b"
+							]
+						},
+						"addMouseJoint": {
+							"name": "addMouseJoint",
+							"args": [
+								"b"
+							]
+						},
+						"updateMouseJoint": {
+							"name": "updateMouseJoint",
+							"args": [
+								"a",
+								"b"
+							]
+						},
+						"removeMouseJoint": {
+							"name": "removeMouseJoint",
+							"args": [
+								"a"
+							]
+						},
+						"onUpdate": {
+							"name": "onUpdate",
+							"args": []
+						},
+						"draw_": {
+							"name": "draw_",
+							"args": [
+								"b",
+								"c"
+							]
+						},
+						"clone": {
+							"name": "clone",
+							"args": [
+								"b"
+							]
+						},
+						"addJoint": {
+							"name": "addJoint",
+							"args": [
+								"a"
+							]
+						},
+						"removeJoint": {
+							"name": "removeJoint",
+							"args": [
+								"a"
+							]
+						},
+						"getB2dBody": {
+							"name": "getB2dBody",
+							"args": []
+						}
+					},
+					"tips": {}
+				}
+			],
+			"sprites": [
+				{
+					"type": "Sprite",
+					"animations": {},
+					"currentAnimation": "default",
+					"sortPoint": {
+						"x": 0,
+						"y": 0
+					},
+					"layer": 1,
+					"autoResize": false,
+					"visible": true,
+					"image": "Moon1.png",
+					"imageArea": {
+						"minX": 0,
+						"minY": 0,
+						"maxX": 1,
+						"maxY": 1
+					},
+					"alwaysDraw": false,
+					"name": "",
+					"drawModifiers": [],
+					"pixelShader": "vec4 col = texture2D(uDiffuseSampler, uvAlphaTime.xy);\ncol.xyz *= tintColor;\ncol.w *= uvAlphaTime.z;\ngl_FragColor = col;",
+					"pixelShaderUniforms": {
+						"tintColor": "vec3"
+					},
+					"pixelPerfectMouseEvents": 0,
+					"properties": {
+						"tintColor": [
+							0.9,
+							0.3,
+							0.3
+						]
+					},
+					"size": {
+						"x": 113.8681619921225,
+						"y": 113.8681619921225
+					}
+				}
+			],
+			"spriteOffsets": [
+				{
+					"x": 0,
+					"y": 0,
+					"angle": 0
+				}
+			],
+			"flowChart": null,
+			"grid": null,
+			"alignment": {
+				"x": "center",
+				"y": "center"
+			},
+			"name": "Asteroid _clone2",
+			"isTemplate": true,
+			"path": "",
+			"addToScene": {
+				"autoListen": true,
+				"params": null
+			},
+			"properties": {
+				"instanceOf": "SceneObject_0"
+			},
+			"functions": {
+				"onAddToScene": "function (data)\n{\n\tthis.died = false\n}",
+				"onUpdate": "function (data)\n{\n\t// var Ship = wade.getObjectByName(\"Ship\");\r\n\t// if (Ship.move === true && wade.vec2.equal(this.getPosition(),\r\n\t// Ship.getPosition(), 300))\r\n\t// Ship.getBehavior().applyForce(\r\n\t// {x:-(Ship.getPosition().x) + this.getPosition().x,\r\n\t// y:-(Ship.getPosition().y) + this.getPosition().y},\r\n\t// 4,\r\n\t// {x:-(Ship.getPosition().x) + this.getPosition().x\r\n\t// , y:-(Ship.getPosition().y) + this.getPosition().y}\r\n\t// );\n}",
+				"onMouseDown": "function (data)\n{\n\t\n}",
+				"onMouseMove": "function (data)\n{\n\t\n}",
+				"onCollision": "function (data)\n{\n\tvar Ship = wade.getObjectByName(\"Ship\")\n\tShip.setPosition(0,-458)\n\tShip.setVelocity(0,0)\n\tShip.setRotation(3.15)\n\tShip.rotateTo(3.15)\n\tShip.move = false\n}"
+			}
+		},
+		{
+			"type": "SceneObject",
+			"position": {
+				"x": 2859.222949413032,
+				"y": 732.8931162856246
+			},
+			"rotation": 0,
+			"behaviors": [],
+			"sprites": [
+				{
+					"type": "Sprite",
+					"animations": {},
+					"currentAnimation": "default",
+					"sortPoint": {
+						"x": 0,
+						"y": 0
+					},
+					"layer": 2,
+					"autoResize": false,
+					"visible": true,
+					"image": "PlacementArea.png",
+					"imageArea": {
+						"minX": 0,
+						"minY": 0,
+						"maxX": 1,
+						"maxY": 1
+					},
+					"alwaysDraw": false,
+					"name": "",
+					"drawModifiers": [],
+					"pixelShader": "// This shader exposes 3 parameters\n// hue: usually in the range -1 to 1\n// saturation: usually in the range 0 to 2\n// brightness: usually in the range -1 to 1\n\n// get original color from the texture\nvec4 color = texture2D(uDiffuseSampler, uvAlphaTime.xy);\n\n// convert to hsv\nvec3 c = color.xyz;\nvec4 K = vec4(0.0, -1.0 / 3.0, 2.0 / 3.0, -1.0);\nvec4 p = mix(vec4(c.bg, K.wz), vec4(c.gb, K.xy), step(c.b, c.g));\nvec4 q = mix(vec4(p.xyw, c.r), vec4(c.r, p.yzx), step(p.x, c.r));\nfloat d = q.x - min(q.w, q.y);\nfloat e = 1.0e-10;\nc = vec3(abs(q.z + (q.w - q.y) / (6.0 * d + e)), d / (q.x + e), q.x);\n\n// apply color correction\nc.x += hue;\nc.y *= saturation;\nc.z -= brightness;\n\n// convert back to rgb\nK = vec4(1.0, 2.0 / 3.0, 1.0 / 3.0, 3.0);\nvec3 r = abs(fract(c.xxx + K.xyz) * 6.0 - K.www);\ncolor.xyz = c.z * mix(K.xxx, clamp(r - K.xxx, 0.0, 1.0), c.y);\ncolor.w *= uvAlphaTime.z;\n\ngl_FragColor = color;\n\n// Thanks to lolengine.net for the rgb<->hsb conversion code",
+					"pixelShaderUniforms": {
+						"hue": "float",
+						"saturation": "float",
+						"brightness": "float"
+					},
+					"pixelPerfectMouseEvents": 0,
+					"properties": {
+						"hue": 0,
+						"saturation": 1,
+						"brightness": 0
+					},
+					"size": {
+						"x": 341.1906250872137,
+						"y": 340.1984213677146
+					}
+				}
+			],
+			"spriteOffsets": [
+				{
+					"x": 0,
+					"y": 0,
+					"angle": 0
+				}
+			],
+			"flowChart": null,
+			"grid": null,
+			"alignment": {
+				"x": "center",
+				"y": "center"
+			},
+			"name": "GameMan_clone1",
+			"isTemplate": true,
+			"path": "",
+			"addToScene": {
+				"autoListen": true,
+				"params": null
+			},
+			"properties": {
+				"instanceOf": "GameMan"
+			},
+			"functions": {
+				"onAddToScene": "function (data)\n{\n\t\n}",
+				"onMouseDown": "function (data)\n{\n\tif (wade.getObjectByName(\"Ship\").moonNum < 4\r\n\t&& !wade.getObjectByName(\"Ship\").move \r\n\t&& wade.isMouseDown(0))\r\n\t{\r\n\twade.getObjectByName(\"Ship\").moonNum += 1;\r\n\tthis.movespot = data.screenPosition;\r\n\tvar moon = wade.getSceneObject(\"Moon\").clone();\r\n\tmoon.setPosition(this.movespot.x, this.movespot.y);\r\n\twade.addSceneObject(moon, true);\r\n\tconsole.log(this.movespot)\r\n\t}\n}",
+				"onUpdate": "function (data)\n{\n\t// if (wade.isMouseDown()){\n\t// var data = wade.getMousePosition\n\t// this.moonNum += 1;\n\t// this.movespot = data.screenPosition;\n\t// var moon = wade.getSceneObject(\"Moon\").clone();\n\t// moon.setPosition(this.movespot.x, this.movespot.y);\n\t// wade.addSceneObject(moon, true);\n\t// console.log(this.movespot)\n\t// }\n}",
+				"onKeyDown": "function (data)\n{\n\tif (data.keyName == 'r'){\n\tvar Ship = wade.getObjectByName(\"Ship\")\n\tShip.setPosition(0,-458)\n\tShip.setVelocity(0,0)\n\tShip.setRotation(3.15)\n\tShip.rotateTo(3.15)\n\tShip.move = false\n\t}\n}",
+				"onMouseIn": "function (data)\n{\n\twade.getObjectByName(\"Ship\").mousein = true\n}",
+				"onMouseOut": "function (data)\n{\n\twade.getObjectByName(\"Ship\").mousein = false\n}"
+			}
+		},
+		{
+			"type": "SceneObject",
+			"position": {
+				"x": 2859.222949413032,
+				"y": 732.8931162856246
+			},
+			"rotation": 0,
+			"behaviors": [],
+			"sprites": [
+				{
+					"type": "Sprite",
+					"animations": {},
+					"currentAnimation": "default",
+					"sortPoint": {
+						"x": 0,
+						"y": 0
+					},
+					"layer": 2,
+					"autoResize": false,
+					"visible": true,
+					"image": "PlacementArea.png",
+					"imageArea": {
+						"minX": 0,
+						"minY": 0,
+						"maxX": 1,
+						"maxY": 1
+					},
+					"alwaysDraw": false,
+					"name": "",
+					"drawModifiers": [],
+					"pixelShader": "// This shader exposes 3 parameters\n// hue: usually in the range -1 to 1\n// saturation: usually in the range 0 to 2\n// brightness: usually in the range -1 to 1\n\n// get original color from the texture\nvec4 color = texture2D(uDiffuseSampler, uvAlphaTime.xy);\n\n// convert to hsv\nvec3 c = color.xyz;\nvec4 K = vec4(0.0, -1.0 / 3.0, 2.0 / 3.0, -1.0);\nvec4 p = mix(vec4(c.bg, K.wz), vec4(c.gb, K.xy), step(c.b, c.g));\nvec4 q = mix(vec4(p.xyw, c.r), vec4(c.r, p.yzx), step(p.x, c.r));\nfloat d = q.x - min(q.w, q.y);\nfloat e = 1.0e-10;\nc = vec3(abs(q.z + (q.w - q.y) / (6.0 * d + e)), d / (q.x + e), q.x);\n\n// apply color correction\nc.x += hue;\nc.y *= saturation;\nc.z -= brightness;\n\n// convert back to rgb\nK = vec4(1.0, 2.0 / 3.0, 1.0 / 3.0, 3.0);\nvec3 r = abs(fract(c.xxx + K.xyz) * 6.0 - K.www);\ncolor.xyz = c.z * mix(K.xxx, clamp(r - K.xxx, 0.0, 1.0), c.y);\ncolor.w *= uvAlphaTime.z;\n\ngl_FragColor = color;\n\n// Thanks to lolengine.net for the rgb<->hsb conversion code",
+					"pixelShaderUniforms": {
+						"hue": "float",
+						"saturation": "float",
+						"brightness": "float"
+					},
+					"pixelPerfectMouseEvents": 0,
+					"properties": {
+						"hue": 0,
+						"saturation": 1,
+						"brightness": 0
+					},
+					"size": {
+						"x": 341.1906250872137,
+						"y": 340.1984213677146
+					}
+				}
+			],
+			"spriteOffsets": [
+				{
+					"x": 0,
+					"y": 0,
+					"angle": 0
+				}
+			],
+			"flowChart": null,
+			"grid": null,
+			"alignment": {
+				"x": "center",
+				"y": "center"
+			},
+			"name": "GameMan_clone1_0",
+			"isTemplate": true,
+			"path": "",
+			"addToScene": {
+				"autoListen": true,
+				"params": null
+			},
+			"properties": {
+				"instanceOf": "GameMan"
+			},
+			"functions": {
+				"onAddToScene": "function (data)\n{\n\t\n}",
+				"onMouseDown": "function (data)\n{\n\tif (wade.getObjectByName(\"Ship\").moonNum < 4\r\n\t&& !wade.getObjectByName(\"Ship\").move \r\n\t&& wade.isMouseDown(0))\r\n\t{\r\n\twade.getObjectByName(\"Ship\").moonNum += 1;\r\n\tthis.movespot = data.screenPosition;\r\n\tvar moon = wade.getSceneObject(\"Moon\").clone();\r\n\tmoon.setPosition(this.movespot.x, this.movespot.y);\r\n\twade.addSceneObject(moon, true);\r\n\tconsole.log(this.movespot)\r\n\t}\n}",
+				"onUpdate": "function (data)\n{\n\t// if (wade.isMouseDown()){\n\t// var data = wade.getMousePosition\n\t// this.moonNum += 1;\n\t// this.movespot = data.screenPosition;\n\t// var moon = wade.getSceneObject(\"Moon\").clone();\n\t// moon.setPosition(this.movespot.x, this.movespot.y);\n\t// wade.addSceneObject(moon, true);\n\t// console.log(this.movespot)\n\t// }\n}",
+				"onKeyDown": "function (data)\n{\n\tif (data.keyName == 'r'){\n\tvar Ship = wade.getObjectByName(\"Ship\")\n\tShip.setPosition(0,-458)\n\tShip.setVelocity(0,0)\n\tShip.setRotation(3.15)\n\tShip.rotateTo(3.15)\n\tShip.move = false\n\t}\n}",
+				"onMouseIn": "function (data)\n{\n\twade.getObjectByName(\"Ship\").mousein = true\n}",
+				"onMouseOut": "function (data)\n{\n\twade.getObjectByName(\"Ship\").mousein = false\n}"
+			}
+		},
+		{
+			"type": "SceneObject",
+			"position": {
+				"x": 0,
+				"y": -458
+			},
+			"rotation": 3.15,
+			"behaviors": [
+				{
+					"name": "PhysicsObject",
+					"properties": {
+						"customEditor": {
+							"title": "Edit Physics Shapes",
+							"module": "physicsShapeEditor"
+						},
+						"bodyType": "dynamic",
+						"bodyType_options": [
+							"static",
+							"dynamic",
+							"kinematic"
+						],
+						"bullet": false,
+						"gravityScale": 0,
+						"linearDamping": 0,
+						"angularDamping": 0,
+						"fixedRotation": false,
+						"allowSleeping": true,
+						"active": true,
+						"fixtures": {
+							"0": {
+								"density": 1,
+								"friction": 0,
+								"restitution": 0.4,
+								"shapeType": "polygon",
+								"shapeType_options": [
+									"box",
+									"circle",
+									"polygon",
+									"edge",
+									"chain",
+									"loopChain"
+								],
+								"spriteIndex": 0,
+								"isSensor": false,
+								"autoCalculateShape": false,
+								"filter": {
+									"groupIndex": 0,
+									"categoryBits": 1,
+									"maskBits": 65535
+								},
+								"offset": {
+									"x": 0,
+									"y": 0,
+									"ang": 0
+								},
+								"vertices": [
+									{
+										"x": -24.150000000000002,
+										"y": 30.187500000000004
+									},
+									{
+										"x": -0.6900000000000001,
+										"y": -32.947500000000005
+									},
+									{
+										"x": 22.080000000000002,
+										"y": 30.532500000000006
+									}
+								]
+							},
+							"1": {
+								"density": 1,
+								"friction": 0.5,
+								"restitution": 1,
+								"shapeType": "circle",
+								"shapeType_options": [
+									"box",
+									"circle",
+									"polygon",
+									"edge",
+									"chain",
+									"loopChain"
+								],
+								"spriteIndex": 0,
+								"isSensor": false,
+								"autoCalculateShape": true,
+								"filter": {
+									"groupIndex": 0,
+									"categoryBits": 1,
+									"maskBits": 65535
+								},
+								"offset": {
+									"x": 0,
+									"y": 0,
+									"ang": 0
+								},
+								"vertices": [
+									{
+										"x": -10.200000000000005,
+										"y": 21.547500000000007
+									},
+									{
+										"x": 13.110000000000003,
+										"y": 0
+									}
+								]
+							},
+							"2": {
+								"density": 1,
+								"friction": 0.5,
+								"restitution": 1,
+								"shapeType": "circle",
+								"shapeType_options": [
+									"box",
+									"circle",
+									"polygon",
+									"edge",
+									"chain",
+									"loopChain"
+								],
+								"spriteIndex": 0,
+								"isSensor": false,
+								"autoCalculateShape": true,
+								"filter": {
+									"groupIndex": 0,
+									"categoryBits": 1,
+									"maskBits": 65535
+								},
+								"offset": {
+									"x": 0,
+									"y": 0,
+									"ang": 0
+								},
+								"vertices": [
+									{
+										"x": -0.34500000000000003,
+										"y": -13.627500000000001
+									},
+									{
+										"x": 11.73,
+										"y": 0
+									}
+								]
+							},
+							"3": {
+								"density": 1,
+								"friction": 0.5,
+								"restitution": 1,
+								"shapeType": "circle",
+								"shapeType_options": [
+									"box",
+									"circle",
+									"polygon",
+									"edge",
+									"chain",
+									"loopChain"
+								],
+								"spriteIndex": 0,
+								"isSensor": false,
+								"autoCalculateShape": true,
+								"filter": {
+									"groupIndex": 0,
+									"categoryBits": 1,
+									"maskBits": 65535
+								},
+								"offset": {
+									"x": 0,
+									"y": 0,
+									"ang": 0
+								},
+								"vertices": [
+									{
+										"x": -0.2550000000000001,
+										"y": -21.80250000000001
+									},
+									{
+										"x": 9.475000000000005,
+										"y": 0
+									}
+								]
+							},
+							"4": {
+								"density": 1,
+								"friction": 0.5,
+								"restitution": 1,
+								"shapeType": "circle",
+								"shapeType_options": [
+									"box",
+									"circle",
+									"polygon",
+									"edge",
+									"chain",
+									"loopChain"
+								],
+								"spriteIndex": 0,
+								"isSensor": false,
+								"autoCalculateShape": true,
+								"filter": {
+									"groupIndex": 0,
+									"categoryBits": 1,
+									"maskBits": 65535
+								},
+								"offset": {
+									"x": 0,
+									"y": 0,
+									"ang": 0
+								},
+								"vertices": [
+									{
+										"x": 9.180000000000003,
+										"y": 21.03750000000001
+									},
+									{
+										"x": 13.515000000000006,
+										"y": 0
+									}
+								]
+							},
+							"isPseudoArray": true,
+							"length": 5,
+							"elementTemplate": {
+								"density": 1,
+								"friction": 0.5,
+								"restitution": 1,
+								"shapeType": "box",
+								"shapeType_options": [
+									"box",
+									"circle",
+									"polygon",
+									"edge",
+									"chain",
+									"loopChain"
+								],
+								"spriteIndex": 0,
+								"isSensor": false,
+								"autoCalculateShape": true,
+								"filter": {
+									"groupIndex": 0,
+									"categoryBits": 1,
+									"maskBits": 65535
+								},
+								"offset": {
+									"x": 0,
+									"y": 0,
+									"ang": 0
+								},
+								"vertices": [
+									{
+										"x": 0,
+										"y": 0
+									}
+								]
+							}
+						}
+					},
+					"functions": {
+						"onAddToScene": {
+							"name": "onAddToScene",
+							"args": [
+								"a"
+							]
+						},
+						"onRemoveFromScene": {
+							"name": "onRemoveFromScene",
+							"args": []
+						},
+						"isAwake": {
+							"name": "isAwake",
+							"args": []
+						},
+						"setAwake": {
+							"name": "setAwake",
+							"args": [
+								"b"
+							]
+						},
+						"addFixture": {
+							"name": "addFixture",
+							"args": [
+								"b"
+							]
+						},
+						"removeFixture": {
+							"name": "removeFixture",
+							"args": [
+								"b"
+							]
+						},
+						"getFixtureList": {
+							"name": "getFixtureList",
+							"args": []
+						},
+						"getJointList": {
+							"name": "getJointList",
+							"args": []
+						},
+						"getDefinition": {
+							"name": "getDefinition",
+							"args": []
+						},
+						"applyForce": {
+							"name": "applyForce",
+							"args": [
+								"b",
+								"c",
+								"d"
+							]
+						},
+						"applyImpulse": {
+							"name": "applyImpulse",
+							"args": [
+								"b",
+								"c",
+								"d"
+							]
+						},
+						"applyTorque": {
+							"name": "applyTorque",
+							"args": [
+								"b"
+							]
+						},
+						"addMouseJoint": {
+							"name": "addMouseJoint",
+							"args": [
+								"b"
+							]
+						},
+						"updateMouseJoint": {
+							"name": "updateMouseJoint",
+							"args": [
+								"a",
+								"b"
+							]
+						},
+						"removeMouseJoint": {
+							"name": "removeMouseJoint",
+							"args": [
+								"a"
+							]
+						},
+						"onUpdate": {
+							"name": "onUpdate",
+							"args": []
+						},
+						"draw_": {
+							"name": "draw_",
+							"args": [
+								"b",
+								"c"
+							]
+						},
+						"clone": {
+							"name": "clone",
+							"args": [
+								"b"
+							]
+						},
+						"addJoint": {
+							"name": "addJoint",
+							"args": [
+								"a"
+							]
+						},
+						"removeJoint": {
+							"name": "removeJoint",
+							"args": [
+								"a"
+							]
+						},
+						"getB2dBody": {
+							"name": "getB2dBody",
+							"args": []
+						}
+					},
+					"tips": {}
+				}
+			],
+			"sprites": [
+				{
+					"type": "Sprite",
+					"animations": {},
+					"currentAnimation": "default",
+					"sortPoint": {
+						"x": 0,
+						"y": 0
+					},
+					"layer": 1,
+					"autoResize": false,
+					"visible": true,
+					"image": "SpaceShip.png",
+					"imageArea": {
+						"minX": 0,
+						"minY": 0,
+						"maxX": 1,
+						"maxY": 1
+					},
+					"alwaysDraw": false,
+					"name": "",
+					"drawModifiers": [],
+					"pixelShader": "",
+					"pixelShaderUniforms": null,
+					"pixelPerfectMouseEvents": 0,
+					"properties": {},
+					"size": {
+						"x": 40.60014343648323,
+						"y": 73.1406914875004
+					}
+				}
+			],
+			"spriteOffsets": [
+				{
+					"x": 0,
+					"y": 0,
+					"angle": 0
+				}
+			],
+			"flowChart": null,
+			"grid": null,
+			"alignment": {
+				"x": "center",
+				"y": "center"
+			},
+			"name": "Ship",
+			"isTemplate": false,
+			"path": "",
+			"addToScene": {
+				"autoListen": true,
+				"params": null
+			},
+			"properties": {},
+			"functions": {
+				"onAddToScene": "function (data)\n{\n\tthis.move = false\n\tthis.moonNum = 0\n}",
+				"onUpdate": "function (data)\n{\n\tif (!this.move)\n\t{\n\tthis.setRotation(3.15)\n\tthis.rotateTo(3.15)\n\tthis.setPosition(0,-458)\n\tthis.setVelocity(0,0)\n\t}\n}",
+				"onKeyDown": "function (data)\n{\n\tif (this.move === false && data.keyName == \"space\") {\n\tthis.move = true;\n\tconsole.log(this.move)\n\twade.getObjectByName(\"Ship\").getBehavior()\n\t.applyImpulse({x:0, y:1},5,{x:0, y:1})\n\t}\n}"
+			}
+		}
+	],
+	"paths": [],
+	"sceneObjectGroups": [
+		{
+			"type": "SceneObjectGroup",
+			"name": "Truck",
+			"sceneObjectNames": [
+				"",
+				"",
+				""
+			]
+		}
+	],
+	"layers": [
+		null,
+		{
+			"scaleFactor": 1,
+			"translateFactor": 1,
+			"renderMode": "webgl",
+			"useQuadtree": true,
+			"resolutionFactor": 1,
+			"blur": 0,
+			"postProcessShader": "",
+			"postProcessShaderUniforms": null,
+			"properties": {}
+		},
+		{
+			"scaleFactor": 1,
+			"translateFactor": 1,
+			"renderMode": "webgl",
+			"useQuadtree": true,
+			"resolutionFactor": 1,
+			"blur": 0,
+			"postProcessShader": "",
+			"postProcessShaderUniforms": null,
+			"properties": {}
+		},
+		{
+			"scaleFactor": 1,
+			"translateFactor": 1,
+			"renderMode": "webgl",
+			"useQuadtree": true,
+			"resolutionFactor": 1,
+			"blur": 0,
+			"postProcessShader": "",
+			"postProcessShaderUniforms": null,
+			"properties": {}
+		}
+	],
+	"minScreenSize": {
+		"x": 1500,
+		"y": 1500
+	},
+	"maxScreenSize": {
+		"x": 10000,
+		"y": 10000
+	},
+	"orientation": "none",
+	"windowMode": "full",
+	"defaultLayer": 1,
+	"timeline": {
+		"events": []
+	},
+	"scripts": [
+		"wade.physics.js"
+	]
+}

@@ -1,0 +1,1417 @@
+{
+	"sceneObjects": [
+		{
+			"type": "SceneObject",
+			"position": {
+				"x": 0,
+				"y": -600
+			},
+			"rotation": 0,
+			"behaviors": [],
+			"sprites": [
+				{
+					"type": "TextSprite",
+					"text": "The objective is to get the ship to the flag",
+					"name": "",
+					"font": "80px Arial",
+					"alignment": "center",
+					"color": "#ffffff",
+					"visible": true,
+					"layer": 1,
+					"maxWidth": 0,
+					"shadowColor": "#000",
+					"shadowBlur": 0,
+					"shadowOffset": {
+						"x": 0,
+						"y": 0
+					},
+					"lineSpacing": 6,
+					"maxLines": 2,
+					"firstLine": 0,
+					"outlineColor": "#ffffff",
+					"outlineWidth": 2,
+					"boundsScale": {
+						"x": 1,
+						"y": 1
+					},
+					"sortPoint": {
+						"x": 0,
+						"y": 0
+					},
+					"fixedSize": false,
+					"drawModifiers": [],
+					"properties": {}
+				}
+			],
+			"spriteOffsets": [
+				{
+					"x": 0,
+					"y": 0,
+					"angle": 0
+				}
+			],
+			"flowChart": null,
+			"grid": null,
+			"alignment": {
+				"x": "center",
+				"y": "center"
+			},
+			"name": "SceneObject_1_clone4",
+			"isTemplate": false,
+			"path": "",
+			"addToScene": {
+				"autoListen": true,
+				"params": null
+			},
+			"properties": {
+				"instanceOf": "SceneObject_0"
+			},
+			"functions": {
+				"onAddToScene": "function (data)\n{\n\t\n}",
+				"onUpdate": "function (data)\n{\n\t\n}",
+				"onMouseDown": "function (data)\n{\n\t\n}",
+				"onKeyDown": "function (data)\n{\n\t\n}"
+			}
+		},
+		{
+			"type": "SceneObject",
+			"position": {
+				"x": 800,
+				"y": -630
+			},
+			"rotation": 0,
+			"behaviors": [
+				{
+					"name": "PhysicsObject",
+					"properties": {
+						"customEditor": {
+							"title": "Edit Physics Shapes",
+							"module": "physicsShapeEditor"
+						},
+						"bodyType": "static",
+						"bodyType_options": [
+							"static",
+							"dynamic",
+							"kinematic"
+						],
+						"bullet": false,
+						"gravityScale": 1,
+						"linearDamping": 0,
+						"angularDamping": 0,
+						"fixedRotation": false,
+						"allowSleeping": true,
+						"active": true,
+						"fixtures": {
+							"0": {
+								"density": 1,
+								"friction": 0.5,
+								"restitution": 1,
+								"shapeType": "polygon",
+								"shapeType_options": [
+									"box",
+									"circle",
+									"polygon",
+									"edge",
+									"chain",
+									"loopChain"
+								],
+								"spriteIndex": 0,
+								"isSensor": false,
+								"autoCalculateShape": false,
+								"filter": {
+									"groupIndex": 0,
+									"categoryBits": 1,
+									"maskBits": 65535
+								},
+								"offset": {
+									"x": 0,
+									"y": 0,
+									"ang": 0
+								},
+								"vertices": [
+									{
+										"x": -53,
+										"y": 79.5
+									},
+									{
+										"x": -52.5,
+										"y": 10.5
+									},
+									{
+										"x": -52,
+										"y": -58.5
+									},
+									{
+										"x": 42,
+										"y": -59.5
+									},
+									{
+										"x": 45,
+										"y": 78.5
+									}
+								]
+							},
+							"isPseudoArray": true,
+							"length": 1,
+							"elementTemplate": {
+								"density": 1,
+								"friction": 0.5,
+								"restitution": 1,
+								"shapeType": "box",
+								"shapeType_options": [
+									"box",
+									"circle",
+									"polygon",
+									"edge",
+									"chain",
+									"loopChain"
+								],
+								"spriteIndex": 0,
+								"isSensor": false,
+								"autoCalculateShape": true,
+								"filter": {
+									"groupIndex": 0,
+									"categoryBits": 1,
+									"maskBits": 65535
+								},
+								"offset": {
+									"x": 0,
+									"y": 0,
+									"ang": 0
+								},
+								"vertices": [
+									{
+										"x": 0,
+										"y": 0
+									}
+								]
+							}
+						}
+					},
+					"functions": {
+						"onAddToScene": {
+							"name": "onAddToScene",
+							"args": [
+								"a"
+							]
+						},
+						"onRemoveFromScene": {
+							"name": "onRemoveFromScene",
+							"args": []
+						},
+						"isAwake": {
+							"name": "isAwake",
+							"args": []
+						},
+						"setAwake": {
+							"name": "setAwake",
+							"args": [
+								"b"
+							]
+						},
+						"addFixture": {
+							"name": "addFixture",
+							"args": [
+								"b"
+							]
+						},
+						"removeFixture": {
+							"name": "removeFixture",
+							"args": [
+								"b"
+							]
+						},
+						"getFixtureList": {
+							"name": "getFixtureList",
+							"args": []
+						},
+						"getJointList": {
+							"name": "getJointList",
+							"args": []
+						},
+						"getDefinition": {
+							"name": "getDefinition",
+							"args": []
+						},
+						"applyForce": {
+							"name": "applyForce",
+							"args": [
+								"b",
+								"c",
+								"d"
+							]
+						},
+						"applyImpulse": {
+							"name": "applyImpulse",
+							"args": [
+								"b",
+								"c",
+								"d"
+							]
+						},
+						"applyTorque": {
+							"name": "applyTorque",
+							"args": [
+								"b"
+							]
+						},
+						"addMouseJoint": {
+							"name": "addMouseJoint",
+							"args": [
+								"b"
+							]
+						},
+						"updateMouseJoint": {
+							"name": "updateMouseJoint",
+							"args": [
+								"a",
+								"b"
+							]
+						},
+						"removeMouseJoint": {
+							"name": "removeMouseJoint",
+							"args": [
+								"a"
+							]
+						},
+						"onUpdate": {
+							"name": "onUpdate",
+							"args": []
+						},
+						"draw_": {
+							"name": "draw_",
+							"args": [
+								"b",
+								"c"
+							]
+						},
+						"clone": {
+							"name": "clone",
+							"args": [
+								"b"
+							]
+						},
+						"addJoint": {
+							"name": "addJoint",
+							"args": [
+								"a"
+							]
+						},
+						"removeJoint": {
+							"name": "removeJoint",
+							"args": [
+								"a"
+							]
+						},
+						"getB2dBody": {
+							"name": "getB2dBody",
+							"args": []
+						}
+					},
+					"tips": {}
+				}
+			],
+			"sprites": [
+				{
+					"type": "Sprite",
+					"animations": {},
+					"currentAnimation": "default",
+					"sortPoint": {
+						"x": 0,
+						"y": 0
+					},
+					"layer": 1,
+					"autoResize": false,
+					"visible": true,
+					"image": "FinishFlag.png",
+					"imageArea": {
+						"minX": 0,
+						"minY": 0,
+						"maxX": 1,
+						"maxY": 1
+					},
+					"alwaysDraw": false,
+					"name": "",
+					"drawModifiers": [],
+					"pixelShader": "",
+					"pixelShaderUniforms": null,
+					"pixelPerfectMouseEvents": 0,
+					"properties": {},
+					"size": {
+						"x": 160,
+						"y": 160
+					}
+				}
+			],
+			"spriteOffsets": [
+				{
+					"x": 0,
+					"y": 0,
+					"angle": 0
+				}
+			],
+			"flowChart": null,
+			"grid": null,
+			"alignment": {
+				"x": "center",
+				"y": "center"
+			},
+			"name": "Objective",
+			"isTemplate": false,
+			"path": "",
+			"addToScene": {
+				"autoListen": true,
+				"params": null
+			},
+			"properties": {},
+			"functions": {
+				"onCollision": "function (data)\n{\n\tvar level = wade.retrieveLocalObject(\"Level\");\r\n\tif (level <= 1 || !level){\r\n\tlevel = 2;\r\n\twade.storeLocalObject(\"Level\", level)\r\n\tconsole.log(level + \"hi\")\r\n\t}\r\n\twade.app.onWin()\r\n\twade.preloadImage(\"uiPack2.png\")\r\n\twade.clearScene();\r\n\twade.loadScene(\"scene0.wsc\",false,function(){},\r\n\ttrue)\n}",
+				"onKeyUp": "function (data)\n{\n\t\n}",
+				"onKeyDown": "function (data)\n{\n\twade.app.onWin2()\n}"
+			}
+		},
+		{
+			"type": "SceneObject",
+			"position": {
+				"x": -770,
+				"y": -635
+			},
+			"rotation": 3.15,
+			"behaviors": [
+				{
+					"name": "PhysicsObject",
+					"properties": {
+						"customEditor": {
+							"title": "Edit Physics Shapes",
+							"module": "physicsShapeEditor"
+						},
+						"bodyType": "dynamic",
+						"bodyType_options": [
+							"static",
+							"dynamic",
+							"kinematic"
+						],
+						"bullet": false,
+						"gravityScale": 0,
+						"linearDamping": 0,
+						"angularDamping": 0,
+						"fixedRotation": false,
+						"allowSleeping": true,
+						"active": true,
+						"fixtures": {
+							"0": {
+								"density": 1,
+								"friction": 0,
+								"restitution": 0.4,
+								"shapeType": "polygon",
+								"shapeType_options": [
+									"box",
+									"circle",
+									"polygon",
+									"edge",
+									"chain",
+									"loopChain"
+								],
+								"spriteIndex": 0,
+								"isSensor": false,
+								"autoCalculateShape": false,
+								"filter": {
+									"groupIndex": 0,
+									"categoryBits": 1,
+									"maskBits": 65535
+								},
+								"offset": {
+									"x": 0,
+									"y": 0,
+									"ang": 0
+								},
+								"vertices": [
+									{
+										"x": -24.150000000000002,
+										"y": 30.187500000000004
+									},
+									{
+										"x": -0.6900000000000001,
+										"y": -32.947500000000005
+									},
+									{
+										"x": 22.080000000000002,
+										"y": 30.532500000000006
+									}
+								]
+							},
+							"1": {
+								"density": 1,
+								"friction": 0.5,
+								"restitution": 1,
+								"shapeType": "circle",
+								"shapeType_options": [
+									"box",
+									"circle",
+									"polygon",
+									"edge",
+									"chain",
+									"loopChain"
+								],
+								"spriteIndex": 0,
+								"isSensor": false,
+								"autoCalculateShape": true,
+								"filter": {
+									"groupIndex": 0,
+									"categoryBits": 1,
+									"maskBits": 65535
+								},
+								"offset": {
+									"x": 0,
+									"y": 0,
+									"ang": 0
+								},
+								"vertices": [
+									{
+										"x": -10.200000000000005,
+										"y": 21.547500000000007
+									},
+									{
+										"x": 13.110000000000003,
+										"y": 0
+									}
+								]
+							},
+							"2": {
+								"density": 1,
+								"friction": 0.5,
+								"restitution": 1,
+								"shapeType": "circle",
+								"shapeType_options": [
+									"box",
+									"circle",
+									"polygon",
+									"edge",
+									"chain",
+									"loopChain"
+								],
+								"spriteIndex": 0,
+								"isSensor": false,
+								"autoCalculateShape": true,
+								"filter": {
+									"groupIndex": 0,
+									"categoryBits": 1,
+									"maskBits": 65535
+								},
+								"offset": {
+									"x": 0,
+									"y": 0,
+									"ang": 0
+								},
+								"vertices": [
+									{
+										"x": -0.34500000000000003,
+										"y": -13.627500000000001
+									},
+									{
+										"x": 11.73,
+										"y": 0
+									}
+								]
+							},
+							"3": {
+								"density": 1,
+								"friction": 0.5,
+								"restitution": 1,
+								"shapeType": "circle",
+								"shapeType_options": [
+									"box",
+									"circle",
+									"polygon",
+									"edge",
+									"chain",
+									"loopChain"
+								],
+								"spriteIndex": 0,
+								"isSensor": false,
+								"autoCalculateShape": true,
+								"filter": {
+									"groupIndex": 0,
+									"categoryBits": 1,
+									"maskBits": 65535
+								},
+								"offset": {
+									"x": 0,
+									"y": 0,
+									"ang": 0
+								},
+								"vertices": [
+									{
+										"x": -0.2550000000000001,
+										"y": -21.80250000000001
+									},
+									{
+										"x": 9.475000000000005,
+										"y": 0
+									}
+								]
+							},
+							"4": {
+								"density": 1,
+								"friction": 0.5,
+								"restitution": 1,
+								"shapeType": "circle",
+								"shapeType_options": [
+									"box",
+									"circle",
+									"polygon",
+									"edge",
+									"chain",
+									"loopChain"
+								],
+								"spriteIndex": 0,
+								"isSensor": false,
+								"autoCalculateShape": true,
+								"filter": {
+									"groupIndex": 0,
+									"categoryBits": 1,
+									"maskBits": 65535
+								},
+								"offset": {
+									"x": 0,
+									"y": 0,
+									"ang": 0
+								},
+								"vertices": [
+									{
+										"x": 9.180000000000003,
+										"y": 21.03750000000001
+									},
+									{
+										"x": 13.515000000000006,
+										"y": 0
+									}
+								]
+							},
+							"isPseudoArray": true,
+							"length": 5,
+							"elementTemplate": {
+								"density": 1,
+								"friction": 0.5,
+								"restitution": 1,
+								"shapeType": "box",
+								"shapeType_options": [
+									"box",
+									"circle",
+									"polygon",
+									"edge",
+									"chain",
+									"loopChain"
+								],
+								"spriteIndex": 0,
+								"isSensor": false,
+								"autoCalculateShape": true,
+								"filter": {
+									"groupIndex": 0,
+									"categoryBits": 1,
+									"maskBits": 65535
+								},
+								"offset": {
+									"x": 0,
+									"y": 0,
+									"ang": 0
+								},
+								"vertices": [
+									{
+										"x": 0,
+										"y": 0
+									}
+								]
+							}
+						}
+					},
+					"functions": {
+						"onAddToScene": {
+							"name": "onAddToScene",
+							"args": [
+								"a"
+							]
+						},
+						"onRemoveFromScene": {
+							"name": "onRemoveFromScene",
+							"args": []
+						},
+						"isAwake": {
+							"name": "isAwake",
+							"args": []
+						},
+						"setAwake": {
+							"name": "setAwake",
+							"args": [
+								"b"
+							]
+						},
+						"addFixture": {
+							"name": "addFixture",
+							"args": [
+								"b"
+							]
+						},
+						"removeFixture": {
+							"name": "removeFixture",
+							"args": [
+								"b"
+							]
+						},
+						"getFixtureList": {
+							"name": "getFixtureList",
+							"args": []
+						},
+						"getJointList": {
+							"name": "getJointList",
+							"args": []
+						},
+						"getDefinition": {
+							"name": "getDefinition",
+							"args": []
+						},
+						"applyForce": {
+							"name": "applyForce",
+							"args": [
+								"b",
+								"c",
+								"d"
+							]
+						},
+						"applyImpulse": {
+							"name": "applyImpulse",
+							"args": [
+								"b",
+								"c",
+								"d"
+							]
+						},
+						"applyTorque": {
+							"name": "applyTorque",
+							"args": [
+								"b"
+							]
+						},
+						"addMouseJoint": {
+							"name": "addMouseJoint",
+							"args": [
+								"b"
+							]
+						},
+						"updateMouseJoint": {
+							"name": "updateMouseJoint",
+							"args": [
+								"a",
+								"b"
+							]
+						},
+						"removeMouseJoint": {
+							"name": "removeMouseJoint",
+							"args": [
+								"a"
+							]
+						},
+						"onUpdate": {
+							"name": "onUpdate",
+							"args": []
+						},
+						"draw_": {
+							"name": "draw_",
+							"args": [
+								"b",
+								"c"
+							]
+						},
+						"clone": {
+							"name": "clone",
+							"args": [
+								"b"
+							]
+						},
+						"addJoint": {
+							"name": "addJoint",
+							"args": [
+								"a"
+							]
+						},
+						"removeJoint": {
+							"name": "removeJoint",
+							"args": [
+								"a"
+							]
+						},
+						"getB2dBody": {
+							"name": "getB2dBody",
+							"args": []
+						}
+					},
+					"tips": {}
+				}
+			],
+			"sprites": [
+				{
+					"type": "Sprite",
+					"animations": {},
+					"currentAnimation": "default",
+					"sortPoint": {
+						"x": 0,
+						"y": 0
+					},
+					"layer": 1,
+					"autoResize": false,
+					"visible": true,
+					"image": "SpaceShip.png",
+					"imageArea": {
+						"minX": 0,
+						"minY": 0,
+						"maxX": 1,
+						"maxY": 1
+					},
+					"alwaysDraw": false,
+					"name": "",
+					"drawModifiers": [],
+					"pixelShader": "",
+					"pixelShaderUniforms": null,
+					"pixelPerfectMouseEvents": 0,
+					"properties": {},
+					"size": {
+						"x": 58.41959154589205,
+						"y": 105.24222232782313
+					}
+				}
+			],
+			"spriteOffsets": [
+				{
+					"x": 0,
+					"y": 0,
+					"angle": 0
+				}
+			],
+			"flowChart": null,
+			"grid": null,
+			"alignment": {
+				"x": "center",
+				"y": "center"
+			},
+			"name": "Ship",
+			"isTemplate": false,
+			"path": "",
+			"addToScene": {
+				"autoListen": true,
+				"params": null
+			},
+			"properties": {}
+		},
+		{
+			"type": "SceneObject",
+			"position": {
+				"x": 0,
+				"y": -400
+			},
+			"rotation": 0,
+			"behaviors": [],
+			"sprites": [
+				{
+					"type": "TextSprite",
+					"text": "You can place moons in the green areas",
+					"name": "",
+					"font": "80px Arial",
+					"alignment": "center",
+					"color": "#ffffff",
+					"visible": true,
+					"layer": 1,
+					"maxWidth": 0,
+					"shadowColor": "#000",
+					"shadowBlur": 0,
+					"shadowOffset": {
+						"x": 0,
+						"y": 0
+					},
+					"lineSpacing": 6,
+					"maxLines": 2,
+					"firstLine": 0,
+					"outlineColor": "#ffffff",
+					"outlineWidth": 2,
+					"boundsScale": {
+						"x": 1,
+						"y": 1
+					},
+					"sortPoint": {
+						"x": 0,
+						"y": 0
+					},
+					"fixedSize": false,
+					"drawModifiers": [],
+					"properties": {}
+				}
+			],
+			"spriteOffsets": [
+				{
+					"x": 0,
+					"y": 0,
+					"angle": 0
+				}
+			],
+			"flowChart": null,
+			"grid": null,
+			"alignment": {
+				"x": "center",
+				"y": "center"
+			},
+			"name": "SceneObject_1_clone0",
+			"isTemplate": false,
+			"path": "",
+			"addToScene": {
+				"autoListen": true,
+				"params": null
+			},
+			"properties": {
+				"instanceOf": "SceneObject_0"
+			},
+			"functions": {
+				"onAddToScene": "function (data)\n{\n\t\n}",
+				"onUpdate": "function (data)\n{\n\t\n}",
+				"onMouseDown": "function (data)\n{\n\t\n}",
+				"onKeyDown": "function (data)\n{\n\t\n}"
+			}
+		},
+		{
+			"type": "SceneObject",
+			"position": {
+				"x": -800,
+				"y": -430
+			},
+			"rotation": 0,
+			"behaviors": [],
+			"sprites": [
+				{
+					"type": "Sprite",
+					"animations": {},
+					"currentAnimation": "default",
+					"sortPoint": {
+						"x": 0,
+						"y": 0
+					},
+					"layer": 2,
+					"autoResize": false,
+					"visible": true,
+					"image": "PlacementArea.png",
+					"imageArea": {
+						"minX": 0,
+						"minY": 0,
+						"maxX": 1,
+						"maxY": 1
+					},
+					"alwaysDraw": false,
+					"name": "",
+					"drawModifiers": [],
+					"pixelShader": "// This shader exposes 3 parameters\n// hue: usually in the range -1 to 1\n// saturation: usually in the range 0 to 2\n// brightness: usually in the range -1 to 1\n\n// get original color from the texture\nvec4 color = texture2D(uDiffuseSampler, uvAlphaTime.xy);\n\n// convert to hsv\nvec3 c = color.xyz;\nvec4 K = vec4(0.0, -1.0 / 3.0, 2.0 / 3.0, -1.0);\nvec4 p = mix(vec4(c.bg, K.wz), vec4(c.gb, K.xy), step(c.b, c.g));\nvec4 q = mix(vec4(p.xyw, c.r), vec4(c.r, p.yzx), step(p.x, c.r));\nfloat d = q.x - min(q.w, q.y);\nfloat e = 1.0e-10;\nc = vec3(abs(q.z + (q.w - q.y) / (6.0 * d + e)), d / (q.x + e), q.x);\n\n// apply color correction\nc.x += hue;\nc.y *= saturation;\nc.z -= brightness;\n\n// convert back to rgb\nK = vec4(1.0, 2.0 / 3.0, 1.0 / 3.0, 3.0);\nvec3 r = abs(fract(c.xxx + K.xyz) * 6.0 - K.www);\ncolor.xyz = c.z * mix(K.xxx, clamp(r - K.xxx, 0.0, 1.0), c.y);\ncolor.w *= uvAlphaTime.z;\n\ngl_FragColor = color;\n\n// Thanks to lolengine.net for the rgb<->hsb conversion code",
+					"pixelShaderUniforms": {
+						"hue": "float",
+						"saturation": "float",
+						"brightness": "float"
+					},
+					"pixelPerfectMouseEvents": 0,
+					"properties": {
+						"hue": 0,
+						"saturation": 1,
+						"brightness": 0
+					},
+					"size": {
+						"x": 129.46394492290756,
+						"y": 129.82626304485376
+					}
+				}
+			],
+			"spriteOffsets": [
+				{
+					"x": 0,
+					"y": 0,
+					"angle": 0
+				}
+			],
+			"flowChart": null,
+			"grid": null,
+			"alignment": {
+				"x": "center",
+				"y": "center"
+			},
+			"name": "GameMan",
+			"isTemplate": false,
+			"path": "",
+			"addToScene": {
+				"autoListen": true,
+				"params": null
+			},
+			"properties": {}
+		},
+		{
+			"type": "SceneObject",
+			"position": {
+				"x": 0,
+				"y": -200
+			},
+			"rotation": 0,
+			"behaviors": [],
+			"sprites": [
+				{
+					"type": "TextSprite",
+					"text": "There is a moon counter in the top left",
+					"name": "",
+					"font": "80px Arial",
+					"alignment": "center",
+					"color": "#ffffff",
+					"visible": true,
+					"layer": 1,
+					"maxWidth": 0,
+					"shadowColor": "#000",
+					"shadowBlur": 0,
+					"shadowOffset": {
+						"x": 0,
+						"y": 0
+					},
+					"lineSpacing": 6,
+					"maxLines": 2,
+					"firstLine": 0,
+					"outlineColor": "#ffffff",
+					"outlineWidth": 2,
+					"boundsScale": {
+						"x": 1,
+						"y": 1
+					},
+					"sortPoint": {
+						"x": 0,
+						"y": 0
+					},
+					"fixedSize": false,
+					"drawModifiers": [],
+					"properties": {}
+				}
+			],
+			"spriteOffsets": [
+				{
+					"x": 0,
+					"y": 0,
+					"angle": 0
+				}
+			],
+			"flowChart": null,
+			"grid": null,
+			"alignment": {
+				"x": "center",
+				"y": "center"
+			},
+			"name": "SceneObject_1_clone1",
+			"isTemplate": false,
+			"path": "",
+			"addToScene": {
+				"autoListen": true,
+				"params": null
+			},
+			"properties": {
+				"instanceOf": "SceneObject_0"
+			},
+			"functions": {
+				"onAddToScene": "function (data)\n{\n\t\n}",
+				"onUpdate": "function (data)\n{\n\t\n}",
+				"onMouseDown": "function (data)\n{\n\t\n}",
+				"onKeyDown": "function (data)\n{\n\t\n}"
+			}
+		},
+		{
+			"type": "SceneObject",
+			"position": {
+				"x": 800,
+				"y": -430
+			},
+			"rotation": 0,
+			"behaviors": [],
+			"sprites": [
+				{
+					"type": "Sprite",
+					"animations": {},
+					"currentAnimation": "default",
+					"sortPoint": {
+						"x": 0,
+						"y": 0
+					},
+					"layer": 1,
+					"autoResize": false,
+					"visible": true,
+					"image": "Moon1.png",
+					"imageArea": {
+						"minX": 0,
+						"minY": 0,
+						"maxX": 1,
+						"maxY": 1
+					},
+					"alwaysDraw": false,
+					"name": "",
+					"drawModifiers": [],
+					"pixelShader": "",
+					"pixelShaderUniforms": null,
+					"pixelPerfectMouseEvents": 0,
+					"properties": {},
+					"size": {
+						"x": 149.4998810419156,
+						"y": 149.4998810419156
+					}
+				}
+			],
+			"spriteOffsets": [
+				{
+					"x": 0,
+					"y": 0,
+					"angle": 0
+				}
+			],
+			"flowChart": null,
+			"grid": null,
+			"alignment": {
+				"x": "center",
+				"y": "center"
+			},
+			"name": "SceneObject_0",
+			"isTemplate": false,
+			"path": "",
+			"addToScene": {
+				"autoListen": true,
+				"params": null
+			},
+			"properties": {}
+		},
+		{
+			"type": "SceneObject",
+			"position": {
+				"x": 750,
+				"y": -200
+			},
+			"rotation": 0,
+			"behaviors": [],
+			"sprites": [
+				{
+					"type": "TextSprite",
+					"text": "3",
+					"name": "",
+					"font": "80px Arial",
+					"alignment": "center",
+					"color": "#ffffff",
+					"visible": true,
+					"layer": 1,
+					"maxWidth": 0,
+					"shadowColor": "#000",
+					"shadowBlur": 0,
+					"shadowOffset": {
+						"x": 0,
+						"y": 0
+					},
+					"lineSpacing": 6,
+					"maxLines": 2,
+					"firstLine": 0,
+					"outlineColor": "#ffffff",
+					"outlineWidth": 2,
+					"boundsScale": {
+						"x": 1,
+						"y": 1
+					},
+					"sortPoint": {
+						"x": 0,
+						"y": 0
+					},
+					"fixedSize": false,
+					"drawModifiers": [],
+					"properties": {}
+				}
+			],
+			"spriteOffsets": [
+				{
+					"x": 0,
+					"y": 0,
+					"angle": 0
+				}
+			],
+			"flowChart": null,
+			"grid": null,
+			"alignment": {
+				"x": "center",
+				"y": "center"
+			},
+			"name": "SceneObject_1_clone2",
+			"isTemplate": false,
+			"path": "",
+			"addToScene": {
+				"autoListen": true,
+				"params": null
+			},
+			"properties": {
+				"instanceOf": "SceneObject_0"
+			},
+			"functions": {
+				"onAddToScene": "function (data)\n{\n\t\n}",
+				"onUpdate": "function (data)\n{\n\t\n}",
+				"onMouseDown": "function (data)\n{\n\t\n}",
+				"onKeyDown": "function (data)\n{\n\t\n}"
+			}
+		},
+		{
+			"type": "SceneObject",
+			"position": {
+				"x": 0,
+				"y": 0
+			},
+			"rotation": 0,
+			"behaviors": [],
+			"sprites": [
+				{
+					"type": "TextSprite",
+					"text": "Right click to place moons. Left click and drag to move moons. D + left click to delete moons. Space to start the simulation. R to restart. M to go to menu. H for hints.",
+					"name": "",
+					"font": "80px Arial",
+					"alignment": "center",
+					"color": "#ffffff",
+					"visible": true,
+					"layer": 1,
+					"maxWidth": 1500,
+					"shadowColor": "#000",
+					"shadowBlur": 0,
+					"shadowOffset": {
+						"x": 0,
+						"y": 0
+					},
+					"lineSpacing": 1,
+					"maxLines": 1000,
+					"firstLine": 0,
+					"outlineColor": "#ffffff",
+					"outlineWidth": 0,
+					"boundsScale": {
+						"x": 1,
+						"y": 1
+					},
+					"sortPoint": {
+						"x": 0,
+						"y": 0
+					},
+					"fixedSize": false,
+					"drawModifiers": [],
+					"properties": {}
+				}
+			],
+			"spriteOffsets": [
+				{
+					"x": 0,
+					"y": 0,
+					"angle": 0
+				}
+			],
+			"flowChart": null,
+			"grid": null,
+			"alignment": {
+				"x": "center",
+				"y": "center"
+			},
+			"name": "SceneObject_1_clone3",
+			"isTemplate": false,
+			"path": "",
+			"addToScene": {
+				"autoListen": true,
+				"params": null
+			},
+			"properties": {
+				"instanceOf": "SceneObject_0"
+			},
+			"functions": {
+				"onAddToScene": "function (data)\n{\n\t\n}",
+				"onUpdate": "function (data)\n{\n\t\n}",
+				"onMouseDown": "function (data)\n{\n\t\n}",
+				"onKeyDown": "function (data)\n{\n\t\n}"
+			}
+		},
+		{
+			"type": "SceneObject",
+			"position": {
+				"x": 0,
+				"y": 550
+			},
+			"rotation": 0,
+			"behaviors": [],
+			"sprites": [
+				{
+					"type": "TextSprite",
+					"text": "New game mechanics will be added as you progress",
+					"name": "",
+					"font": "80px Arial",
+					"alignment": "center",
+					"color": "#ffffff",
+					"visible": true,
+					"layer": 1,
+					"maxWidth": 0,
+					"shadowColor": "#000",
+					"shadowBlur": 0,
+					"shadowOffset": {
+						"x": 0,
+						"y": 0
+					},
+					"lineSpacing": 6,
+					"maxLines": 2,
+					"firstLine": 0,
+					"outlineColor": "#ffffff",
+					"outlineWidth": 2,
+					"boundsScale": {
+						"x": 1,
+						"y": 1
+					},
+					"sortPoint": {
+						"x": 0,
+						"y": 0
+					},
+					"fixedSize": false,
+					"drawModifiers": [],
+					"properties": {}
+				}
+			],
+			"spriteOffsets": [
+				{
+					"x": 0,
+					"y": 0,
+					"angle": 0
+				}
+			],
+			"flowChart": null,
+			"grid": null,
+			"alignment": {
+				"x": "center",
+				"y": "center"
+			},
+			"name": "SceneObject_1_clone5",
+			"isTemplate": false,
+			"path": "",
+			"addToScene": {
+				"autoListen": true,
+				"params": null
+			},
+			"properties": {
+				"instanceOf": "SceneObject_0"
+			},
+			"functions": {
+				"onAddToScene": "function (data)\n{\n\t\n}",
+				"onUpdate": "function (data)\n{\n\t\n}",
+				"onMouseDown": "function (data)\n{\n\t\n}",
+				"onKeyDown": "function (data)\n{\n\t\n}"
+			}
+		},
+		{
+			"type": "SceneObject",
+			"position": {
+				"x": 0,
+				"y": 630
+			},
+			"rotation": 0,
+			"behaviors": [],
+			"sprites": [
+				{
+					"type": "TextSprite",
+					"text": "(Press space to go back to menu)",
+					"name": "",
+					"font": "50px Arial",
+					"alignment": "center",
+					"color": "#ffffff",
+					"visible": true,
+					"layer": 1,
+					"maxWidth": 0,
+					"shadowColor": "#000",
+					"shadowBlur": 0,
+					"shadowOffset": {
+						"x": 0,
+						"y": 0
+					},
+					"lineSpacing": 6,
+					"maxLines": 2,
+					"firstLine": 0,
+					"outlineColor": "#ffffff",
+					"outlineWidth": 2,
+					"boundsScale": {
+						"x": 1,
+						"y": 1
+					},
+					"sortPoint": {
+						"x": 0,
+						"y": 0
+					},
+					"fixedSize": false,
+					"drawModifiers": [],
+					"properties": {}
+				}
+			],
+			"spriteOffsets": [
+				{
+					"x": 0,
+					"y": 0,
+					"angle": 0
+				}
+			],
+			"flowChart": null,
+			"grid": null,
+			"alignment": {
+				"x": "center",
+				"y": "center"
+			},
+			"name": "SceneObject_1_clone6",
+			"isTemplate": false,
+			"path": "",
+			"addToScene": {
+				"autoListen": true,
+				"params": null
+			},
+			"properties": {
+				"instanceOf": "SceneObject_0"
+			},
+			"functions": {
+				"onAddToScene": "function (data)\n{\n\t\n}",
+				"onUpdate": "function (data)\n{\n\t\n}",
+				"onMouseDown": "function (data)\n{\n\t\n}",
+				"onKeyDown": "function (data)\n{\n\tif (wade.isKeyDown(\"space\"))\n\t{\n\twade.clearScene();\n\twade.loadScene(\"scene0.wsc\",false,function(){}\n\t,true)\n\t}\n}"
+			}
+		}
+	],
+	"paths": [],
+	"sceneObjectGroups": [],
+	"layers": [
+		null,
+		{
+			"scaleFactor": 1,
+			"translateFactor": 1,
+			"renderMode": "webgl",
+			"useQuadtree": true,
+			"resolutionFactor": 1,
+			"blur": 0,
+			"postProcessShader": "",
+			"postProcessShaderUniforms": null,
+			"properties": {}
+		},
+		{
+			"scaleFactor": 1,
+			"translateFactor": 1,
+			"renderMode": "webgl",
+			"useQuadtree": true,
+			"resolutionFactor": 1,
+			"blur": 0,
+			"postProcessShader": "",
+			"postProcessShaderUniforms": null,
+			"properties": {}
+		}
+	],
+	"minScreenSize": {
+		"x": 1500,
+		"y": 1500
+	},
+	"maxScreenSize": {
+		"x": 10000,
+		"y": 10000
+	},
+	"orientation": "none",
+	"windowMode": "full",
+	"defaultLayer": 1,
+	"timeline": {
+		"events": []
+	}
+}

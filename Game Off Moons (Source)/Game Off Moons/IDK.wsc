@@ -1,0 +1,204 @@
+{
+	"sceneObjects": [
+		{
+			"type": "SceneObject",
+			"position": {
+				"x": 0,
+				"y": 0
+			},
+			"rotation": 0,
+			"behaviors": [],
+			"sprites": [
+				{
+					"type": "Sprite",
+					"animations": {},
+					"currentAnimation": "default",
+					"sortPoint": {
+						"x": 0,
+						"y": 0
+					},
+					"layer": 5,
+					"autoResize": false,
+					"visible": true,
+					"image": "procedural_square",
+					"imageArea": {
+						"minX": 0,
+						"minY": 0,
+						"maxX": 1,
+						"maxY": 1
+					},
+					"alwaysDraw": false,
+					"name": "",
+					"drawModifiers": [],
+					"pixelShader": "vec4 col = texture2D(uDiffuseSampler, uvAlphaTime.xy);\ncol.xyz *= tintColor;\ncol.w *= uvAlphaTime.z;\ngl_FragColor = col;",
+					"pixelShaderUniforms": {
+						"tintColor": "vec3"
+					},
+					"pixelPerfectMouseEvents": 0,
+					"properties": {
+						"tintColor": [
+							0.5,
+							0.5,
+							0.5
+						]
+					},
+					"size": {
+						"x": 491.0778762577195,
+						"y": 491.0778762577195
+					}
+				}
+			],
+			"spriteOffsets": [
+				{
+					"x": 0,
+					"y": 0,
+					"angle": 0
+				}
+			],
+			"flowChart": null,
+			"grid": null,
+			"alignment": {
+				"x": "center",
+				"y": "center"
+			},
+			"name": "SceneObject_0",
+			"isTemplate": false,
+			"path": "",
+			"addToScene": {
+				"autoListen": true,
+				"params": null
+			},
+			"properties": {},
+			"functions": {
+				"onAddToScene": "function (data)\n{\n\t\n}",
+				"onUpdate": "function (data)\n{\n\tthis.onClick = function() {\r\n\tthis.text = wade.getObjectByName(\"GameMan\").clone(0,0);\r\n\t// console.log(this.text)\r\n\tvar textArea = document.createElement('textArea');\r\n\ttextArea.value = this.text.toString();\r\n\tdocument.body.appendChild(textArea);\r\n\ttextArea.focus();\r\n\ttextArea.select();\r\n\tdocument.execCommand('copy');\r\n\tdocument.body.removeChild(textArea);\r\n\t// wade.addSceneObject(text,true)\r\n\t};\n}",
+				"onClick": "function (data)\n{\n\t// document.addEventListener(\r\n\t// \"copy\",() => navigator.clipboard.readText().then(\r\n\t// text => console.log(\"copied text: \" + text))\r\n\t// );\n}",
+				"onMouseIn": "function (data)\n{\n\t\n}",
+				"onMouseOut": "function (data)\n{\n\t\n}",
+				"onMouseDown": "function (data)\n{\n\t\n}",
+				"onKeyDown": "function (data)\n{\n\t\n}"
+			}
+		},
+		{
+			"type": "SceneObject",
+			"position": {
+				"x": 2620.6830885093646,
+				"y": 186.7867188610034
+			},
+			"rotation": 0,
+			"behaviors": [],
+			"sprites": [
+				{
+					"type": "Sprite",
+					"animations": {},
+					"currentAnimation": "default",
+					"sortPoint": {
+						"x": 0,
+						"y": 0
+					},
+					"layer": 2,
+					"autoResize": false,
+					"visible": true,
+					"image": "PlacementArea.png",
+					"imageArea": {
+						"minX": 0,
+						"minY": 0,
+						"maxX": 1,
+						"maxY": 1
+					},
+					"alwaysDraw": false,
+					"name": "",
+					"drawModifiers": [],
+					"pixelShader": "// This shader exposes 3 parameters\n// hue: usually in the range -1 to 1\n// saturation: usually in the range 0 to 2\n// brightness: usually in the range -1 to 1\n\n// get original color from the texture\nvec4 color = texture2D(uDiffuseSampler, uvAlphaTime.xy);\n\n// convert to hsv\nvec3 c = color.xyz;\nvec4 K = vec4(0.0, -1.0 / 3.0, 2.0 / 3.0, -1.0);\nvec4 p = mix(vec4(c.bg, K.wz), vec4(c.gb, K.xy), step(c.b, c.g));\nvec4 q = mix(vec4(p.xyw, c.r), vec4(c.r, p.yzx), step(p.x, c.r));\nfloat d = q.x - min(q.w, q.y);\nfloat e = 1.0e-10;\nc = vec3(abs(q.z + (q.w - q.y) / (6.0 * d + e)), d / (q.x + e), q.x);\n\n// apply color correction\nc.x += hue;\nc.y *= saturation;\nc.z -= brightness;\n\n// convert back to rgb\nK = vec4(1.0, 2.0 / 3.0, 1.0 / 3.0, 3.0);\nvec3 r = abs(fract(c.xxx + K.xyz) * 6.0 - K.www);\ncolor.xyz = c.z * mix(K.xxx, clamp(r - K.xxx, 0.0, 1.0), c.y);\ncolor.w *= uvAlphaTime.z;\n\ngl_FragColor = color;\n\n// Thanks to lolengine.net for the rgb<->hsb conversion code",
+					"pixelShaderUniforms": {
+						"hue": "float",
+						"saturation": "float",
+						"brightness": "float"
+					},
+					"pixelPerfectMouseEvents": 0,
+					"properties": {
+						"hue": 0,
+						"saturation": 1,
+						"brightness": 0
+					},
+					"size": {
+						"x": 305.8211302109226,
+						"y": 300
+					}
+				}
+			],
+			"spriteOffsets": [
+				{
+					"x": 0,
+					"y": 0,
+					"angle": 0
+				}
+			],
+			"flowChart": null,
+			"grid": null,
+			"alignment": {
+				"x": "center",
+				"y": "center"
+			},
+			"name": "GameMan",
+			"isTemplate": false,
+			"path": "",
+			"addToScene": {
+				"autoListen": true,
+				"params": null
+			},
+			"properties": {
+				"instanceOf": "GameMan"
+			},
+			"functions": {
+				"onAddToScene": "function (data)\n{\n\t\n}",
+				"onMouseDown": "function (data)\n{\n\tif (wade.getObjectByName(\"Ship\").moonNum < 12\r\n\t&& !wade.getObjectByName(\"Ship\").move \r\n\t&& wade.isMouseDown(0))\r\n\t{\r\n\twade.getObjectByName(\"Ship\").moonNum += 1;\r\n\tthis.movespot = data.screenPosition;\r\n\tvar moon = wade.getSceneObject(\"Moon\").clone();\r\n\tmoon.setPosition(this.movespot.x, this.movespot.y);\r\n\twade.addSceneObject(moon, true);\r\n\tconsole.log(this.movespot)\r\n\t}\n}",
+				"onUpdate": "function (data)\n{\n\t// if (wade.isMouseDown()){\n\t// var data = wade.getMousePosition\n\t// this.moonNum += 1;\n\t// this.movespot = data.screenPosition;\n\t// var moon = wade.getSceneObject(\"Moon\").clone();\n\t// moon.setPosition(this.movespot.x, this.movespot.y);\n\t// wade.addSceneObject(moon, true);\n\t// console.log(this.movespot)\n\t// }\n}",
+				"onKeyDown": "function (data)\n{\n\tif (data.keyName == 'r'){\n\tvar Ship = wade.getObjectByName(\"Ship\")\n\tShip.setPosition(0,-458)\n\tShip.setVelocity(0,0)\n\tShip.setRotation(3.15)\n\tShip.rotateTo(3.15)\n\tShip.move = false\n\t}\n}",
+				"onMouseIn": "function (data)\n{\n\twade.getObjectByName(\"Ship\").mousein = true\n}",
+				"onMouseOut": "function (data)\n{\n\twade.getObjectByName(\"Ship\").mousein = false\n}"
+			}
+		}
+	],
+	"paths": [],
+	"sceneObjectGroups": [],
+	"layers": [
+		null,
+		null,
+		{
+			"scaleFactor": 1,
+			"translateFactor": 1,
+			"renderMode": "webgl",
+			"useQuadtree": true,
+			"resolutionFactor": 1,
+			"blur": 0,
+			"postProcessShader": "",
+			"postProcessShaderUniforms": null,
+			"properties": {}
+		},
+		null,
+		null,
+		{
+			"scaleFactor": 1,
+			"translateFactor": 1,
+			"renderMode": "webgl",
+			"useQuadtree": true,
+			"resolutionFactor": 1,
+			"blur": 0,
+			"postProcessShader": "",
+			"postProcessShaderUniforms": null,
+			"properties": {}
+		}
+	],
+	"minScreenSize": {
+		"x": 0,
+		"y": 0
+	},
+	"maxScreenSize": {
+		"x": 10000,
+		"y": 10000
+	},
+	"orientation": "none",
+	"windowMode": "full",
+	"defaultLayer": 1
+}
